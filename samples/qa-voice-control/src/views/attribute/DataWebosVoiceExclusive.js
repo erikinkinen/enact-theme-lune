@@ -1,9 +1,9 @@
 
-import Alert from '@enact/sandstone/Alert';
-import Button from '@enact/sandstone/Button';
-import ContextualPopupDecorator from '@enact/sandstone/ContextualPopupDecorator';
-import Heading from '@enact/sandstone/Heading';
-import Popup from '@enact/sandstone/Popup';
+import Alert from '@enact/lune/Alert';
+import Button from '@enact/lune/Button';
+import ContextualPopupDecorator from '@enact/lune/ContextualPopupDecorator';
+import Heading from '@enact/lune/Heading';
+import Popup from '@enact/lune/Popup';
 import Spotlight from '@enact/spotlight';
 import SpotlightContainerDecorator from '@enact/spotlight/SpotlightContainerDecorator';
 import FloatingLayer from '@enact/ui/FloatingLayer';

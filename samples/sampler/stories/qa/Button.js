@@ -1,10 +1,10 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, select, text} from '@enact/storybook-utils/addons/controls';
-import Button, {ButtonBase} from '@enact/sandstone/Button';
-import Heading from '@enact/sandstone/Heading';
+import Button, {ButtonBase} from '@enact/lune/Button';
+import Heading from '@enact/lune/Heading';
 import {Row} from '@enact/ui/Layout';
-import Scroller from '@enact/sandstone/Scroller';
+import Scroller from '@enact/lune/Scroller';
 import UIButton, {ButtonBase as UIButtonBase} from '@enact/ui/Button';
 
 import iconNames from '../helper/icons';
@@ -40,7 +40,7 @@ const prop = {
 };
 
 export default {
-	title: 'Sandstone/Button',
+	title: 'Lune/Button',
 	component: 'Button'
 };
 

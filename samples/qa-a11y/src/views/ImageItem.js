@@ -1,4 +1,4 @@
-import ImageItem from '@enact/sandstone/ImageItem';
+import ImageItem from '@enact/lune/ImageItem';
 import {useState} from 'react';
 
 import Section from '../components/Section';

@@ -1,4 +1,4 @@
-import Switch from '@enact/sandstone/Switch';
+import Switch from '@enact/lune/Switch';
 
 import Section from '../components/Section';
 

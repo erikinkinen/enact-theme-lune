@@ -1,7 +1,7 @@
 /**
- * Provides Sandstone-themed virtual list components and behaviors.
+ * Provides Lune-themed virtual list components and behaviors.
  *
- * @module sandstone/VirtualList
+ * @module lune/VirtualList
  * @exports VirtualGridList
  * @exports VirtualList
  */
@@ -24,10 +24,10 @@ import {useThemeVirtualList} from './useThemeVirtualList';
 const nop = () => {};
 
 /**
- * A Sandstone-styled scrollable and spottable virtual list component.
+ * A Lune-styled scrollable and spottable virtual list component.
  *
  * @class VirtualList
- * @memberof sandstone/VirtualList
+ * @memberof lune/VirtualList
  * @extends ui/VirtualList.VirtualListBasic
  * @ui
  * @public
@@ -87,7 +87,7 @@ let VirtualList = ({itemSize, hoverToScroll, ...rest}) => {
 
 VirtualList.displayName = 'VirtualList';
 
-VirtualList.propTypes = /** @lends sandstone/VirtualList.VirtualList.prototype */ {
+VirtualList.propTypes = /** @lends lune/VirtualList.VirtualList.prototype */ {
 	/**
 	 * Size of an item for the VirtualList; valid value is a number generally.
 	 * For different item size, value is an object that has `minSize`
@@ -202,7 +202,7 @@ VirtualList.propTypes = /** @lends sandstone/VirtualList.VirtualList.prototype *
 	/**
 	 * Unique identifier for the component.
 	 *
-	 * When defined and when the `VirtualList` is within a [Panel]{@link sandstone/Panels.Panel},
+	 * When defined and when the `VirtualList` is within a [Panel]{@link lune/Panels.Panel},
 	 * the `VirtualList` will store its scroll position and restore that position when returning to
 	 * the `Panel`.
 	 *
@@ -484,10 +484,10 @@ VirtualList.defaultProps = {
 };
 
 /**
- * A Sandstone-styled scrollable and spottable virtual grid list component.
+ * A Lune-styled scrollable and spottable virtual grid list component.
  *
  * @class VirtualGridList
- * @memberof sandstone/VirtualList
+ * @memberof lune/VirtualList
  * @extends ui/VirtualList.VirtualListBasic
  * @ui
  * @public
@@ -531,7 +531,7 @@ let VirtualGridList = ({hoverToScroll, ...rest}) => {
 
 VirtualGridList.displayName = 'VirtualGridList';
 
-VirtualGridList.propTypes = /** @lends sandstone/VirtualList.VirtualGridList.prototype */ {
+VirtualGridList.propTypes = /** @lends lune/VirtualList.VirtualGridList.prototype */ {
 	/**
 	 * Size of an item for the VirtualGridList; valid value is an object that has `minWidth`
 	 * and `minHeight` as properties.
@@ -648,7 +648,7 @@ VirtualGridList.propTypes = /** @lends sandstone/VirtualList.VirtualGridList.pro
 	/**
 	 * Unique identifier for the component.
 	 *
-	 * When defined and when the `VirtualGridList` is within a [Panel]{@link sandstone/Panels.Panel},
+	 * When defined and when the `VirtualGridList` is within a [Panel]{@link lune/Panels.Panel},
 	 * the `VirtualGridList` will store its scroll position and restore that position when returning to
 	 * the `Panel`.
 	 *

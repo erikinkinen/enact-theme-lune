@@ -1,4 +1,4 @@
-import {InputField} from '@enact/sandstone/Input';
+import {InputField} from '@enact/lune/Input';
 
 import Section from '../components/Section';
 

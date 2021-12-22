@@ -1,9 +1,9 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, range, select} from '@enact/storybook-utils/addons/controls';
-import BodyText from '@enact/sandstone/BodyText';
-import {FixedPopupPanels, Panel, Header} from '@enact/sandstone/FixedPopupPanels';
-import Item from '@enact/sandstone/Item';
+import BodyText from '@enact/lune/BodyText';
+import {FixedPopupPanels, Panel, Header} from '@enact/lune/FixedPopupPanels';
+import Item from '@enact/lune/Item';
 
 const Config = mergeComponentMetadata('FixedPopupPanels', FixedPopupPanels);
 Config.defaultProps.position = 'right';
@@ -12,7 +12,7 @@ Config.defaultProps.spotlightRestrict = 'self-only';
 Config.defaultProps.width = 'narrow';
 
 export default {
-	title: 'Sandstone/FixedPopupPanels',
+	title: 'Lune/FixedPopupPanels',
 	component: 'FixedPopupPanels'
 };
 

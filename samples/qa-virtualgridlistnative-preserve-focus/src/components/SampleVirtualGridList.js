@@ -1,8 +1,8 @@
-import ImageItem from '@enact/sandstone/ImageItem';
+import ImageItem from '@enact/lune/ImageItem';
 import PropTypes from 'prop-types';
 import {Component} from 'react';
 import ri from '@enact/ui/resolution';
-import {VirtualGridList} from '@enact/sandstone/VirtualList';
+import {VirtualGridList} from '@enact/lune/VirtualList';
 
 import css from './SampleVirtualGridList.module.less';
 

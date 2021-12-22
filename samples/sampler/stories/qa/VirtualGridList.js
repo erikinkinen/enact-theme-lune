@@ -1,13 +1,13 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, number, select} from '@enact/storybook-utils/addons/controls';
-import Button from '@enact/sandstone/Button';
-import ContextualPopupDecorator from '@enact/sandstone/ContextualPopupDecorator';
-import ImageItem from '@enact/sandstone/ImageItem';
-import Item from '@enact/sandstone/Item';
-import {Header, Panel, Panels} from '@enact/sandstone/Panels';
-import Scroller from '@enact/sandstone/Scroller';
-import {VirtualGridList} from '@enact/sandstone/VirtualList';
+import Button from '@enact/lune/Button';
+import ContextualPopupDecorator from '@enact/lune/ContextualPopupDecorator';
+import ImageItem from '@enact/lune/ImageItem';
+import Item from '@enact/lune/Item';
+import {Header, Panel, Panels} from '@enact/lune/Panels';
+import Scroller from '@enact/lune/Scroller';
+import {VirtualGridList} from '@enact/lune/VirtualList';
 import ri from '@enact/ui/resolution';
 import {VirtualListBasic as UiVirtualListBasic} from '@enact/ui/VirtualList/VirtualListBasic';
 import PropTypes from 'prop-types';
@@ -162,7 +162,7 @@ class ButtonAndVirtualGridList extends Component {
 }
 
 export default {
-	title: 'Sandstone/VirtualGridList',
+	title: 'Lune/VirtualGridList',
 	component: 'VirtualGridList'
 };
 

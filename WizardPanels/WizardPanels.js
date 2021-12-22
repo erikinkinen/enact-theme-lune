@@ -46,18 +46,18 @@ const HeaderContainer = SpotlightContainerDecorator(Header);
  *	</WizardPanels>
  *
  * @class WizardPanelsBase
- * @memberof sandstone/WizardPanels
+ * @memberof lune/WizardPanels
  * @ui
  * @public
  */
 const WizardPanelsBase = kind({
 	name: 'WizardPanels',
 
-	propTypes: /** @lends sandstone/WizardPanels.WizardPanelsBase.prototype */ {
+	propTypes: /** @lends lune/WizardPanels.WizardPanelsBase.prototype */ {
 		/**
 		 * The "aria-label" for the Panel.
 		 *
-		 * By default, the panel will be labeled by its [Header]{@link sandstone/Panels.Header}.
+		 * By default, the panel will be labeled by its [Header]{@link lune/Panels.Header}.
 		 * When `aria-label` is set, it will be used instead to provide an accessibility label for
 		 * the panel.
 		 *
@@ -459,11 +459,11 @@ function useReverseTransition (index = -1, rtl) {
 
 /**
  * WizardPanelsRouter passes the children, footer, subtitle, and title from
- * [WizardPanel]{@link sandstone/WizardPanels.Panel} to
- * [WizardPanelsBase]{@link sandstone/WizardPanels.WizardPanelsBase}.
+ * [WizardPanel]{@link lune/WizardPanels.Panel} to
+ * [WizardPanelsBase]{@link lune/WizardPanels.WizardPanelsBase}.
  *
  * @class WizardPanelsRouter
- * @memberof sandstone/WizardPanels
+ * @memberof lune/WizardPanels
  * @private
  */
 const WizardPanelsRouter = (Wrapped) => {
@@ -526,7 +526,7 @@ const WizardPanelsRouter = (Wrapped) => {
 		);
 	};
 
-	WizardPanelsProvider.propTypes =  /** @lends sandstone/WizardPanels.WizardPanelsRouter.prototype */  {
+	WizardPanelsProvider.propTypes =  /** @lends lune/WizardPanels.WizardPanelsRouter.prototype */  {
 		/**
 		 * Obtains a reference to the root node.
 		 *
@@ -586,7 +586,7 @@ const WizardPanelsRouter = (Wrapped) => {
 
 		/**
 		* The "default" subtitle for WizardPanels if subtitle isn't explicitly set in
-		* [Panel]{@link sandstone/WizardPanels.Panel}.
+		* [Panel]{@link lune/WizardPanels.Panel}.
 		* @example
 		* 	<WizardPanels subtitle="Subtitle">
 		*		<WizardPanels.Panel>
@@ -601,7 +601,7 @@ const WizardPanelsRouter = (Wrapped) => {
 
 		/**
 		* The "default" title for WizardPanels if title isn't explicitly set in
-		* [Panel]{@link sandstone/WizardPanels.Panel}.
+		* [Panel]{@link lune/WizardPanels.Panel}.
 		* @example
 		* 	<WizardPanels title="Title">
 		*		<WizardPanels.Panel>
@@ -647,11 +647,11 @@ const WizardPanelsDecorator = compose(
 
 /**
  * A WizardPanels that can step through different panels.
- * Expects [WizardPanel]{@link sandstone/WizardPanels.Panel} as children.
+ * Expects [WizardPanel]{@link lune/WizardPanels.Panel} as children.
  *
  * @class WizardPanels
- * @memberof sandstone/WizardPanels
- * @extends sandstone/WizardPanels.WizardPanelsBase
+ * @memberof lune/WizardPanels
+ * @extends lune/WizardPanels.WizardPanelsBase
  * @mixes ui/Changeable.Changeable
  * @ui
  * @public
@@ -665,7 +665,7 @@ const WizardPanels = WizardPanelsDecorator(WizardPanelsBase);
  * not called, the index of the panel will be decremented unless `noPrevButton` is set.
  *
  * @name onBack
- * @memberof sandstone/WizardPanels.WizardPanels.prototype
+ * @memberof lune/WizardPanels.WizardPanels.prototype
  * @type {Function}
  */
 

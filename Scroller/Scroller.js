@@ -1,5 +1,5 @@
 /**
- * Provides Sandstone-themed scroller components and behaviors.
+ * Provides Lune-themed scroller components and behaviors.
  *
  * @example
  * <Scroller>
@@ -12,7 +12,7 @@
  * 	</div>
  * </Scroller>
  *
- * @module sandstone/Scroller
+ * @module lune/Scroller
  * @exports Scroller
  */
 
@@ -37,7 +37,7 @@ const SpottableDiv = Spottable('div');
 let scrollerId = 0;
 
 /**
- * A Sandstone-styled Scroller, useScroll applied.
+ * A Lune-styled Scroller, useScroll applied.
  *
  * Usage:
  * ```
@@ -45,7 +45,7 @@ let scrollerId = 0;
  * ```
  *
  * @class Scroller
- * @memberof sandstone/Scroller
+ * @memberof lune/Scroller
  * @extends ui/Scroller.ScrollerBasic
  * @ui
  * @public
@@ -100,7 +100,7 @@ let Scroller = ({'aria-label': ariaLabel, hoverToScroll, ...rest}) => {
 
 Scroller.displayName = 'Scroller';
 
-Scroller.propTypes = /** @lends sandstone/Scroller.Scroller.prototype */ {
+Scroller.propTypes = /** @lends lune/Scroller.Scroller.prototype */ {
 	/**
 	 * The "aria-label" for the Scroller.
 	 *
@@ -231,7 +231,7 @@ Scroller.propTypes = /** @lends sandstone/Scroller.Scroller.prototype */ {
 	/**
 	 * Unique identifier for the component.
 	 *
-	 * When defined and when the `Scroller` is within a [Panel]{@link sandstone/Panels.Panel}, the
+	 * When defined and when the `Scroller` is within a [Panel]{@link lune/Panels.Panel}, the
 	 * `Scroller` will store its scroll position and restore that position when returning to the
 	 * `Panel`.
 	 *

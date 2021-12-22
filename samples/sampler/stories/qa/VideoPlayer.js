@@ -1,6 +1,6 @@
-import Button from '@enact/sandstone/Button';
-import {MediaControls} from '@enact/sandstone/MediaPlayer';
-import VideoPlayer, {Video} from '@enact/sandstone/VideoPlayer';
+import Button from '@enact/lune/Button';
+import {MediaControls} from '@enact/lune/MediaPlayer';
+import VideoPlayer, {Video} from '@enact/lune/VideoPlayer';
 import {select} from '@enact/storybook-utils/addons/controls';
 import PropTypes from 'prop-types';
 import {Component} from 'react';
@@ -107,7 +107,7 @@ class VideoSourceSwap extends Component {
 }
 
 export default {
-	title: 'Sandstone/VideoPlayer',
+	title: 'Lune/VideoPlayer',
 	component: 'VideoPlayer'
 };
 

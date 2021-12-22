@@ -1,8 +1,8 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, number, select} from '@enact/storybook-utils/addons/controls';
-import Item from '@enact/sandstone/Item';
-import VirtualList from '@enact/sandstone/VirtualList';
+import Item from '@enact/lune/Item';
+import VirtualList from '@enact/lune/VirtualList';
 import ri from '@enact/ui/resolution';
 import {VirtualListBasic as UiVirtualListBasic} from '@enact/ui/VirtualList';
 
@@ -46,7 +46,7 @@ updateDataSize(defaultDataSize);
 const VirtualListConfig = mergeComponentMetadata('VirtualList', UiVirtualListBasic, VirtualList);
 
 export default {
-	title: 'Sandstone/VirtualList',
+	title: 'Lune/VirtualList',
 	component: 'VirtualList'
 };
 

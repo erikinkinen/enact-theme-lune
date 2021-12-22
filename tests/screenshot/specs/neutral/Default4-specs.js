@@ -1,9 +1,9 @@
 const {runTest} = require('@enact/ui-test-utils/utils');
 
-const Page = require('./SandstonePage');
+const Page = require('./LunePage');
 
 runTest({
-	testName: 'Sandstone',
+	testName: 'Lune',
 	Page: Page,
 	skin: 'neutral',
 	highContrast: false,

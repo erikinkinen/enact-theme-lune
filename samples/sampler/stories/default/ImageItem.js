@@ -1,6 +1,6 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {boolean, object, select, text} from '@enact/storybook-utils/addons/controls';
-import {ImageItem, ImageItemBase} from '@enact/sandstone/ImageItem';
+import {ImageItem, ImageItemBase} from '@enact/lune/ImageItem';
 import {ImageItem as UiImageItem} from '@enact/ui/ImageItem';
 import ri from '@enact/ui/resolution';
 
@@ -18,7 +18,7 @@ const prop = {
 };
 
 export default {
-	title: 'Sandstone/ImageItem',
+	title: 'Lune/ImageItem',
 	component: 'ImageItem'
 };
 

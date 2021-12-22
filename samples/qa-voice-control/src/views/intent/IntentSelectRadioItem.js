@@ -1,5 +1,5 @@
-import Heading from '@enact/sandstone/Heading';
-import RadioItem from '@enact/sandstone/RadioItem';
+import Heading from '@enact/lune/Heading';
+import RadioItem from '@enact/lune/RadioItem';
 import Group from '@enact/ui/Group';
 import {Component} from 'react';
 

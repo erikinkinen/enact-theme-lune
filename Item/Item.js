@@ -1,10 +1,10 @@
 /**
- * Provides Sandstone styled item components and behaviors. Useful for content in lists.
+ * Provides Lune styled item components and behaviors. Useful for content in lists.
  *
  * @example
  * <Item>Hello Enact!</Item>
  *
- * @module sandstone/Item
+ * @module lune/Item
  * @exports Item
  * @exports ItemBase
  * @exports ItemDecorator
@@ -81,10 +81,10 @@ ItemContent.propTypes = {
 };
 
 /**
- * A Sandstone styled item without any behavior.
+ * A Lune styled item without any behavior.
  *
  * @class ItemBase
- * @memberof sandstone/Item
+ * @memberof lune/Item
  * @extends ui/Item.ItemBase
  * @ui
  * @public
@@ -92,7 +92,7 @@ ItemContent.propTypes = {
 const ItemBase = kind({
 	name: 'Item',
 
-	propTypes: /** @lends sandstone/Item.ItemBase.prototype */ {
+	propTypes: /** @lends lune/Item.ItemBase.prototype */ {
 		/**
 		 * Centers the slots and content.
 		 *
@@ -297,16 +297,16 @@ const ItemMeasurementDecorator = (Wrapped) => {
 };
 
 /**
- * Sandstone specific item behaviors to apply to [Item]{@link sandstone/Item.ItemBase}.
+ * Lune specific item behaviors to apply to [Item]{@link lune/Item.ItemBase}.
  *
  * @class ItemDecorator
  * @hoc
- * @memberof sandstone/Item
+ * @memberof lune/Item
  * @mixes ui/Item.ItemDecorator
  * @mixes ui/Slottable.Slottable
  * @mixes spotlight/Spottable.Spottable
- * @mixes sandstone/Marquee.MarqueeController
- * @mixes sandstone/Skinnable.Skinnable
+ * @mixes lune/Marquee.MarqueeController
+ * @mixes lune/Skinnable.Skinnable
  * @public
  */
 const ItemDecorator = compose(
@@ -319,7 +319,7 @@ const ItemDecorator = compose(
 );
 
 /**
- * A Sandstone styled item with built-in support for marqueed text, and Spotlight focus.
+ * A Lune styled item with built-in support for marqueed text, and Spotlight focus.
  *
  * Usage:
  * ```
@@ -327,9 +327,9 @@ const ItemDecorator = compose(
  * ```
  *
  * @class Item
- * @memberof sandstone/Item
- * @extends sandstone/Item.ItemBase
- * @mixes sandstone/Item.ItemDecorator
+ * @memberof lune/Item
+ * @extends lune/Item.ItemBase
+ * @mixes lune/Item.ItemDecorator
  * @ui
  * @public
  */

@@ -1,10 +1,10 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, select, text} from '@enact/storybook-utils/addons/controls';
-import Checkbox, {CheckboxBase} from '@enact/sandstone/Checkbox';
-import FormCheckboxItem, {FormCheckboxItemBase} from '@enact/sandstone/FormCheckboxItem';
-import Icon from '@enact/sandstone/Icon';
-import Item, {ItemBase} from '@enact/sandstone/Item';
+import Checkbox, {CheckboxBase} from '@enact/lune/Checkbox';
+import FormCheckboxItem, {FormCheckboxItemBase} from '@enact/lune/FormCheckboxItem';
+import Icon from '@enact/lune/Icon';
+import Item, {ItemBase} from '@enact/lune/Item';
 
 import iconNames from '../helper/icons';
 
@@ -21,7 +21,7 @@ const Config = mergeComponentMetadata(
 Config.defaultProps.icon = CheckboxBase.defaultProps.children;
 
 export default {
-	title: 'Sandstone/FormCheckboxItem',
+	title: 'Lune/FormCheckboxItem',
 	component: 'FormCheckboxItem'
 };
 

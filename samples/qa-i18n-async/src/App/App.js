@@ -1,11 +1,11 @@
-import Button from '@enact/sandstone/Button';
-import Dropdown from '@enact/sandstone/Dropdown';
+import Button from '@enact/lune/Button';
+import Dropdown from '@enact/lune/Dropdown';
 import {I18nContextDecorator} from '@enact/i18n/I18nDecorator';
 import PropTypes from 'prop-types';
 import {Component} from 'react';
 import $L from '@enact/i18n/$L';
 import Text, {TextDecorator} from '@enact/i18n/Text';
-import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
+import ThemeDecorator from '@enact/lune/ThemeDecorator';
 
 const TextButton = TextDecorator(Button);
 

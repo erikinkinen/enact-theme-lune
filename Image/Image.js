@@ -1,10 +1,10 @@
 /**
- * Provides Sandstone styled Image component that supports multiple resolution sources.
+ * Provides Lune styled Image component that supports multiple resolution sources.
  *
  * @example
  * <Image src="https://dummyimage.com/64/e048e0/0011ff" style={{height: 64, width: 64}} />
  *
- * @module sandstone/Image
+ * @module lune/Image
  * @exports Image
  * @exports ImageBase
  * @exports ImageDecorator
@@ -26,10 +26,10 @@ import Skinnable from '../Skinnable';
 import componentCss from './Image.module.less';
 
 /**
- * A Sandstone-styled image component without any behavior
+ * A Lune-styled image component without any behavior
  *
  * @class ImageBase
- * @memberof sandstone/Image
+ * @memberof lune/Image
  * @extends ui/Image.Image
  * @ui
  * @public
@@ -37,11 +37,11 @@ import componentCss from './Image.module.less';
 const ImageBase = kind({
 	name: 'Image',
 
-	propTypes: /** @lends sandstone/Image.ImageBase.prototype */ {
+	propTypes: /** @lends lune/Image.ImageBase.prototype */ {
 		/**
 		 * Called with a reference to the root component.
 		 *
-		 * When using {@link sandstone/Image.Image}, the `ref` prop is forwarded to this component
+		 * When using {@link lune/Image.Image}, the `ref` prop is forwarded to this component
 		 * as `componentRef`.
 		 *
 		 * @type {Object|Function}
@@ -132,11 +132,11 @@ const ResponsiveImageDecorator = hoc((config, Wrapped) => {
 });
 
 /**
- * Sandstone-specific behaviors to apply to [Image]{@link sandstone/Image.ImageBase}.
+ * Lune-specific behaviors to apply to [Image]{@link lune/Image.ImageBase}.
  *
  * @hoc
- * @memberof sandstone/Image
- * @mixes sandstone/Skinnable.Skinnable
+ * @memberof lune/Image
+ * @mixes lune/Skinnable.Skinnable
  * @public
  */
 const ImageDecorator = compose(
@@ -147,7 +147,7 @@ const ImageDecorator = compose(
 );
 
 /**
- * A Sandstone-styled image component
+ * A Lune-styled image component
  *
  * ```
  * <Image
@@ -160,9 +160,9 @@ const ImageDecorator = compose(
  * ```
  *
  * @class Image
- * @memberof sandstone/Image
- * @extends sandstone/Image.ImageBase
- * @mixes sandstone/Image.ImageDecorator
+ * @memberof lune/Image
+ * @extends lune/Image.ImageBase
+ * @mixes lune/Image.ImageDecorator
  * @ui
  * @public
  */

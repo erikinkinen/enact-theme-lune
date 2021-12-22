@@ -1,10 +1,10 @@
 /**
- * Provides Sandstone-themed progress button component.
+ * Provides Lune-themed progress button component.
  *
  * @example
  * <ProgressButton progress={0.5}>Progress</ProgressButton>
  *
- * @module sandstone/ProgressButton
+ * @module lune/ProgressButton
  * @exports ProgressButton
  * @exports ProgressButtonBase
  * @exports ProgressButtonDecorator
@@ -20,19 +20,19 @@ import ProgressBar from '../ProgressBar';
 import componentCss from './ProgressButton.module.less';
 
 /**
- * Renders a sandstone-styled progress button.
+ * Renders a lune-styled progress button.
  *
  * @class ProgressButtonBase
- * @memberof sandstone/ProgressButton
- * @extends sandstone/Button.ButtonBase
- * @extends sandstone/ProgressBar.ProgressBar
+ * @memberof lune/ProgressButton
+ * @extends lune/Button.ButtonBase
+ * @extends lune/ProgressBar.ProgressBar
  * @ui
  * @public
  */
 const ProgressButtonBase = kind({
 	name: 'ProgressButton',
 
-	propTypes: /** @lends sandstone/ProgressButton.ProgressButtonBase.prototype */ {
+	propTypes: /** @lends lune/ProgressButton.ProgressButtonBase.prototype */ {
 		/**
 		 * Customizes the component by mapping the supplied collection of CSS class names to the
 		 * corresponding internal elements and states of this component.
@@ -122,11 +122,11 @@ const ProgressButtonBase = kind({
 
 
 /**
- * The ready-to-use Sandstone-styled ProgressButton.
+ * The ready-to-use Lune-styled ProgressButton.
  *
  * @class ProgressButton
- * @memberof sandstone/ProgressButton
- * @extends sandstone/ProgressButton.ProgressButtonBase
+ * @memberof lune/ProgressButton
+ * @extends lune/ProgressButton.ProgressButtonBase
  * @ui
  * @public
  */

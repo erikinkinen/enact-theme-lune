@@ -1,6 +1,6 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {range, select} from '@enact/storybook-utils/addons/controls';
-import Steps, {StepsBase} from '@enact/sandstone/Steps';
+import Steps, {StepsBase} from '@enact/lune/Steps';
 
 import iconNames from '../helper/icons';
 
@@ -18,7 +18,7 @@ const prop = {
 };
 
 export default {
-	title: 'Sandstone/Steps',
+	title: 'Lune/Steps',
 	component: 'Steps'
 };
 

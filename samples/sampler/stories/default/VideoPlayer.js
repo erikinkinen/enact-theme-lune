@@ -1,11 +1,11 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, number, range, select, text} from '@enact/storybook-utils/addons/controls';
-import Button from '@enact/sandstone/Button';
-import {ImageItem} from '@enact/sandstone/ImageItem';
-import {MediaControls} from '@enact/sandstone/MediaPlayer';
-import VideoPlayer, {VideoPlayerBase} from '@enact/sandstone/VideoPlayer';
-import {VirtualGridList} from '@enact/sandstone/VirtualList';
+import Button from '@enact/lune/Button';
+import {ImageItem} from '@enact/lune/ImageItem';
+import {MediaControls} from '@enact/lune/MediaPlayer';
+import VideoPlayer, {VideoPlayerBase} from '@enact/lune/VideoPlayer';
+import {VirtualGridList} from '@enact/lune/VirtualList';
 import ri from '@enact/ui/resolution';
 
 import icons from '../helper/icons';
@@ -102,7 +102,7 @@ VideoPlayer.displayName = 'VideoPlayer';
 MediaControls.displayName = 'MediaControls';
 
 export default {
-	title: 'Sandstone/VideoPlayer',
+	title: 'Lune/VideoPlayer',
 	component: 'VideoPlayer'
 };
 
@@ -226,7 +226,7 @@ boolean('pauseAtEnd', _VideoPlayer, Config);
 boolean('seekDisabled', _VideoPlayer, Config);
 boolean('spotlightDisabled', _VideoPlayer, Config);
 boolean('thumbnailUnavailable', _VideoPlayer, Config);
-text('title', _VideoPlayer, Config, 'Sandstone VideoPlayer Sample Video');
+text('title', _VideoPlayer, Config, 'Lune VideoPlayer Sample Video');
 number('titleHideDelay', _VideoPlayer, Config, 4000);
 text(
 	'actionGuideAriaLabel',

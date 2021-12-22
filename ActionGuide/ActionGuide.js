@@ -1,10 +1,10 @@
 /**
- * Sandstone styled action guide component and behaviors.
+ * Lune styled action guide component and behaviors.
  *
  * @example
  * <ActionGuide icon="arrowlargedown">Hello</ActionGuide>
  *
- * @module sandstone/ActionGuide
+ * @module lune/ActionGuide
  * @exports ActionGuide
  * @exports ActionGuideBase
  * @exports ActionGuideDecorator
@@ -28,17 +28,17 @@ const TouchableDiv = Touchable('div');
  * An Action Guide component.
  *
  * This component is most often not used directly but may be composed within another component as it
- * is within [ActionGuide]{@link sandstone/ActionGuide.ActionGuide}.
+ * is within [ActionGuide]{@link lune/ActionGuide.ActionGuide}.
  *
  * @class ActionGuideBase
- * @memberof sandstone/ActionGuide
+ * @memberof lune/ActionGuide
  * @ui
  * @public
  */
 const ActionGuideBase = kind({
 	name: 'ActionGuide',
 
-	propTypes: /** @lends sandstone/ActionGuide.ActionGuideBase.prototype */ {
+	propTypes: /** @lends lune/ActionGuide.ActionGuideBase.prototype */ {
 		/**
 		 * The contents for the action guide.
 		 *
@@ -91,11 +91,11 @@ const ActionGuideBase = kind({
 });
 
 /**
- * Applies Sandstone specific behaviors to [ActionGuide]{@link sandstone/ActionGuide.ActionGuideBase}.
+ * Applies Lune specific behaviors to [ActionGuide]{@link lune/ActionGuide.ActionGuideBase}.
  *
  * @hoc
- * @memberof sandstone/ActionGuide
- * @mixes sandstone/Skinnable.Skinnable
+ * @memberof lune/ActionGuide
+ * @mixes lune/Skinnable.Skinnable
  * @public
  */
 const ActionGuideDecorator = compose(
@@ -104,7 +104,7 @@ const ActionGuideDecorator = compose(
 );
 
 /**
- * An Action Guide component, ready to use in Sandstone applications.
+ * An Action Guide component, ready to use in Lune applications.
  *
  * `ActionGuide` may be used to display text and icon to describe an action.
  *
@@ -114,9 +114,9 @@ const ActionGuideDecorator = compose(
  * ```
  *
  * @class ActionGuide
- * @memberof sandstone/ActionGuide
- * @extends sandstone/ActionGuide.ActionGuideBase
- * @mixes sandstone/ActionGuide.ActionGuideDecorator
+ * @memberof lune/ActionGuide
+ * @extends lune/ActionGuide.ActionGuideBase
+ * @mixes lune/ActionGuide.ActionGuideDecorator
  * @ui
  * @public
  */

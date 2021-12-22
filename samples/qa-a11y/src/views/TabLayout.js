@@ -1,10 +1,10 @@
-import Button from '@enact/sandstone/Button';
-import Icon from '@enact/sandstone/Icon';
-import Image from '@enact/sandstone/Image';
-import Item from '@enact/sandstone/Item';
-import {Header} from '@enact/sandstone/Panels';
-import Scroller from '@enact/sandstone/Scroller';
-import TabLayout, {Tab} from '@enact/sandstone/TabLayout';
+import Button from '@enact/lune/Button';
+import Icon from '@enact/lune/Icon';
+import Image from '@enact/lune/Image';
+import Item from '@enact/lune/Item';
+import {Header} from '@enact/lune/Panels';
+import Scroller from '@enact/lune/Scroller';
+import TabLayout, {Tab} from '@enact/lune/TabLayout';
 import {scaleToRem} from '@enact/ui/resolution';
 
 const tabsWithIcons = [
@@ -25,7 +25,7 @@ const images = new Array(20).fill().map( (_, i) =>
 const TabLayoutView = () => {
 	return (
 		<>
-			<Header title="Sandstone TabLayout" subtitle="Basic TabLayout" />
+			<Header title="Lune TabLayout" subtitle="Basic TabLayout" />
 			<TabLayout>
 				<Tab
 					icon={tabsWithIcons[0].icon}

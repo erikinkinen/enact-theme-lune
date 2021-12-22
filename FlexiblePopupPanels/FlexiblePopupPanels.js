@@ -10,20 +10,20 @@ import {NavButtonFocusDecorator} from './useNavButtonFocus';
 import css from './FlexiblePopupPanels.module.less';
 
 /**
- * An instance of [`Panels`]{@link sandstone/Panels.Panels} which restricts the `Panel` to the left
+ * An instance of [`Panels`]{@link lune/Panels.Panels} which restricts the `Panel` to the left
  * or right side of the screen inside a popup. This panel flexes both horizontally and vertically,
  * with the Header positioned outside the Panel background area. This is typically used for a single
  * setting or control at a time, for maximum background area viewing.
  *
  * @class FlexiblePopupPanels
- * @memberof sandstone/FlexiblePopupPanels
+ * @memberof lune/FlexiblePopupPanels
  * @ui
  * @public
  */
 const FlexiblePopupPanelsBase = kind({
 	name: 'FlexiblePopupPanels',
 
-	propTypes: /** @lends sandstone/FlexiblePopupPanels.FlexiblePopupPanels.prototype */ {
+	propTypes: /** @lends lune/FlexiblePopupPanels.FlexiblePopupPanels.prototype */ {
 		/**
 		 * Specifies when and how to show `nextButton` on `FlexiblePopupPanels.Panel`.
 		 *

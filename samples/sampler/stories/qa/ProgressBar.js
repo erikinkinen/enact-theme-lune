@@ -1,11 +1,11 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {boolean, range, select} from '@enact/storybook-utils/addons/controls';
-import ProgressBar, {ProgressBarBase} from '@enact/sandstone/ProgressBar';
+import ProgressBar, {ProgressBarBase} from '@enact/lune/ProgressBar';
 
 const Config = mergeComponentMetadata('ProgressBar', ProgressBarBase, ProgressBar);
 
 export default {
-	title: 'Sandstone/ProgressBar',
+	title: 'Lune/ProgressBar',
 	component: 'ProgressBar'
 };
 

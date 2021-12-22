@@ -1,5 +1,5 @@
 /**
- * Provides Sandstone styled image item components and behaviors.
+ * Provides Lune styled image item components and behaviors.
  *
  * @example
  * <ImageItem
@@ -9,7 +9,7 @@
  * 	The primary caption for the image
  * </ImageItem>
  *
- * @module sandstone/ImageItem
+ * @module lune/ImageItem
  * @exports ImageItem
  * @exports ImageItemBase
  * @exports ImageItemDecorator
@@ -40,18 +40,18 @@ const
 	'4NCg==';
 
 /**
- * A Sandstone styled base component for [ImageItem]{@link sandstone/ImageItem.ImageItem}.
+ * A Lune styled base component for [ImageItem]{@link lune/ImageItem.ImageItem}.
  *
  * @class ImageItemBase
  * @extends ui/ImageItem.ImageItem
- * @memberof sandstone/ImageItem
+ * @memberof lune/ImageItem
  * @ui
  * @public
  */
 const ImageItemBase = kind({
 	name: 'ImageItem',
 
-	propTypes: /** @lends sandstone/ImageItem.ImageItemBase.prototype */ {
+	propTypes: /** @lends lune/ImageItem.ImageItemBase.prototype */ {
 		/**
 		 * Centers the primary caption and label in vertical orientation.
 		 *
@@ -103,7 +103,7 @@ const ImageItemBase = kind({
 		 *
 		 * @type {String}
 		 * @default 'Select'
-		 * @memberof sandstone/ImageItem.ImageItemBase.prototype
+		 * @memberof lune/ImageItem.ImageItemBase.prototype
 		 * @public
 		 */
 		'data-webos-voice-intent': PropTypes.string,
@@ -121,7 +121,7 @@ const ImageItemBase = kind({
 		 * The component used to render the image icon component.
 		 *
 		 * @type {Component}
-		 * @default sandstone/Image.Image
+		 * @default lune/Image.Image
 		 * @private
 		 */
 		imageIconComponent: EnactPropTypes.component,
@@ -155,7 +155,7 @@ const ImageItemBase = kind({
 		orientation: PropTypes.oneOf(['horizontal', 'vertical']),
 
 		/**
-		 * Placeholder image used while [src]{@link sandstone/ImageItem.ImageItem#src}
+		 * Placeholder image used while [src]{@link lune/ImageItem.ImageItem#src}
 		 * is loaded.
 		 *
 		 * @type {String}
@@ -305,14 +305,14 @@ const ImageItemBase = kind({
 });
 
 /**
- * Sandstone-specific ImageItem behaviors to apply to
- * [ImageItem]{@link sandstone/ImageItem.ImageItem}.
+ * Lune-specific ImageItem behaviors to apply to
+ * [ImageItem]{@link lune/ImageItem.ImageItem}.
  *
  * @hoc
- * @memberof sandstone/ImageItem
- * @mixes sandstone/Marquee.MarqueeController
+ * @memberof lune/ImageItem
+ * @mixes lune/Marquee.MarqueeController
  * @mixes spotlight/Spottable.Spottable
- * @mixes sandstone/Skinnable.Skinnable
+ * @mixes lune/Skinnable.Skinnable
  * @public
  */
 const ImageItemDecorator = compose(
@@ -322,7 +322,7 @@ const ImageItemDecorator = compose(
 );
 
 /**
- * A sandstone-styled image item, Marquee and Spottable applied.
+ * A lune-styled image item, Marquee and Spottable applied.
  *
  * Usage:
  * ```
@@ -335,10 +335,10 @@ const ImageItemDecorator = compose(
  * ```
  *
  * @class ImageItem
- * @memberof sandstone/ImageItem
- * @extends sandstone/ImageItem.ImageItemBase
- * @mixes sandstone/ImageItem.ImageItemDecorator
- * @see {@link sandstone/ImageItem.ImageItemBase}
+ * @memberof lune/ImageItem
+ * @extends lune/ImageItem.ImageItemBase
+ * @mixes lune/ImageItem.ImageItemDecorator
+ * @see {@link lune/ImageItem.ImageItemBase}
  * @ui
  * @public
  */

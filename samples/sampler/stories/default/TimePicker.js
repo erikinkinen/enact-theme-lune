@@ -1,13 +1,13 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, text} from '@enact/storybook-utils/addons/controls';
-import TimePicker from '@enact/sandstone/TimePicker';
+import TimePicker from '@enact/lune/TimePicker';
 
 const Config = mergeComponentMetadata('TimePicker', TimePicker);
 TimePicker.displayName = 'TimePicker';
 
 export default {
-	title: 'Sandstone/TimePicker',
+	title: 'Lune/TimePicker',
 	component: 'TimePicker'
 };
 

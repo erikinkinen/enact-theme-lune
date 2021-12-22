@@ -1,8 +1,8 @@
 import kind from '@enact/core/kind';
-import Button from '@enact/sandstone/Button';
-import CheckboxItem from '@enact/sandstone/CheckboxItem';
-import {Header} from '@enact/sandstone/Panels';
-import {InputField as Input} from '@enact/sandstone/Input';
+import Button from '@enact/lune/Button';
+import CheckboxItem from '@enact/lune/CheckboxItem';
+import {Header} from '@enact/lune/Panels';
+import {InputField as Input} from '@enact/lune/Input';
 import {Cell, Row} from '@enact/ui/Layout';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';

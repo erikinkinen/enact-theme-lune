@@ -1,34 +1,34 @@
-import Button from '@enact/sandstone/Button';
-import Heading from '@enact/sandstone/Heading';
-import {Header, Panel} from '@enact/sandstone/Panels';
+import Button from '@enact/lune/Button';
+import Heading from '@enact/lune/Heading';
+import {Header, Panel} from '@enact/lune/Panels';
 import {Component} from 'react';
-import Scroller from '@enact/sandstone/Scroller';
+import Scroller from '@enact/lune/Scroller';
 
 import FontList from '../components/FontList';
 
 const
-	sandstoneIcons = '\u{2B} \u{21A9} \u{22EF} \u{EFFDD} \u{EFFEA} \u{F0028}',
+	luneIcons = '\u{2B} \u{21A9} \u{22EF} \u{EFFDD} \u{EFFEA} \u{F0028}',
 	lgIcons = 'ꔘ ꔧ ꕒ ꕭ ꖀ';
 
 const fonts = {
 	standard: [
-		'300 condensed 1em "Sandstone"',
-		'condensed 1em "Sandstone"',
-		'bold condensed 1em "Sandstone"',
-		'100 1em "Sandstone"',
-		'300 1em "Sandstone"',
-		'1em "Sandstone"',
-		'500 1em "Sandstone"',
-		'italic 500 1em "Sandstone"',
-		'700 1em "Sandstone"',
-		'italic 700 1em "Sandstone"',
-		'900 1em "Sandstone"',
-		'italic 900 1em "Sandstone"',
-		['1em "Sandstone Icons"', sandstoneIcons],
+		'300 condensed 1em "Lune"',
+		'condensed 1em "Lune"',
+		'bold condensed 1em "Lune"',
+		'100 1em "Lune"',
+		'300 1em "Lune"',
+		'1em "Lune"',
+		'500 1em "Lune"',
+		'italic 500 1em "Lune"',
+		'700 1em "Lune"',
+		'italic 700 1em "Lune"',
+		'900 1em "Lune"',
+		'italic 900 1em "Lune"',
+		['1em "Lune Icons"', luneIcons],
 		['1em "LG Icons"', lgIcons],
-		'300 1em "Sandstone Global"',
-		'1em "Sandstone Global"',
-		'bold 1em "Sandstone Global"'
+		'300 1em "Lune Global"',
+		'1em "Lune Global"',
+		'bold 1em "Lune Global"'
 	],
 	system: [
 		// Full-names
@@ -40,7 +40,7 @@ const fonts = {
 		'1em "LG Smart UI"',
 		'600 1em "LG Smart UI SemiBold"',
 		'700 1em "LG Smart UI Bold"',
-		['1em "Sandstone"', sandstoneIcons],
+		['1em "Lune"', luneIcons],
 		['1em "LG Display_Dingbat"', lgIcons],
 		'1em "LG Smart UI Global-Light"',
 		'1em "LG Smart UI Global-Regular"',
@@ -68,9 +68,9 @@ const fonts = {
 		['1em "LG Display_Urdu"', 'مجھے چکّر آرہے ہیں']
 	],
 	legacyWeb: [
-		'300 1em "Sandstone Miso"',
-		'1em "Sandstone Miso"',
-		'bold 1em "Sandstone Miso"',
+		'300 1em "Lune Miso"',
+		'1em "Lune Miso"',
+		'bold 1em "Lune Miso"',
 		'100 1em "MuseoSans"',
 		'300 1em "MuseoSans"',
 		'1em "MuseoSans"',
@@ -80,11 +80,11 @@ const fonts = {
 		'italic 700 1em "MuseoSans"',
 		'900 1em "MuseoSans"',
 		'italic 900 1em "MuseoSans"',
-		['1em "Sandstone Icons"', sandstoneIcons],
+		['1em "Lune Icons"', luneIcons],
 		['1em "LG Icons"', lgIcons],
-		'300 1em "Sandstone LG Display"',
-		'1em "Sandstone LG Display"',
-		'bold 1em "Sandstone LG Display"'
+		'300 1em "Lune LG Display"',
+		'1em "Lune LG Display"',
+		'bold 1em "Lune LG Display"'
 	],
 	legacySystem: [
 		'300 1em "Miso"',
@@ -99,7 +99,7 @@ const fonts = {
 		'italic 700 1em "Museo Sans"',
 		'900 1em "Museo Sans"',
 		'italic 900 1em "Museo Sans"',
-		['1em "Sandstone"', sandstoneIcons],
+		['1em "Lune"', luneIcons],
 		['1em "LG Display_Dingbat"', lgIcons],
 		'1em "LG Display-Light"',
 		'1em "LG Display-Regular"',
@@ -118,17 +118,17 @@ class MainPanel extends Component {
 			<Panel {...this.props}>
 				<Header type="compact">
 					<title>Font Verification</title>
-					<Button>A Sandstone Button</Button>
+					<Button>A Lune Button</Button>
 				</Header>
 				<Scroller focusableScrollbar>
 					<Heading size="large" showLine>Current</Heading>
-					<FontList fonts={fonts.standard}>Sandstone Defined Fonts</FontList>
+					<FontList fonts={fonts.standard}>Lune Defined Fonts</FontList>
 					<FontList fonts={fonts.system}>System Fonts (Locally Installed)</FontList>
 					<FontList fonts={fonts.systemPs}>System Fonts PostScript Names (Locally Installed)</FontList>
 					<Heading size="large" showLine>Regional</Heading>
 					<FontList fonts={fonts.locale}>Locale-specific Fonts</FontList>
 					<Heading size="large" showLine>Legacy</Heading>
-					<FontList fonts={fonts.legacyWeb}>Legacy Sandstone Defined Fonts</FontList>
+					<FontList fonts={fonts.legacyWeb}>Legacy Lune Defined Fonts</FontList>
 					<FontList fonts={fonts.legacySystem}>Legacy System Fonts (Locally Installed)</FontList>
 				</Scroller>
 			</Panel>

@@ -1,4 +1,4 @@
-import Heading from '@enact/sandstone/Heading';
+import Heading from '@enact/lune/Heading';
 import {Component} from 'react';
 
 import CommonView from '../../components/CommonView';

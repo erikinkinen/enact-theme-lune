@@ -1,4 +1,4 @@
-import RangePicker from '@enact/sandstone/RangePicker';
+import RangePicker from '@enact/lune/RangePicker';
 import SpotlightContainerDecorator from '@enact/spotlight/SpotlightContainerDecorator';
 
 import Section from '../components/Section';

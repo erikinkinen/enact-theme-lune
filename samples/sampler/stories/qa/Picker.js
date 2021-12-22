@@ -1,10 +1,10 @@
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, select, text} from '@enact/storybook-utils/addons/controls';
-import Button from '@enact/sandstone/Button';
-import {Header} from '@enact/sandstone/Panels';
-import Picker from '@enact/sandstone/Picker';
-import PopupTabLayout, {Tab, TabPanels, TabPanel} from '@enact/sandstone/PopupTabLayout';
-import Scroller from '@enact/sandstone/Scroller';
+import Button from '@enact/lune/Button';
+import {Header} from '@enact/lune/Panels';
+import Picker from '@enact/lune/Picker';
+import PopupTabLayout, {Tab, TabPanels, TabPanel} from '@enact/lune/PopupTabLayout';
+import Scroller from '@enact/lune/Scroller';
 import {Row} from '@enact/ui/Layout';
 import {Component} from 'react';
 
@@ -95,7 +95,7 @@ class PickerInPopupTabLayout extends Component {
 }
 
 export default {
-	title: 'Sandstone/Picker',
+	title: 'Lune/Picker',
 	component: 'Picker'
 };
 

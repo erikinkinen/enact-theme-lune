@@ -1,10 +1,10 @@
 /**
- * Provides a Sandstone-themed time selection component.
+ * Provides a Lune-themed time selection component.
  *
  * @example
  * <TimePicker value={new Date()} />
  *
- * @module sandstone/TimePicker
+ * @module lune/TimePicker
  * @exports TimePicker
  * @exports TimePickerBase
  * @exports timeToLocaleString
@@ -198,7 +198,7 @@ const dateTimeConfig = {
 /**
  * A component that allows displaying or selecting time.
  *
- * Set the [value]{@link sandstone/TimePicker.TimePicker#value} property to a standard JavaScript
+ * Set the [value]{@link lune/TimePicker.TimePicker#value} property to a standard JavaScript
  * [Date] {@link /docs/developer-guide/glossary/#date} object to initialize the picker.
  *
  * By default, `TimePicker` maintains the state of its `value` property. Supply the
@@ -207,7 +207,7 @@ const dateTimeConfig = {
  * `onChange` events.
  *
  * @class TimePicker
- * @memberof sandstone/TimePicker
+ * @memberof lune/TimePicker
  * @mixes ui/Changeable.Changeable
  * @ui
  * @public
@@ -217,7 +217,7 @@ const dateTimeConfig = {
  * Default value
  *
  * @name defaultValue
- * @memberof sandstone/TimePicker.TimePicker.prototype
+ * @memberof lune/TimePicker.TimePicker.prototype
  * @type {Number}
  * @public
  */
@@ -235,7 +235,7 @@ const TimePicker = Pure(
  * The selected date.
  *
  * @name value
- * @memberof sandstone/TimePicker.TimePicker
+ * @memberof lune/TimePicker.TimePicker
  * @instance
  * @type {Date}
  * @public
@@ -245,7 +245,7 @@ const TimePicker = Pure(
  * Converts a standard `Date` object into a locale-specific string.
  *
  * @function
- * @memberof sandstone/TimePicker
+ * @memberof lune/TimePicker
  * @param {Date} time `Date` to convert
  * @returns {String?} Converted date or `null` if `date` is invalid
  */

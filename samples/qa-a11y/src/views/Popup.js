@@ -1,8 +1,8 @@
-import Button from '@enact/sandstone/Button';
-import Heading from '@enact/sandstone/Heading';
-import Item from '@enact/sandstone/Item';
-import Popup from '@enact/sandstone/Popup';
-import Scroller from '@enact/sandstone/Scroller';
+import Button from '@enact/lune/Button';
+import Heading from '@enact/lune/Heading';
+import Item from '@enact/lune/Item';
+import Popup from '@enact/lune/Popup';
+import Scroller from '@enact/lune/Scroller';
 import ri from '@enact/ui/resolution';
 
 import Section from '../components/Section';

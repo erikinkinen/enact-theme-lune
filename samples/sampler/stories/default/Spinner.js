@@ -1,7 +1,7 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, select, text} from '@enact/storybook-utils/addons/controls';
-import Spinner, {SpinnerBase} from '@enact/sandstone/Spinner';
+import Spinner, {SpinnerBase} from '@enact/lune/Spinner';
 import ri from '@enact/ui/resolution';
 import UiSpinner, {SpinnerBase as UiSpinnerBase} from '@enact/ui/Spinner';
 
@@ -9,7 +9,7 @@ Spinner.displayName = 'Spinner';
 const Config = mergeComponentMetadata('Spinner', UiSpinnerBase, UiSpinner, SpinnerBase, Spinner);
 
 export default {
-	title: 'Sandstone/Spinner',
+	title: 'Lune/Spinner',
 	component: 'Spinner'
 };
 

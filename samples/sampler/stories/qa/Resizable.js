@@ -1,6 +1,6 @@
-import Button from '@enact/sandstone/Button';
-import Item from '@enact/sandstone/Item';
-import Scroller from '@enact/sandstone/Scroller';
+import Button from '@enact/lune/Button';
+import Item from '@enact/lune/Item';
+import Scroller from '@enact/lune/Scroller';
 import Resizable from '@enact/ui/Resizable';
 import ri from '@enact/ui/resolution';
 import {Component, Fragment} from 'react';
@@ -53,7 +53,7 @@ class Items extends Component {
 }
 
 export default {
-	title: 'Sandstone/Resizable',
+	title: 'Lune/Resizable',
 	component: 'Resizable'
 };
 

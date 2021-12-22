@@ -1,8 +1,8 @@
-import Item from '@enact/sandstone/Item';
+import Item from '@enact/lune/Item';
 import {Component} from 'react';
 import ri from '@enact/ui/resolution';
-import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
-import VirtualList from '@enact/sandstone/VirtualList';
+import ThemeDecorator from '@enact/lune/ThemeDecorator';
+import VirtualList from '@enact/lune/VirtualList';
 
 const
 	items = [],

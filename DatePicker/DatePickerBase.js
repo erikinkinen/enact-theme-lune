@@ -11,17 +11,17 @@ import css from './DatePicker.module.less';
  * A date selection component.
  *
  * This component is most often not used directly but may be composed within another component as it
- * is within [DatePicker]{@link sandstone/DatePicker.DatePicker}.
+ * is within [DatePicker]{@link lune/DatePicker.DatePicker}.
  *
  * @class DatePickerBase
- * @memberof sandstone/DatePicker
+ * @memberof lune/DatePicker
  * @ui
  * @public
  */
 const DatePickerBase = kind({
 	name: 'DatePickerBase',
 
-	propTypes:  /** @lends sandstone/DatePicker.DatePickerBase.prototype */ {
+	propTypes:  /** @lends lune/DatePicker.DatePickerBase.prototype */ {
 		/**
 		 * The `day` component of the Date.
 		 *
@@ -86,7 +86,7 @@ const DatePickerBase = kind({
 		 * Disables voice control.
 		 *
 		 * @type {Boolean}
-		 * @memberof sandstone/DatePicker.DatePickerBase.prototype
+		 * @memberof lune/DatePicker.DatePickerBase.prototype
 		 * @public
 		 */
 		'data-webos-voice-disabled': PropTypes.bool,
@@ -370,7 +370,7 @@ const DatePickerBase = kind({
  * Called when `Enter` key down on the last picker
  *
  * @name onComplete
- * @memberof sandstone/DatePicker.DatePickerBase.prototype
+ * @memberof lune/DatePicker.DatePickerBase.prototype
  * @type {Function}
  * @public
  */

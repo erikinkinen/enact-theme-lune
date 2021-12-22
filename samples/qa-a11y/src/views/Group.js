@@ -1,4 +1,4 @@
-import Button from '@enact/sandstone/Button';
+import Button from '@enact/lune/Button';
 import Group from '@enact/ui/Group';
 
 import Section from '../components/Section';

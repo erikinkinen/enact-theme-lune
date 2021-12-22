@@ -1,10 +1,10 @@
 /**
- * Provides Sandstone styled form item component and interactive toggleable checkbox.
+ * Provides Lune styled form item component and interactive toggleable checkbox.
  *
  * @example
  * <FormCheckboxItem>A Checkbox for a form</FormCheckboxItem>
  *
- * @module sandstone/FormCheckboxItem
+ * @module lune/FormCheckboxItem
  * @exports FormCheckboxItem
  * @exports FormCheckboxItemBase
  * @exports FormCheckboxItemDecorator
@@ -31,20 +31,20 @@ const Checkbox = Skinnable(CheckboxBase);
 const hasChildren = (children) => (Children.toArray(children).filter(Boolean).length > 0);
 
 /**
- * A Sandstone-styled form item with a checkbox component.
+ * A Lune-styled form item with a checkbox component.
  *
  * Useful to show a selected state on an item inside a form.
  *
  * @class FormCheckboxItemBase
- * @memberof sandstone/FormCheckboxItem
- * @extends sandstone/Item.Item
+ * @memberof lune/FormCheckboxItem
+ * @extends lune/Item.Item
  * @ui
  * @public
  */
 const FormCheckboxItemBase = kind({
 	name: 'FormCheckboxItem',
 
-	propTypes: /** @lends sandstone/FormCheckboxItem.FormCheckboxItemBase.prototype */ {
+	propTypes: /** @lends lune/FormCheckboxItem.FormCheckboxItemBase.prototype */ {
 		/**
 		 * Customizes the component by mapping the supplied collection of CSS class names to the
 		 * corresponding internal elements and states of this component.
@@ -63,7 +63,7 @@ const FormCheckboxItemBase = kind({
 		 *
 		 * May be specified as either:
 		 *
-		 * * A string that represents an icon from the [iconList]{@link sandstone/Icon.Icon.iconList},
+		 * * A string that represents an icon from the [iconList]{@link lune/Icon.Icon.iconList},
 		 * * An HTML entity string, Unicode reference or hex value (in the form '0x...'),
 		 * * A URL specifying path to an icon image, or
 		 * * An object representing a resolution independent resource (See {@link ui/resolution})
@@ -92,7 +92,7 @@ const FormCheckboxItemBase = kind({
 		 *
 		 * May be specified as either:
 		 *
-		 * * A string that represents an icon from the [iconList]{@link sandstone/Icon.Icon.iconList},
+		 * * A string that represents an icon from the [iconList]{@link lune/Icon.Icon.iconList},
 		 * * An HTML entity string, Unicode reference or hex value (in the form '0x...'),
 		 * * A URL specifying path to an icon image, or
 		 * * An object representing a resolution independent resource (See {@link ui/resolution})
@@ -159,7 +159,7 @@ const FormCheckboxItemBase = kind({
  * Adds interactive functionality to `FormCheckboxItem`.
  *
  * @class FormCheckboxItemDecorator
- * @memberof sandstone/FormCheckboxItem
+ * @memberof lune/FormCheckboxItem
  * @mixes ui/Toggleable.Toggleable
  * @hoc
  * @public
@@ -170,15 +170,15 @@ const FormCheckboxItemDecorator = compose(
 );
 
 /**
- * A Sandstone-styled form item with a checkbox component.
+ * A Lune-styled form item with a checkbox component.
  *
  * `FormCheckboxItem` will manage its `selected` state via [Toggleable]{@link ui/Toggleable} unless
  * set directly.
  *
  * @class FormCheckboxItem
- * @memberof sandstone/FormCheckboxItem
- * @extends sandstone/FormCheckboxItem.FormCheckboxItemBase
- * @mixes sandstone/FormCheckboxItem.FormCheckboxItemDecorator
+ * @memberof lune/FormCheckboxItem
+ * @extends lune/FormCheckboxItem.FormCheckboxItemBase
+ * @mixes lune/FormCheckboxItem.FormCheckboxItemDecorator
  * @ui
  * @public
  */

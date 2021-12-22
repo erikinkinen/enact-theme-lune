@@ -15,7 +15,7 @@
  * />
  * ```
  *
- * @module sandstone/Sprite
+ * @module lune/Sprite
  * @exports Sprite
  */
 
@@ -42,7 +42,7 @@ const createKeyframe = ({dimension, axis, vertical, offset}) => {
  * Renders a Sprite animation.
  *
  * @class Sprite
- * @memberof sandstone/Sprite
+ * @memberof lune/Sprite
  * @ui
  * @public
  */
@@ -51,7 +51,7 @@ const SpriteBase = kind({
 
 	functional: true,
 
-	propTypes: /** @lends sandstone/Sprite.Sprite.prototype */ {
+	propTypes: /** @lends lune/Sprite.Sprite.prototype */ {
 		/**
 		 * The amount of animation cells spread across the X (horizontal) axis.
 		 *

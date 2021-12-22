@@ -1,7 +1,7 @@
 /**
- * Sandstone-themed scrollable hook and behaviors.
+ * Lune-themed scrollable hook and behaviors.
  *
- * @module sandstone/useScroll
+ * @module lune/useScroll
  * @exports affordanceSize
  * @exports dataIndexAttribute
  * @exports useScroll
@@ -44,11 +44,11 @@ const
 
 /**
  * The name of a custom attribute which indicates the index of an item in
- * [VirtualList]{@link sandstone/VirtualList.VirtualList} or
- * [VirtualGridList]{@link sandstone/VirtualList.VirtualGridList}.
+ * [VirtualList]{@link lune/VirtualList.VirtualList} or
+ * [VirtualGridList]{@link lune/VirtualList.VirtualGridList}.
  *
  * @constant dataIndexAttribute
- * @memberof sandstone/useScroll
+ * @memberof lune/useScroll
  * @type {String}
  * @private
  */
@@ -282,10 +282,10 @@ const useThemeScroll = (props, instances) => {
 };
 
 /**
- * A custom hook that passes Sandstone-themed scrollable behavior information as its render prop.
+ * A custom hook that passes Lune-themed scrollable behavior information as its render prop.
  *
  * @class
- * @memberof sandstone/useScroll
+ * @memberof lune/useScroll
  * @ui
  * @private
  */

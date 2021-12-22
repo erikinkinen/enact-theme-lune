@@ -1,7 +1,7 @@
 /**
  * Popup style inputs for text and numbers.
  *
- * @module sandstone/Input
+ * @module lune/Input
  * @exports Input
  * @exports InputBase
  * @exports InputDecorator

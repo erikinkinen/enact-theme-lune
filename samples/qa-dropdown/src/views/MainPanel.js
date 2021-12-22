@@ -1,6 +1,6 @@
-import Button from '@enact/sandstone/Button';
-import Dropdown from '@enact/sandstone/Dropdown';
-import {WizardPanels, Panel} from '@enact/sandstone/WizardPanels';
+import Button from '@enact/lune/Button';
+import Dropdown from '@enact/lune/Dropdown';
+import {WizardPanels, Panel} from '@enact/lune/WizardPanels';
 import {Component} from 'react';
 
 class MainPanel extends Component {

@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import ImageItem from '@enact/sandstone/ImageItem';
+import ImageItem from '@enact/lune/ImageItem';
 
 import {selectItem} from '../../actions';
 

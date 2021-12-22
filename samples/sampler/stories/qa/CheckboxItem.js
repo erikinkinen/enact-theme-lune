@@ -1,8 +1,8 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, select, text} from '@enact/storybook-utils/addons/controls';
-import CheckboxItem from '@enact/sandstone/CheckboxItem';
-import Item, {ItemBase} from '@enact/sandstone/Item';
+import CheckboxItem from '@enact/lune/CheckboxItem';
+import Item, {ItemBase} from '@enact/lune/Item';
 import Group from '@enact/ui/Group';
 
 Group.displayName = 'Group';
@@ -17,7 +17,7 @@ const prop = {
 };
 
 export default {
-	title: 'Sandstone/CheckboxItem',
+	title: 'Lune/CheckboxItem',
 	component: 'CheckboxItem'
 };
 

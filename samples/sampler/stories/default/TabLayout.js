@@ -1,13 +1,13 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {range, select} from '@enact/storybook-utils/addons/controls';
-import Button from '@enact/sandstone/Button';
-import ImageItem from '@enact/sandstone/ImageItem';
-import Icon from '@enact/sandstone/Icon';
-import Item from '@enact/sandstone/Item';
-import {Panel, Header} from '@enact/sandstone/Panels';
-import Scroller from '@enact/sandstone/Scroller';
-import TabLayout, {TabLayoutBase, Tab} from '@enact/sandstone/TabLayout';
+import Button from '@enact/lune/Button';
+import ImageItem from '@enact/lune/ImageItem';
+import Icon from '@enact/lune/Icon';
+import Item from '@enact/lune/Item';
+import {Panel, Header} from '@enact/lune/Panels';
+import Scroller from '@enact/lune/Scroller';
+import TabLayout, {TabLayoutBase, Tab} from '@enact/lune/TabLayout';
 import {scaleToRem} from '@enact/ui/resolution';
 
 import spriteGear2k from '../../images/sprite-gear-2k.png';
@@ -32,7 +32,7 @@ const tabSelections = {
 };
 
 export default {
-	title: 'Sandstone/TabLayout',
+	title: 'Lune/TabLayout',
 	component: 'TabLayout'
 };
 
@@ -56,7 +56,7 @@ export const _TabLayout = (args) => {
 
 	return (
 		<Panel>
-			<Header title="Sandstone TabLayout" subtitle="Basic TabLayout" />
+			<Header title="Lune TabLayout" subtitle="Basic TabLayout" />
 			<TabLayout
 				onSelect={action('onSelect')}
 				onTabAnimationEnd={action('onTabAnimationEnd')}

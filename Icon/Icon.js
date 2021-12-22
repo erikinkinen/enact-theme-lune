@@ -1,10 +1,10 @@
 /**
- * Provides Sandstone styled icon components and behaviors.
+ * Provides Lune styled icon components and behaviors.
  *
  * @example
  * <Icon>plus</Icon>
  *
- * @module sandstone/Icon
+ * @module lune/Icon
  * @exports Icon
  * @exports IconBase
  * @exports IconDecorator
@@ -26,10 +26,10 @@ import iconList from './IconList.js';
 import componentCss from './Icon.module.less';
 
 /**
- * Renders a sandstone-styled icon without any behavior.
+ * Renders a lune-styled icon without any behavior.
  *
  * @class IconBase
- * @memberof sandstone/Icon
+ * @memberof lune/Icon
  * @extends ui/Icon.Icon
  * @ui
  * @public
@@ -37,7 +37,7 @@ import componentCss from './Icon.module.less';
 const IconBase = kind({
 	name: 'Icon',
 
-	propTypes: /** @lends sandstone/Icon.IconBase.prototype */ {
+	propTypes: /** @lends lune/Icon.IconBase.prototype */ {
 		/**
 		 * The icon content.
 		 *
@@ -133,7 +133,7 @@ const IconBase = kind({
 // Let's find a way to import this list directly, and bonus feature, render our icons in the docs
 // next to their names.
 /**
- * An object whose keys can be used as the child of an [Icon]{@link sandstone/Icon.Icon} component.
+ * An object whose keys can be used as the child of an [Icon]{@link lune/Icon.Icon} component.
  *
  * List of Icons:
  * ```
@@ -334,18 +334,18 @@ const IconBase = kind({
  * ```
  *
  * @name iconList
- * @memberof sandstone/Icon
+ * @memberof lune/Icon
  * @constant
  * @type {Object}
  * @public
  */
 
 /**
- * Sandstone-specific behaviors to apply to [IconBase]{@link sandstone/Icon.IconBase}.
+ * Lune-specific behaviors to apply to [IconBase]{@link lune/Icon.IconBase}.
  *
  * @hoc
- * @memberof sandstone/Icon
- * @mixes sandstone/Skinnable.Skinnable
+ * @memberof lune/Icon
+ * @mixes lune/Skinnable.Skinnable
  * @public
  */
 const IconDecorator = compose(
@@ -355,12 +355,12 @@ const IconDecorator = compose(
 );
 
 /**
- * A Sandstone-styled icon.
+ * A Lune-styled icon.
  *
  * @class Icon
- * @memberof sandstone/Icon
- * @extends sandstone/Icon.IconBase
- * @mixes sandstone/Icon.IconDecorator
+ * @memberof lune/Icon
+ * @extends lune/Icon.IconBase
+ * @mixes lune/Icon.IconDecorator
  * @ui
  * @public
  */

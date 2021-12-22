@@ -1,7 +1,7 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, number, range, object, select} from '@enact/storybook-utils/addons/controls';
-import Slider, {SliderBase, SliderTooltip} from '@enact/sandstone/Slider';
+import Slider, {SliderBase, SliderTooltip} from '@enact/lune/Slider';
 
 const SliderConfig = mergeComponentMetadata('Slider', SliderBase, Slider);
 const SliderTooltipConfig = mergeComponentMetadata('SliderTooltip', SliderTooltip);
@@ -9,7 +9,7 @@ Slider.displayName = 'Slider';
 SliderTooltip.displayName = 'SliderTooltip';
 
 export default {
-	title: 'Sandstone/Slider',
+	title: 'Lune/Slider',
 	component: 'Slider'
 };
 

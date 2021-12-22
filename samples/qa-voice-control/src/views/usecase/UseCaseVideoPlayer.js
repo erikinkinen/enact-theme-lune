@@ -1,4 +1,4 @@
-import {VideoPlayer} from '@enact/sandstone/VideoPlayer';
+import {VideoPlayer} from '@enact/lune/VideoPlayer';
 import {Component} from 'react';
 
 

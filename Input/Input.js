@@ -32,14 +32,14 @@ const isPasswordType = type => type && type.includes('password');
  * Base component for providing text input in the form of a popup without button.
  *
  * @class InputPopupBase
- * @memberof sandstone/Input
+ * @memberof lune/Input
  * @ui
  * @public
  */
 const InputPopupBase = kind({
 	name: 'InputPopup',
 
-	propTypes: /** @lends sandstone/Input.InputPopupBase.prototype */ {
+	propTypes: /** @lends lune/Input.InputPopupBase.prototype */ {
 		/**
 		 * Passed by AnnounceDecorator for accessibility.
 		 *
@@ -82,8 +82,8 @@ const InputPopupBase = kind({
 		inputFieldSpotlightId: PropTypes.string,
 
 		/**
-		 * Indicates [value]{@link sandstone/Input.InputPopupBase.value} is invalid and shows
-		 * [invalidMessage]{@link sandstone/Input.InputPopupBase.invalidMessage}, if set.
+		 * Indicates [value]{@link lune/Input.InputPopupBase.value} is invalid and shows
+		 * [invalidMessage]{@link lune/Input.InputPopupBase.invalidMessage}, if set.
 		 *
 		 * @type {Boolean}
 		 * @public
@@ -92,7 +92,7 @@ const InputPopupBase = kind({
 
 		/**
 		 * The tooltip text to be displayed when the input is
-		 * [invalid]{@link sandstone/Input.InputPopupBase.invalid}.
+		 * [invalid]{@link lune/Input.InputPopupBase.invalid}.
 		 *
 		 * If this value is *falsy*, the tooltip will be shown with the default message.
 		 *
@@ -163,7 +163,7 @@ const InputPopupBase = kind({
 		 * The default is to display separated digits when `length` is less than `7`. If `field` is
 		 * set, a standard `InputField` will be used instead of the normal number input.
 		 *
-		 * This has no effect on other [types]{@link sandstone/Input.InputPopupBase.type}.
+		 * This has no effect on other [types]{@link lune/Input.InputPopupBase.type}.
 		 *
 		 * @type {('auto'|'separated'|'joined'|'field')}
 		 * @default 'auto'
@@ -459,14 +459,14 @@ const InputPopupBase = kind({
  * Base component for providing text input in the form of a popup.
  *
  * @class InputBase
- * @memberof sandstone/Input
+ * @memberof lune/Input
  * @ui
  * @public
  */
 const InputBase = kind({
 	name: 'Input',
 
-	propTypes: /** @lends sandstone/Input.InputBase.prototype */ {
+	propTypes: /** @lends lune/Input.InputBase.prototype */ {
 		/**
 		 * Disables the button that activates the input popup.
 		 *
@@ -592,14 +592,14 @@ const AnnounceDecorator = Wrapped => (function AnnounceDecorator (props) {
 });
 
 /**
- * Sandstone specific item behaviors to apply to [Input]{@link sandstone/Input.InputBase}.
+ * Lune specific item behaviors to apply to [Input]{@link lune/Input.InputBase}.
  *
  * @class InputDecorator
  * @hoc
- * @memberof sandstone/Input
+ * @memberof lune/Input
  * @mixes ui/Toggleable.Toggleable
  * @mixes ui/Changeable.Changeable
- * @mixes sandstone/Skinnable.Skinnable
+ * @mixes lune/Skinnable.Skinnable
  * @public
  */
 const InputDecorator = compose(
@@ -625,8 +625,8 @@ const InputDecorator = compose(
  * ```
  *
  * @class Input
- * @memberof sandstone/Input
- * @extends sandstone/Input.InputBase
+ * @memberof lune/Input
+ * @extends lune/Input.InputBase
  * @ui
  * @public
  */
@@ -648,8 +648,8 @@ const Input = InputDecorator(InputBase);
  * ```
  *
  * @class InputPopup
- * @memberof sandstone/Input
- * @extends sandstone/Input.InputPopupBase
+ * @memberof lune/Input
+ * @extends lune/Input.InputPopupBase
  * @ui
  * @public
  */

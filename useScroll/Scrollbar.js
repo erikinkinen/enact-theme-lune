@@ -79,10 +79,10 @@ const useThemeScrollbar = (props) => {
 };
 
 /**
- * A Sandstone-styled scrollbar base component.
+ * A Lune-styled scrollbar base component.
  *
  * @class ScrollbarBase
- * @memberof sandstone/useScroll
+ * @memberof lune/useScroll
  * @ui
  * @private
  */
@@ -102,7 +102,7 @@ const ScrollbarBase = memo((props) => {
 
 ScrollbarBase.displayName = 'ScrollbarBase';
 
-ScrollbarBase.propTypes = /** @lends sandstone/useScroll.Scrollbar.prototype */ {
+ScrollbarBase.propTypes = /** @lends lune/useScroll.Scrollbar.prototype */ {
 	/**
 	 * Customizes the component by mapping the supplied collection of CSS class names to the
 	 * corresponding internal elements and states of this component.
@@ -156,10 +156,10 @@ ScrollbarBase.defaultProps = {
 };
 
 /**
- * A Sandstone-styled scroll bar.
+ * A Lune-styled scroll bar.
  *
  * @class Scrollbar
- * @memberof sandstone/useScroll
+ * @memberof lune/useScroll
  * @ui
  * @private
  */

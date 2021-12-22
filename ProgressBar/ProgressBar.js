@@ -1,10 +1,10 @@
 /**
- * Provides Sandstone-themed progress bar component.
+ * Provides Lune-themed progress bar component.
  *
  * @example
  * <ProgressBar progress={0.5} backgroundProgress={0.75} />
  *
- * @module sandstone/ProgressBar
+ * @module lune/ProgressBar
  * @exports ProgressBar
  * @exports ProgressBarBase
  * @exports ProgressBarDecorator
@@ -25,17 +25,17 @@ import {ProgressBarTooltip} from './ProgressBarTooltip';
 import componentCss from './ProgressBar.module.less';
 
 /**
- * Renders a sandstone-styled progress bar.
+ * Renders a lune-styled progress bar.
  *
  * @class ProgressBarBase
- * @memberof sandstone/ProgressBar
+ * @memberof lune/ProgressBar
  * @ui
  * @public
  */
 const ProgressBarBase = kind({
 	name: 'ProgressBar',
 
-	propTypes: /** @lends sandstone/ProgressBar.ProgressBarBase.prototype */ {
+	propTypes: /** @lends lune/ProgressBar.ProgressBarBase.prototype */ {
 		/**
 		 * The proportion of the loaded portion of the progress bar.
 		 *
@@ -102,7 +102,7 @@ const ProgressBarBase = kind({
 		 * Enables the built-in tooltip.
 		 *
 		 * To customize the tooltip, pass either a custom tooltip component or an instance of
-		 * [ProgressBarTooltip]{@link sandstone/ProgressBar.ProgressBarTooltip} with additional
+		 * [ProgressBarTooltip]{@link lune/ProgressBar.ProgressBarTooltip} with additional
 		 * props configured.
 		 *
 		 * The provided component will receive the following props from `ProgressBar`:
@@ -182,11 +182,11 @@ const ProgressBarBase = kind({
 });
 
 /**
- * Sandstone-specific behaviors to apply to [ProgressBar]{@link sandstone/ProgressBar.ProgressBarBase}.
+ * Lune-specific behaviors to apply to [ProgressBar]{@link lune/ProgressBar.ProgressBarBase}.
  *
  * @hoc
- * @memberof sandstone/ProgressBar
- * @mixes sandstone/Skinnable.Skinnable
+ * @memberof lune/ProgressBar
+ * @mixes lune/Skinnable.Skinnable
  * @public
  */
 const ProgressBarDecorator = compose(
@@ -196,12 +196,12 @@ const ProgressBarDecorator = compose(
 );
 
 /**
- * The ready-to-use Sandstone-styled ProgressBar.
+ * The ready-to-use Lune-styled ProgressBar.
  *
  * @class ProgressBar
- * @memberof sandstone/ProgressBar
- * @extends sandstone/ProgressBar.ProgressBarBase
- * @mixes sandstone/ProgressBar.ProgressBarDecorator
+ * @memberof lune/ProgressBar
+ * @extends lune/ProgressBar.ProgressBarBase
+ * @mixes lune/ProgressBar.ProgressBarDecorator
  * @ui
  * @public
  */

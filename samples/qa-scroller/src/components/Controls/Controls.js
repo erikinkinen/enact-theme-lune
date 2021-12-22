@@ -1,6 +1,6 @@
 import {Cell, Row} from '@enact/ui/Layout';
-import CheckboxItem from '@enact/sandstone/CheckboxItem';
-import {InputField as Input} from '@enact/sandstone/Input';
+import CheckboxItem from '@enact/lune/CheckboxItem';
+import {InputField as Input} from '@enact/lune/Input';
 import PropTypes from 'prop-types';
 import {Component} from 'react';
 

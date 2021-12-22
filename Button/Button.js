@@ -1,10 +1,10 @@
 /**
- * Sandstone styled button components and behaviors.
+ * Lune styled button components and behaviors.
  *
  * @example
  * <Button>Hello Enact!</Button>
  *
- * @module sandstone/Button
+ * @module lune/Button
  * @exports Button
  * @exports ButtonBase
  * @exports ButtonDecorator
@@ -32,10 +32,10 @@ import componentCss from './Button.module.less';
  * A button component.
  *
  * This component is most often not used directly but may be composed within another component as it
- * is within [Button]{@link sandstone/Button.Button}.
+ * is within [Button]{@link lune/Button.Button}.
  *
  * @class ButtonBase
- * @memberof sandstone/Button
+ * @memberof lune/Button
  * @extends ui/Button.ButtonBase
  * @ui
  * @public
@@ -43,7 +43,7 @@ import componentCss from './Button.module.less';
 const ButtonBase = kind({
 	name: 'Button',
 
-	propTypes: /** @lends sandstone/Button.ButtonBase.prototype */ {
+	propTypes: /** @lends lune/Button.ButtonBase.prototype */ {
 		/**
 		 * The background opacity of this button.
 		 *
@@ -61,14 +61,14 @@ const ButtonBase = kind({
 		/**
 		 * Enables the `collapsed` feature.
 		 *
-		 * This requires that both the text and [icon]{@link sandstone/Button.Button#icon} are
+		 * This requires that both the text and [icon]{@link lune/Button.Button#icon} are
 		 * defined.
 		 *
-		 * Use [collapsed]{@link sandstone/Button.Button#collapsed} to toggle the collapsed state.
+		 * Use [collapsed]{@link lune/Button.Button#collapsed} to toggle the collapsed state.
 		 *
 		 * @type {Boolean}
 		 * @default false
-		 * @see {@link sandstone/Button.Button#collapsed}
+		 * @see {@link lune/Button.Button#collapsed}
 		 * @private
 		 */
 		collapsable: PropTypes.bool,
@@ -76,12 +76,12 @@ const ButtonBase = kind({
 		/**
 		 * Toggles the collapsed state of this button, down to just its icon.
 		 *
-		 * This requires that [collapsable]{@link sandstone/Button.Button#collapsable} is enabled
-		 * and both the text and [icon]{@link sandstone/Button.Button#icon} are defined.
+		 * This requires that [collapsable]{@link lune/Button.Button#collapsable} is enabled
+		 * and both the text and [icon]{@link lune/Button.Button#icon} are defined.
 		 *
 		 * @type {Boolean}
 		 * @default false
-		 * @see {@link sandstone/Button.Button#collapsable}
+		 * @see {@link lune/Button.Button#collapsable}
 		 * @private
 		 */
 		collapsed: PropTypes.bool,
@@ -128,7 +128,7 @@ const ButtonBase = kind({
 		focusEffect: PropTypes.oneOf(['expand', 'static']),
 
 		/**
-		 * The component used to render the [icon]{@link sandstone/Button.ButtonBase.icon}.
+		 * The component used to render the [icon]{@link lune/Button.ButtonBase.icon}.
 		 *
 		 * This component will receive the `icon` class to customize its styling.
 		 *
@@ -229,7 +229,7 @@ const ButtonBase = kind({
  * A higher-order component that determines if it is a button that only displays an icon.
  *
  * @class IconButtonDecorator
- * @memberof sandstone/Button
+ * @memberof lune/Button
  * @hoc
  * @private
  */
@@ -250,14 +250,14 @@ const IconButtonDecorator = hoc((config, Wrapped) => {
 });
 
 /**
- * Applies Sandstone specific behaviors to [Button]{@link sandstone/Button.ButtonBase} components.
+ * Applies Lune specific behaviors to [Button]{@link lune/Button.ButtonBase} components.
  *
  * @hoc
- * @memberof sandstone/Button
- * @mixes sandstone/Marquee.MarqueeDecorator
+ * @memberof lune/Button
+ * @mixes lune/Marquee.MarqueeDecorator
  * @mixes ui/Button.ButtonDecorator
  * @mixes spotlight/Spottable.Spottable
- * @mixes sandstone/Skinnable.Skinnable
+ * @mixes lune/Skinnable.Skinnable
  * @public
  */
 const ButtonDecorator = compose(
@@ -271,7 +271,7 @@ const ButtonDecorator = compose(
 );
 
 /**
- * A button component, ready to use in Sandstone applications.
+ * A button component, ready to use in Lune applications.
  *
  * Usage:
  * ```
@@ -285,9 +285,9 @@ const ButtonDecorator = compose(
  * ```
  *
  * @class Button
- * @memberof sandstone/Button
- * @extends sandstone/Button.ButtonBase
- * @mixes sandstone/Button.ButtonDecorator
+ * @memberof lune/Button
+ * @extends lune/Button.ButtonBase
+ * @mixes lune/Button.ButtonDecorator
  * @ui
  * @public
  */

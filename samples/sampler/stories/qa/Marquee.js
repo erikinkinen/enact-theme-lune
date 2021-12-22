@@ -2,12 +2,12 @@ import kind from '@enact/core/kind';
 import {I18nContextDecorator} from '@enact/i18n/I18nDecorator';
 import {boolean, number, select} from '@enact/storybook-utils/addons/controls';
 import Spottable from '@enact/spotlight/Spottable';
-import Button from '@enact/sandstone/Button';
-import Heading from '@enact/sandstone/Heading';
-import Icon from '@enact/sandstone/Icon';
-import Item from '@enact/sandstone/Item';
-import Marquee, {MarqueeController} from '@enact/sandstone/Marquee';
-import Skinnable from '@enact/sandstone/Skinnable';
+import Button from '@enact/lune/Button';
+import Heading from '@enact/lune/Heading';
+import Icon from '@enact/lune/Icon';
+import Item from '@enact/lune/Item';
+import Marquee, {MarqueeController} from '@enact/lune/Marquee';
+import Skinnable from '@enact/lune/Skinnable';
 import ri from '@enact/ui/resolution';
 import {Component} from 'react';
 
@@ -162,7 +162,7 @@ class MarqueeWithContentChanged extends Component {
 }
 
 export default {
-	title: 'Sandstone/Marquee',
+	title: 'Lune/Marquee',
 	component: 'Marquee'
 };
 

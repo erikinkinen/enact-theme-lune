@@ -24,20 +24,20 @@ import {calcAriaLabel, extractInputProps} from './util';
 import componentCss from './InputField.module.less';
 
 /**
- * A Sandstone styled input component.
+ * A Lune styled input component.
  *
  * It supports start and end icons but it does not support Spotlight. Apps should use
- * {@link sandstone/Input.InputField}.
+ * {@link lune/Input.InputField}.
  *
  * @class InputFieldBase
- * @memberof sandstone/Input
+ * @memberof lune/Input
  * @ui
  * @public
  */
 const InputFieldBase = kind({
 	name: 'InputField',
 
-	propTypes: /** @lends sandstone/Input.InputFieldBase.prototype */ {
+	propTypes: /** @lends lune/Input.InputFieldBase.prototype */ {
 		/**
 		 * Passed by AnnounceDecorator for accessibility.
 		 *
@@ -89,7 +89,7 @@ const InputFieldBase = kind({
 		/**
 		 * The icon to be placed at the end of the input.
 		 *
-		 * @see {@link sandstone/Icon.Icon}
+		 * @see {@link lune/Icon.Icon}
 		 * @type {String}
 		 * @public
 		 */
@@ -98,15 +98,15 @@ const InputFieldBase = kind({
 		/**
 		 * The icon to be placed at the beginning of the input.
 		 *
-		 * @see {@link sandstone/Icon.Icon}
+		 * @see {@link lune/Icon.Icon}
 		 * @type {String}
 		 * @public
 		 */
 		iconBefore: PropTypes.string,
 
 		/**
-		 * Indicates [value]{@link sandstone/Input.InputFieldBase.value} is invalid and shows
-		 * [invalidMessage]{@link sandstone/Input.InputFieldBase.invalidMessage}, if set.
+		 * Indicates [value]{@link lune/Input.InputFieldBase.value} is invalid and shows
+		 * [invalidMessage]{@link lune/Input.InputFieldBase.invalidMessage}, if set.
 		 *
 		 * @type {Boolean}
 		 * @default false
@@ -116,7 +116,7 @@ const InputFieldBase = kind({
 
 		/**
 		 * The tooltip text to be displayed when the input is
-		 * [invalid]{@link sandstone/Input.InputFieldBase.invalid}.
+		 * [invalid]{@link lune/Input.InputFieldBase.invalid}.
 		 *
 		 * If this value is *falsy*, the tooltip will be shown with the default message.
 		 *
@@ -186,7 +186,7 @@ const InputFieldBase = kind({
 		onKeyDown: PropTypes.func,
 
 		/**
-		 * Text to display when [value]{@link sandstone/Input.InputFieldBase.value} is not set.
+		 * Text to display when [value]{@link lune/Input.InputFieldBase.value} is not set.
 		 *
 		 * @type {String}
 		 * @default ''
@@ -345,13 +345,13 @@ const AnnounceDecorator = Wrapped => function AnnounceDecorator (props) {
 };
 
 /**
- * Sandstone specific item behaviors to apply to [InputField]{@link sandstone/Input.InputFieldBase}.
+ * Lune specific item behaviors to apply to [InputField]{@link lune/Input.InputFieldBase}.
  *
  * @class InputFieldDecorator
  * @hoc
- * @memberof sandstone/Input
+ * @memberof lune/Input
  * @mixes ui/Changeable.Changeable
- * @mixes sandstone/Skinnable.Skinnable
+ * @mixes lune/Skinnable.Skinnable
  * @public
  */
 const InputFieldDecorator = compose(
@@ -364,18 +364,18 @@ const InputFieldDecorator = compose(
 );
 
 /**
- * A Spottable, Sandstone styled input component with embedded icon support.
+ * A Spottable, Lune styled input component with embedded icon support.
  *
  * By default, `InputField` maintains the state of its `value` property. Supply the `defaultValue`
  * property to control its initial value. If you wish to directly control updates to the component,
  * supply a value to `value` at creation time and update it in response to `onChange` events.
  *
  * @class InputField
- * @memberof sandstone/Input
- * @extends sandstone/Input.InputFieldBase
+ * @memberof lune/Input
+ * @extends lune/Input.InputFieldBase
  * @mixes ui/Changeable.Changeable
  * @mixes spotlight/Spottable.Spottable
- * @mixes sandstone/Skinnable.Skinnable
+ * @mixes lune/Skinnable.Skinnable
  * @ui
  * @public
  */
@@ -388,7 +388,7 @@ const InputField = InputFieldDecorator(InputFieldBase);
  * be selected to become interactive. In pointer mode, the input will be editable when clicked.
  *
  * @name autoFocus
- * @memberof sandstone/Input.InputField.prototype
+ * @memberof lune/Input.InputField.prototype
  * @type {Boolean}
  * @default false
  * @public
@@ -398,7 +398,7 @@ const InputField = InputFieldDecorator(InputFieldBase);
  * Applies a disabled style and prevents interacting with the component.
  *
  * @name disabled
- * @memberof sandstone/Input.InputField.prototype
+ * @memberof lune/Input.InputField.prototype
  * @type {Boolean}
  * @default false
  * @public
@@ -408,7 +408,7 @@ const InputField = InputFieldDecorator(InputFieldBase);
  * Sets the initial value.
  *
  * @name defaultValue
- * @memberof sandstone/Input.InputField.prototype
+ * @memberof lune/Input.InputField.prototype
  * @type {String}
  * @public
  */
@@ -417,7 +417,7 @@ const InputField = InputFieldDecorator(InputFieldBase);
  * Blurs the input when the "enter" key is pressed.
  *
  * @name dismissOnEnter
- * @memberof sandstone/Input.InputField.prototype
+ * @memberof lune/Input.InputField.prototype
  * @type {Boolean}
  * @default false
  * @public
@@ -427,7 +427,7 @@ const InputField = InputFieldDecorator(InputFieldBase);
  * Called when the internal input is focused.
  *
  * @name onActivate
- * @memberof sandstone/Input.InputField.prototype
+ * @memberof lune/Input.InputField.prototype
  * @type {Function}
  * @param {Object} event
  * @public
@@ -437,7 +437,7 @@ const InputField = InputFieldDecorator(InputFieldBase);
  * Called when the internal input loses focus.
  *
  * @name onDeactivate
- * @memberof sandstone/Input.InputField.prototype
+ * @memberof lune/Input.InputField.prototype
  * @type {Function}
  * @param {Object} event
  * @public
@@ -447,7 +447,7 @@ const InputField = InputFieldDecorator(InputFieldBase);
  * Called when the component is removed when it had focus.
  *
  * @name onSpotlightDisappear
- * @memberof sandstone/Input.InputField.prototype
+ * @memberof lune/Input.InputField.prototype
  * @type {Function}
  * @param {Object} event
  * @public
@@ -457,7 +457,7 @@ const InputField = InputFieldDecorator(InputFieldBase);
  * Disables spotlight navigation into the component.
  *
  * @name spotlightDisabled
- * @memberof sandstone/Input.InputField.prototype
+ * @memberof lune/Input.InputField.prototype
  * @type {Boolean}
  * @default false
  * @public

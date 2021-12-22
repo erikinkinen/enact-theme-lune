@@ -27,7 +27,7 @@ const hasChildren = (children) => (Children.toArray(children).filter(Boolean).le
  * [`slots`]{@link ui/Slottable.Slottable} for components.
  *
  * @class Header
- * @memberof sandstone/Panels
+ * @memberof lune/Panels
  * @ui
  * @public
  */
@@ -35,7 +35,7 @@ const HeaderBase = kind({
 	name: 'Header',
 
 
-	propTypes: /** @lends sandstone/Panels.Header.prototype */ {
+	propTypes: /** @lends lune/Panels.Header.prototype */ {
 		/**
 		 * The animation arranger used to transition title and subtitle changes.
 		 *

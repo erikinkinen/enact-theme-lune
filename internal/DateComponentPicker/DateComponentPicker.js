@@ -9,18 +9,18 @@ import Picker, {PickerItem} from '../Picker';
 import css from './DateComponentPicker.module.less';
 
 /**
- * {@link sandstone/internal/DataComponentPicker.DateComponentPickerBase} allows the selection of one
- * part of the date or time using a {@link sandstone/Picker.Picker}.
+ * {@link lune/internal/DataComponentPicker.DateComponentPickerBase} allows the selection of one
+ * part of the date or time using a {@link lune/Picker.Picker}.
  *
  * @class DateComponentPickerBase
- * @memberof sandstone/internal/DateComponentPicker
+ * @memberof lune/internal/DateComponentPicker
  * @ui
  * @private
  */
 const DateComponentPickerBase = kind({
 	name: 'DateComponentPicker',
 
-	propTypes: /** @lends sandstone/internal/DateComponentPicker.DateComponentPickerBase.prototype */ {
+	propTypes: /** @lends lune/internal/DateComponentPicker.DateComponentPickerBase.prototype */ {
 		/**
 		 * Display values representing the `value` to select
 		 *
@@ -52,7 +52,7 @@ const DateComponentPickerBase = kind({
 		 * to the current selected child and accessibilityHint text.
 		 *
 		 * @type {String}
-		 * @memberof sandstone/internal/DateComponentPicker.DateComponentPickerBase.prototype
+		 * @memberof lune/internal/DateComponentPicker.DateComponentPickerBase.prototype
 		 * @public
 		 */
 		'aria-valuetext': PropTypes.string,
@@ -129,12 +129,12 @@ const DateComponentPickerBase = kind({
 });
 
 /**
- * {@link sandstone/internal/DateComponentPickerBase.DateComponentPicker} allows the selection of one part of
+ * {@link lune/internal/DateComponentPickerBase.DateComponentPicker} allows the selection of one part of
  * the date (date, month, or year). It is a stateful component but allows updates by providing a new
  * `value` via props.
  *
  * @class DateComponentPicker
- * @memberof sandstone/internal/DateComponentPicker
+ * @memberof lune/internal/DateComponentPicker
  * @mixes ui/Changeable.Changeable
  * @ui
  * @private

@@ -1,5 +1,5 @@
-import Button from '@enact/sandstone/Button';
-import CheckboxItem from '@enact/sandstone/CheckboxItem';
+import Button from '@enact/lune/Button';
+import CheckboxItem from '@enact/lune/CheckboxItem';
 import LS2Request from '@enact/webos/LS2Request';
 import {readAlert} from '@enact/webos/speech';
 import {Component} from 'react';

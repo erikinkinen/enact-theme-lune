@@ -1,7 +1,7 @@
 /**
- * Set of Sandstone-styled components to support a custom media player.
+ * Set of Lune-styled components to support a custom media player.
  *
- * @module sandstone/MediaPlayer
+ * @module lune/MediaPlayer
  * @exports MediaControls
  * @exports MediaSlider
  * @exports secondsToTime

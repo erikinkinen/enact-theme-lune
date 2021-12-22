@@ -1,7 +1,7 @@
 /**
- * Exports the {@link sandstone/ThemeDecorator.ThemeDecorator} HOC
+ * Exports the {@link lune/ThemeDecorator.ThemeDecorator} HOC
  *
- * @module sandstone/ThemeDecorator
+ * @module lune/ThemeDecorator
  * @exports ThemeDecorator
  */
 
@@ -29,10 +29,10 @@ import {configure} from '@enact/ui/Touchable';
 /**
  * Default config for `ThemeDecorator`.
  *
- * @memberof sandstone/ThemeDecorator.ThemeDecorator
+ * @memberof lune/ThemeDecorator.ThemeDecorator
  * @hocconfig
  */
-const defaultConfig = /** @lends sandstone/ThemeDecorator.ThemeDecorator.defaultConfig */ {
+const defaultConfig = /** @lends lune/ThemeDecorator.ThemeDecorator.defaultConfig */ {
 	/**
 	 * Applies AccessibilityDecorator.
 	 *
@@ -40,7 +40,7 @@ const defaultConfig = /** @lends sandstone/ThemeDecorator.ThemeDecorator.default
 	 *
 	 * @type {Boolean}
 	 * @default true
-	 * @see {@link sandstone/ThemeDecorator.AccessibilityDecorator}
+	 * @see {@link lune/ThemeDecorator.AccessibilityDecorator}
 	 * @public
 	 */
 	accessible: true,
@@ -124,7 +124,7 @@ const defaultConfig = /** @lends sandstone/ThemeDecorator.ThemeDecorator.default
 	 *
 	 * @type {Boolean}
 	 * @default true
-	 * @see {@link sandstone/Skinnable}
+	 * @see {@link lune/Skinnable}
 	 * @public
 	 */
 	skin: true,
@@ -143,28 +143,28 @@ const defaultConfig = /** @lends sandstone/ThemeDecorator.ThemeDecorator.default
 };
 
 /**
- * A higher-order component that applies Sandstone theming to an application.
+ * A higher-order component that applies Lune theming to an application.
  *
  * It also applies [floating layer]{@link ui/FloatingLayer.FloatingLayerDecorator},
  * [resolution independence]{@link ui/resolution.ResolutionDecorator},
- * [skin support]{@link sandstone/Skinnable}, [spotlight]{@link spotlight.SpotlightRootDecorator}, and
+ * [skin support]{@link lune/Skinnable}, [spotlight]{@link spotlight.SpotlightRootDecorator}, and
  * [internationalization support]{@link i18n/I18nDecorator.I18nDecorator}.
  * It is meant to be applied to the root element of an app.
  *
- * [Skins]{@link sandstone/Skinnable} provide a way to change the coloration of your app. The
- * currently supported skins for Sandstone are "sandstone" (the default, dark skin) and
- * "sandstone-light". Use the `skin` property to assign a skin. Ex: `<DecoratedApp skin="light" />`
+ * [Skins]{@link lune/Skinnable} provide a way to change the coloration of your app. The
+ * currently supported skins for Lune are "lune" (the default, dark skin) and
+ * "lune-light". Use the `skin` property to assign a skin. Ex: `<DecoratedApp skin="light" />`
  *
  * Note: This HoC passes `className` to the wrapped component. It must be passed to the main DOM
  * node.
  *
  * @class ThemeDecorator
- * @memberof sandstone/ThemeDecorator
+ * @memberof lune/ThemeDecorator
  * @mixes ui/FloatingLayer.FloatingLayerDecorator
  * @mixes ui/resolution.ResolutionDecorator
  * @mixes spotlight/SpotlightRootDecorator.SpotlightRootDecorator
- * @mixes sandstone/Skinnable.Skinnable
- * @mixes sandstone/ThemeDecorator.AccessibilityDecorator
+ * @mixes lune/Skinnable.Skinnable
+ * @mixes lune/ThemeDecorator.AccessibilityDecorator
  * @hoc
  * @public
  */
@@ -246,7 +246,7 @@ const ThemeDecorator = hoc(defaultConfig, (config, Wrapped) => {
 	const Decorator = class extends Component {
 		static displayName = 'ThemeDecorator';
 
-		static propTypes = /** @lends sandstone/ThemeDecorator.prototype */ {
+		static propTypes = /** @lends lune/ThemeDecorator.prototype */ {
 			/**
 			 * Assign a skin.
 			 *
@@ -282,7 +282,7 @@ const ThemeDecorator = hoc(defaultConfig, (config, Wrapped) => {
 		render () {
 			const {skin: skinProp, ...rest} = this.props;
 			const skinName = skinProp || 'neutral';
-			const className = classNames(css.root, this.props.className, 'sandstone-theme', 'enact-unselectable', {
+			const className = classNames(css.root, this.props.className, 'lune-theme', 'enact-unselectable', {
 				[bgClassName]: !float,
 				'enact-fit': !disableFullscreen
 			});

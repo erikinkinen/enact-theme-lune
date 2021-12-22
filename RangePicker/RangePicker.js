@@ -4,7 +4,7 @@
  * @example
  * <RangePicker defaultValue={70} min={0} max={100}></RangePicker>
  *
- * @module sandstone/RangePicker
+ * @module lune/RangePicker
  * @exports RangePicker
  * @exports RangePickerBase
  */
@@ -34,19 +34,19 @@ const digits = (num) => {
  * RangePicker base component.
  *
  * @class RangePickerBase
- * @memberof sandstone/RangePicker
+ * @memberof lune/RangePicker
  * @ui
  * @public
  */
 const RangePickerBase = kind({
 	name: 'RangePicker',
 
-	propTypes: /** @lends sandstone/RangePicker.RangePickerBase.prototype */ {
+	propTypes: /** @lends lune/RangePicker.RangePickerBase.prototype */ {
 		/**
 		 * The maximum value selectable by the picker (inclusive).
 		 *
 		 * The range between `min` and `max` should be evenly divisible by
-		 * [step]{@link sandstone/RangePicker.RangePickerBase.step}.
+		 * [step]{@link lune/RangePicker.RangePickerBase.step}.
 		 *
 		 * @type {Number}
 		 * @required
@@ -58,7 +58,7 @@ const RangePickerBase = kind({
 		 * The minimum value selectable by the picker (inclusive).
 		 *
 		 * The range between `min` and `max` should be evenly divisible by
-		 * [step]{@link sandstone/RangePicker.RangePickerBase.step}.
+		 * [step]{@link lune/RangePicker.RangePickerBase.step}.
 		 *
 		 * @type {Number}
 		 * @required
@@ -81,7 +81,7 @@ const RangePickerBase = kind({
 		 * By default, `aria-valuetext` is set to the current selected child value.
 		 *
 		 * @type {String}
-		 * @memberof sandstone/RangePicker.RangePickerBase.prototype
+		 * @memberof lune/RangePicker.RangePickerBase.prototype
 		 * @public
 		 */
 		'aria-valuetext': PropTypes.string,
@@ -119,9 +119,9 @@ const RangePickerBase = kind({
 		/**
 		 * A custom icon for the decrementer.
 		 *
-		 * All strings supported by [Icon]{@link sandstone/Icon.Icon} are supported. Without a
+		 * All strings supported by [Icon]{@link lune/Icon.Icon} are supported. Without a
 		 * custom icon, the default is used, and is automatically changed when the
-		 * [orientation]{@link sandstone/RangePicker.RangePicker#orientation} is changed.
+		 * [orientation]{@link lune/RangePicker.RangePicker#orientation} is changed.
 		 *
 		 * @type {string}
 		 * @public
@@ -139,9 +139,9 @@ const RangePickerBase = kind({
 		/**
 		 * A custom icon for the incrementer.
 		 *
-		 * All strings supported by [Icon]{@link sandstone/Icon.Icon} are supported. Without a
+		 * All strings supported by [Icon]{@link lune/Icon.Icon} are supported. Without a
 		 * custom icon, the default is used, and is automatically changed when the
-		 * [orientation]{@link sandstone/RangePicker.RangePicker#orientation} is changed.
+		 * [orientation]{@link lune/RangePicker.RangePicker#orientation} is changed.
 		 *
 		 * @type {String}
 		 * @public
@@ -317,7 +317,7 @@ const RangePickerBase = kind({
  * supply a value to `value` at creation time and update it in response to `onChange` events.
  *
  * @class RangePicker
- * @memberof sandstone/RangePicker
+ * @memberof lune/RangePicker
  * @mixes ui/Changeable.Changeable
  * @ui
  * @public
@@ -332,7 +332,7 @@ const RangePicker = Pure(
  * Default value
  *
  * @name defaultValue
- * @memberof sandstone/RangePicker.RangePicker.prototype
+ * @memberof lune/RangePicker.RangePicker.prototype
  * @type {Number}
  * @public
  */

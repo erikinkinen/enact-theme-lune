@@ -1,6 +1,6 @@
-import Item from '@enact/sandstone/Item';
-import {Header, Panel} from '@enact/sandstone/Panels';
-import {VirtualList} from '@enact/sandstone/VirtualList';
+import Item from '@enact/lune/Item';
+import {Header, Panel} from '@enact/lune/Panels';
+import {VirtualList} from '@enact/lune/VirtualList';
 import ri from '@enact/ui/resolution';
 import {Component} from 'react';
 

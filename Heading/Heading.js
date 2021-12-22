@@ -1,5 +1,5 @@
 /**
- * Sandstone styled labeled Heading components and behaviors
+ * Lune styled labeled Heading components and behaviors
  *
  * @example
  * <Heading
@@ -9,7 +9,7 @@
  *   A Content Section Heading
  * </Heading>
  *
- * @module sandstone/Heading
+ * @module lune/Heading
  * @exports Heading
  * @exports HeadingBase
  * @exports HeadingDecorator
@@ -30,17 +30,17 @@ import componentCss from './Heading.module.less';
  * A labeled Heading component.
  *
  * This component is most often not used directly but may be composed within another component as it
- * is within [Heading]{@link sandstone/Heading.Heading}.
+ * is within [Heading]{@link lune/Heading.Heading}.
  *
  * @class HeadingBase
- * @memberof sandstone/Heading
+ * @memberof lune/Heading
  * @ui
  * @public
  */
 const HeadingBase = kind({
 	name: 'Heading',
 
-	propTypes: /** @lends sandstone/Heading.HeadingBase.prototype */ {
+	propTypes: /** @lends lune/Heading.HeadingBase.prototype */ {
 		css: PropTypes.object,
 
 		/**
@@ -99,12 +99,12 @@ const HeadingBase = kind({
 });
 
 /**
- * Applies Sandstone specific behaviors to [HeadingBase]{@link sandstone/Heading.HeadingBase}.
+ * Applies Lune specific behaviors to [HeadingBase]{@link lune/Heading.HeadingBase}.
  *
  * @hoc
- * @memberof sandstone/Heading
- * @mixes sandstone/Marquee.MarqueeDecorator
- * @mixes sandstone/Skinnable.Skinnable
+ * @memberof lune/Heading
+ * @mixes lune/Marquee.MarqueeDecorator
+ * @mixes lune/Skinnable.Skinnable
  * @public
  */
 const HeadingDecorator = compose(
@@ -114,7 +114,7 @@ const HeadingDecorator = compose(
 );
 
 /**
- * A labeled Heading component, ready to use in Sandstone applications.
+ * A labeled Heading component, ready to use in Lune applications.
  *
  * `Heading` may be used as a header to group related components.
  *
@@ -130,9 +130,9 @@ const HeadingDecorator = compose(
  * ```
  *
  * @class Heading
- * @memberof sandstone/Heading
- * @extends sandstone/Heading.HeadingBase
- * @mixes sandstone/Heading.HeadingDecorator
+ * @memberof lune/Heading
+ * @extends lune/Heading.HeadingBase
+ * @mixes lune/Heading.HeadingDecorator
  * @ui
  * @public
  */
@@ -148,8 +148,8 @@ const Heading = HeadingDecorator(HeadingBase);
  * @name marqueeOn
  * @type {('hover'|'render')}
  * @default 'render'
- * @memberof sandstone/Heading.Heading.prototype
- * @see {@link sandstone/Marquee.Marquee}
+ * @memberof lune/Heading.Heading.prototype
+ * @see {@link lune/Marquee.Marquee}
  * @public
  */
 

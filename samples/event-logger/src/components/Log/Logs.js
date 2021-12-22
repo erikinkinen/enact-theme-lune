@@ -1,5 +1,5 @@
 import kind from '@enact/core/kind';
-import Scroller from '@enact/sandstone/Scroller';
+import Scroller from '@enact/lune/Scroller';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 

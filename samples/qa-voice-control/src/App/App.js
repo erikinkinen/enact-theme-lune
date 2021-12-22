@@ -1,10 +1,10 @@
 import {Component, Fragment} from 'react';
-import Heading from '@enact/sandstone/Heading';
-import Item from '@enact/sandstone/Item';
-import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
+import Heading from '@enact/lune/Heading';
+import Item from '@enact/lune/Item';
+import ThemeDecorator from '@enact/lune/ThemeDecorator';
 import SpotlightContainerDecorator from '@enact/spotlight/SpotlightContainerDecorator';
 import Layout, {Cell} from '@enact/ui/Layout';
-import Panels, {Panel} from '@enact/sandstone/Panels';
+import Panels, {Panel} from '@enact/lune/Panels';
 
 import css from './App.module.less';
 import Home from './Home';

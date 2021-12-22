@@ -1,5 +1,5 @@
 /**
- * Sandstone styled key guide component and behaviors.
+ * Lune styled key guide component and behaviors.
  *
  * @example
  * <KeyGuide
@@ -12,7 +12,7 @@
  *	]}
  * </KeyGuide>
  *
- * @module sandstone/KeyGuide
+ * @module lune/KeyGuide
  * @exports KeyGuide
  * @exports KeyGuideBase
  * @exports KeyGuideDecorator
@@ -38,17 +38,17 @@ const colorKeys = ['red', 'green', 'yellow', 'blue'];
  * A Key Guide component.
  *
  * This component is most often not used directly but may be composed within another component as it
- * is within [KeyGuide]{@link sandstone/KeyGuide.KeyGuide}.
+ * is within [KeyGuide]{@link lune/KeyGuide.KeyGuide}.
  *
  * @class KeyGuideBase
- * @memberof sandstone/KeyGuide
+ * @memberof lune/KeyGuide
  * @ui
  * @public
  */
 const KeyGuideBase = kind({
 	name: 'KeyGuide',
 
-	propTypes: /** @lends sandstone/KeyGuide.KeyGuideBase.prototype */ {
+	propTypes: /** @lends lune/KeyGuide.KeyGuideBase.prototype */ {
 		/**
 		 * The items to be displayed in the `KeyGuide` when `open`.
 		 *
@@ -127,12 +127,12 @@ const KeyGuideBase = kind({
 });
 
 /**
- * Applies Sandstone specific behaviors to [KeyGuide]{@link sandstone/KeyGuide.KeyGuideBase}.
+ * Applies Lune specific behaviors to [KeyGuide]{@link lune/KeyGuide.KeyGuideBase}.
  *
  * @hoc
- * @memberof sandstone/KeyGuide
- * @mixes sandstone/Marquee.MarqueeController
- * @mixes sandstone/Skinnable.Skinnable
+ * @memberof lune/KeyGuide
+ * @mixes lune/Marquee.MarqueeController
+ * @mixes lune/Skinnable.Skinnable
  * @public
  */
 const KeyGuideDecorator = compose(
@@ -142,7 +142,7 @@ const KeyGuideDecorator = compose(
 );
 
 /**
- * A Key Guide component, ready to use in Sandstone applications.
+ * A Key Guide component, ready to use in Lune applications.
  *
  * `KeyGuide' may be used to display list of text with icons to describe key behavior.
  *
@@ -160,9 +160,9 @@ const KeyGuideDecorator = compose(
  * ```
  *
  * @class KeyGuide
- * @memberof sandstone/KeyGuide
- * @extends sandstone/KeyGuide.KeyGuideBase
- * @mixes sandstone/KeyGuide.KeyGuideDecorator
+ * @memberof lune/KeyGuide
+ * @extends lune/KeyGuide.KeyGuideBase
+ * @mixes lune/KeyGuide.KeyGuideDecorator
  * @ui
  * @public
  */

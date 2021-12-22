@@ -1,9 +1,9 @@
 import {boolean, select, text} from '@enact/storybook-utils/addons/controls';
-import Button from '@enact/sandstone/Button';
-import Heading from '@enact/sandstone/Heading';
-import Icon from '@enact/sandstone/Icon';
-import Item from '@enact/sandstone/Item';
-import Scroller from '@enact/sandstone/Scroller';
+import Button from '@enact/lune/Button';
+import Heading from '@enact/lune/Heading';
+import Icon from '@enact/lune/Icon';
+import Item from '@enact/lune/Item';
+import Scroller from '@enact/lune/Scroller';
 import {Row} from '@enact/ui/Layout';
 import {scale} from '@enact/ui/resolution';
 import {useState} from 'react';
@@ -41,7 +41,7 @@ Icon.displayName = 'Icon';
 const KsIcon = <Icon size="small">notification</Icon>;
 
 export default {
-	title: 'Sandstone/Item',
+	title: 'Lune/Item',
 	component: 'Item'
 };
 

@@ -1,7 +1,7 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, range, select} from '@enact/storybook-utils/addons/controls';
-import Sprite from '@enact/sandstone/Sprite';
+import Sprite from '@enact/lune/Sprite';
 
 Sprite.displayName = 'Sprite';
 const Config = mergeComponentMetadata('Sprite', Sprite);
@@ -16,7 +16,7 @@ const prop = {
 };
 
 export default {
-	title: 'Sandstone/Sprite',
+	title: 'Lune/Sprite',
 	component: 'Sprite'
 };
 

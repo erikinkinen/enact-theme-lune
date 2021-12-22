@@ -4,21 +4,21 @@ import Spotlight from '@enact/spotlight';
 import Pause from '@enact/spotlight/Pause';
 import SpotlightContainerDecorator from '@enact/spotlight/SpotlightContainerDecorator';
 import Spottable from '@enact/spotlight/Spottable';
-import Button from '@enact/sandstone/Button';
-import CheckboxItem from '@enact/sandstone/CheckboxItem';
-import DatePicker from '@enact/sandstone/DatePicker';
-import Heading from '@enact/sandstone/Heading';
-import FormCheckboxItem from '@enact/sandstone/FormCheckboxItem';
-import Input from '@enact/sandstone/Input';
-import Item from '@enact/sandstone/Item';
-import Picker from '@enact/sandstone/Picker';
-import Popup from '@enact/sandstone/Popup';
-import RadioItem from '@enact/sandstone/RadioItem';
-import Skinnable from '@enact/sandstone/Skinnable';
-import SwitchItem from '@enact/sandstone/SwitchItem';
-import TimePicker from '@enact/sandstone/TimePicker';
-import Scroller from '@enact/sandstone/Scroller';
-import Slider from '@enact/sandstone/Slider';
+import Button from '@enact/lune/Button';
+import CheckboxItem from '@enact/lune/CheckboxItem';
+import DatePicker from '@enact/lune/DatePicker';
+import Heading from '@enact/lune/Heading';
+import FormCheckboxItem from '@enact/lune/FormCheckboxItem';
+import Input from '@enact/lune/Input';
+import Item from '@enact/lune/Item';
+import Picker from '@enact/lune/Picker';
+import Popup from '@enact/lune/Popup';
+import RadioItem from '@enact/lune/RadioItem';
+import Skinnable from '@enact/lune/Skinnable';
+import SwitchItem from '@enact/lune/SwitchItem';
+import TimePicker from '@enact/lune/TimePicker';
+import Scroller from '@enact/lune/Scroller';
+import Slider from '@enact/lune/Slider';
 import {Row, Cell, Column} from '@enact/ui/Layout';
 import ri from '@enact/ui/resolution';
 import PropTypes from 'prop-types';
@@ -291,7 +291,7 @@ class FocusedAndDisabled extends Component {
 }
 
 export default {
-	title: 'Sandstone/Spotlight',
+	title: 'Lune/Spotlight',
 	component: 'Spotlight'
 };
 

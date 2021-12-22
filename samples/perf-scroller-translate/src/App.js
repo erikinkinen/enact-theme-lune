@@ -1,6 +1,6 @@
-import Item from '@enact/sandstone/Item';
-import Scroller from '@enact/sandstone/Scroller';
-import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
+import Item from '@enact/lune/Item';
+import Scroller from '@enact/lune/Scroller';
+import ThemeDecorator from '@enact/lune/ThemeDecorator';
 
 import css from './App.module.less';
 

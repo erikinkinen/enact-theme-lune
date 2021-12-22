@@ -1,6 +1,6 @@
-import CheckboxItem from '@enact/sandstone/CheckboxItem';
-import FormCheckboxItem from '@enact/sandstone/FormCheckboxItem';
-import Heading from '@enact/sandstone/Heading';
+import CheckboxItem from '@enact/lune/CheckboxItem';
+import FormCheckboxItem from '@enact/lune/FormCheckboxItem';
+import Heading from '@enact/lune/Heading';
 import Group from '@enact/ui/Group';
 import {Component} from 'react';
 

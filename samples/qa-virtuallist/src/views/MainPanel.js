@@ -1,13 +1,13 @@
-import Button from '@enact/sandstone/Button';
+import Button from '@enact/lune/Button';
 import {Cell, Row} from '@enact/ui/Layout';
-import CheckboxItem from '@enact/sandstone/CheckboxItem';
+import CheckboxItem from '@enact/lune/CheckboxItem';
 import {connect} from 'react-redux';
-import {Header, Panel} from '@enact/sandstone/Panels';
-import {InputField as Input} from '@enact/sandstone/Input';
+import {Header, Panel} from '@enact/lune/Panels';
+import {InputField as Input} from '@enact/lune/Input';
 import PropTypes from 'prop-types';
 import {Component} from 'react';
 import ri from '@enact/ui/resolution';
-import VirtualList from '@enact/sandstone/VirtualList';
+import VirtualList from '@enact/lune/VirtualList';
 
 import ListItem from '../components/ListItem';
 import LocaleSwitch from '../components/LocaleSwitch';

@@ -1,21 +1,21 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, select} from '@enact/storybook-utils/addons/controls';
-import BodyText from '@enact/sandstone/BodyText';
-import {Button, ButtonBase} from '@enact/sandstone/Button';
-import CheckboxItem from '@enact/sandstone/CheckboxItem';
-import {ContextualPopupDecorator} from '@enact/sandstone/ContextualPopupDecorator';
-import FormCheckboxItem from '@enact/sandstone/FormCheckboxItem';
-import Heading from '@enact/sandstone/Heading';
-import ImageItem from '@enact/sandstone/ImageItem';
-import Input, {InputField} from '@enact/sandstone/Input';
-import Item, {ItemBase} from '@enact/sandstone/Item';
-import Marquee from '@enact/sandstone/Marquee';
-import {Header} from '@enact/sandstone/Panels';
-import Picker from '@enact/sandstone/Picker';
-import RadioItem from '@enact/sandstone/RadioItem';
-import Scroller from '@enact/sandstone/Scroller';
-import SwitchItem from '@enact/sandstone/SwitchItem';
+import BodyText from '@enact/lune/BodyText';
+import {Button, ButtonBase} from '@enact/lune/Button';
+import CheckboxItem from '@enact/lune/CheckboxItem';
+import {ContextualPopupDecorator} from '@enact/lune/ContextualPopupDecorator';
+import FormCheckboxItem from '@enact/lune/FormCheckboxItem';
+import Heading from '@enact/lune/Heading';
+import ImageItem from '@enact/lune/ImageItem';
+import Input, {InputField} from '@enact/lune/Input';
+import Item, {ItemBase} from '@enact/lune/Item';
+import Marquee from '@enact/lune/Marquee';
+import {Header} from '@enact/lune/Panels';
+import Picker from '@enact/lune/Picker';
+import RadioItem from '@enact/lune/RadioItem';
+import Scroller from '@enact/lune/Scroller';
+import SwitchItem from '@enact/lune/SwitchItem';
 import {Row} from '@enact/ui/Layout';
 import Repeater from '@enact/ui/Repeater';
 import {Component} from 'react';
@@ -95,7 +95,7 @@ class ContextualPopupWithActivator extends Component {
 }
 
 export default {
-	title: 'Sandstone/Text',
+	title: 'Lune/Text',
 	component: 'Text'
 };
 

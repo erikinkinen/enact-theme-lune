@@ -1,7 +1,7 @@
 import {select, text} from '@enact/storybook-utils/addons/controls';
-import Heading from '@enact/sandstone/Heading';
-import Item from '@enact/sandstone/Item';
-import Scroller from '@enact/sandstone/Scroller';
+import Heading from '@enact/lune/Heading';
+import Item from '@enact/lune/Item';
+import Scroller from '@enact/lune/Scroller';
 import ri from '@enact/ui/resolution';
 
 import css from './Heading.module.less';
@@ -19,7 +19,7 @@ const prop = {
 };
 
 export default {
-	title: 'Sandstone/Heading',
+	title: 'Lune/Heading',
 	component: 'Heading'
 };
 

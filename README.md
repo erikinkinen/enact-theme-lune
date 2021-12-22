@@ -1,13 +1,13 @@
-# @enact/sandstone [![npm (scoped)](https://img.shields.io/npm/v/@enact/sandstone.svg?style=flat-square)](https://www.npmjs.com/package/@enact/sandstone)
+# enact-lune 
 
-> The set of components for an Enact-based application targeting smart TVs.
+> The set of components for an Enact-based application targeting LuneOS mobile devices.
 
 ## Usage
 
 ```
 import kind from '@enact/core/kind';
-import Button from '@enact/sandstone/Button';
-import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
+import Button from 'enact-lune/Button';
+import ThemeDecorator from 'enact-lune/ThemeDecorator';
 import React from 'react';
 
 const MyApp = kind({
@@ -15,18 +15,18 @@ const MyApp = kind({
 	render: () => (<Button>Hello, Enact!</Button>)
 });
 
-const MySandstoneApp = ThemeDecorator(MyApp);
+const MyLuneApp = ThemeDecorator(MyApp);
 
-export default MySandstoneApp;
+export default MyLuneApp;
 ```
 
-> Note: The sandstone decorator must be applied to the base component. This decorator also applies
+> Note: The lune decorator must be applied to the base component. This decorator also applies
 `@enact/i18n/I18nDecorator`, `@enact/spotlight` and `@enact/ui/resolution` decorators.
 
 ## Install
 
 ```
-npm install --save @enact/sandstone
+npm install --save enact-lune
 ```
 
 ## Test

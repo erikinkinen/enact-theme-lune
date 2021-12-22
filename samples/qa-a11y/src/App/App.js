@@ -1,6 +1,6 @@
 import {I18nContextDecorator} from '@enact/i18n/I18nDecorator';
-import Item from '@enact/sandstone/Item';
-import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
+import Item from '@enact/lune/Item';
+import ThemeDecorator from '@enact/lune/ThemeDecorator';
 import Spotlight from '@enact/spotlight';
 import SpotlightContainerDecorator from '@enact/spotlight/SpotlightContainerDecorator';
 import Layout, {Cell} from '@enact/ui/Layout';

@@ -1,5 +1,5 @@
 import {boolean, select} from '@enact/storybook-utils/addons/controls';
-import BodyText from '@enact/sandstone/BodyText';
+import BodyText from '@enact/lune/BodyText';
 
 BodyText.displayName = 'BodyText';
 
@@ -12,7 +12,7 @@ const stringsToChoose = [
 ];
 
 export default {
-	title: 'Sandstone/BodyText',
+	title: 'Lune/BodyText',
 	component: 'BodyText'
 };
 

@@ -1,8 +1,8 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {range, select, text} from '@enact/storybook-utils/addons/controls';
-import Button from '@enact/sandstone/Button';
-import ContextualMenuDecorator from '@enact/sandstone/ContextualMenuDecorator';
+import Button from '@enact/lune/Button';
+import ContextualMenuDecorator from '@enact/lune/ContextualMenuDecorator';
 import ri from '@enact/ui/resolution';
 
 const ContextualButton = ContextualMenuDecorator(Button);
@@ -24,7 +24,7 @@ Config.defaultProps = {
 };
 
 export default {
-	title: 'Sandstone/ContextualMenuDecorator',
+	title: 'Lune/ContextualMenuDecorator',
 	component: 'ContextualMenuDecorator'
 };
 

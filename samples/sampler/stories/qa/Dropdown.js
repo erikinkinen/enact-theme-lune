@@ -1,11 +1,11 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, select, text} from '@enact/storybook-utils/addons/controls';
-import Button, {ButtonBase} from '@enact/sandstone/Button';
-import Dropdown, {DropdownBase} from '@enact/sandstone/Dropdown';
-import Item from '@enact/sandstone/Item';
-import Scroller from '@enact/sandstone/Scroller';
-import Heading from '@enact/sandstone/Heading';
+import Button, {ButtonBase} from '@enact/lune/Button';
+import Dropdown, {DropdownBase} from '@enact/lune/Dropdown';
+import Item from '@enact/lune/Item';
+import Scroller from '@enact/lune/Scroller';
+import Heading from '@enact/lune/Heading';
 import UIButton, {ButtonBase as UIButtonBase} from '@enact/ui/Button';
 import {Component} from 'react';
 
@@ -107,7 +107,7 @@ class PositionChangingDropdown extends Component {
 }
 
 export default {
-	title: 'Sandstone/Dropdown',
+	title: 'Lune/Dropdown',
 	component: 'Dropdown'
 };
 

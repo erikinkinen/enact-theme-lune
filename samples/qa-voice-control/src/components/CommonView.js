@@ -1,5 +1,5 @@
-import {Header} from '@enact/sandstone/Panels';
-import {Scroller} from '@enact/sandstone/Scroller';
+import {Header} from '@enact/lune/Panels';
+import {Scroller} from '@enact/lune/Scroller';
 import kind from '@enact/core/kind';
 import PropTypes from 'prop-types';
 import {Fragment} from 'react';

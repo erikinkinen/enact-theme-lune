@@ -1,12 +1,12 @@
 /**
- * Sandstone styled item components with a toggleable checkbox.
+ * Lune styled item components with a toggleable checkbox.
  *
  * @example
  * <CheckboxItem onToggle={console.log}>
  * 	Item with a Checkbox
  * </CheckboxItem>
  *
- * @module sandstone/CheckboxItem
+ * @module lune/CheckboxItem
  * @exports CheckboxItem
  * @exports CheckboxItemBase
  * @exports CheckboxItemDecorator
@@ -32,7 +32,7 @@ const Checkbox = Skinnable(CheckboxBase);
 Checkbox.displayName = 'Checkbox';
 
 /**
- * A Sandstone-styled item with a checkbox component.
+ * A Lune-styled item with a checkbox component.
  *
  * `CheckboxItem` may be used to allow the user to select a single option or used as part of a
  * [Group]{@link ui/Group} when multiple [selections]{@link ui/Group.Group.select} are possible.
@@ -48,8 +48,8 @@ Checkbox.displayName = 'Checkbox';
  * ```
  *
  * @class CheckboxItemBase
- * @memberof sandstone/CheckboxItem
- * @extends sandstone/Item.Item
+ * @memberof lune/CheckboxItem
+ * @extends lune/Item.Item
  * @omit iconComponent
  * @ui
  * @public
@@ -57,7 +57,7 @@ Checkbox.displayName = 'Checkbox';
 const CheckboxItemBase = kind({
 	name: 'CheckboxItem',
 
-	propTypes: /** @lends sandstone/CheckboxItem.CheckboxItemBase.prototype */ {
+	propTypes: /** @lends lune/CheckboxItem.CheckboxItemBase.prototype */ {
 		/**
 		 * Customizes the component by mapping the supplied collection of CSS class names to the
 		 * corresponding internal elements and states of this component.
@@ -76,7 +76,7 @@ const CheckboxItemBase = kind({
 		 *
 		 * May be specified as either:
 		 *
-		 * * A string that represents an icon from the [iconList]{@link sandstone/Icon.Icon.iconList},
+		 * * A string that represents an icon from the [iconList]{@link lune/Icon.Icon.iconList},
 		 * * An HTML entity string, Unicode reference or hex value (in the form '0x...'),
 		 * * A URL specifying path to an icon image, or
 		 * * An object representing a resolution independent resource (See {@link ui/resolution})
@@ -105,7 +105,7 @@ const CheckboxItemBase = kind({
 		 *
 		 * May be specified as either:
 		 *
-		 * * A string that represents an icon from the [iconList]{@link sandstone/Icon.Icon.iconList},
+		 * * A string that represents an icon from the [iconList]{@link lune/Icon.Icon.iconList},
 		 * * An HTML entity string, Unicode reference or hex value (in the form '0x...'),
 		 * * A URL specifying path to an icon image, or
 		 * * An object representing a resolution independent resource (See {@link ui/resolution})
@@ -167,7 +167,7 @@ const CheckboxItemBase = kind({
  * Adds interactive functionality to `CheckboxItem`.
  *
  * @class CheckboxItemDecorator
- * @memberof sandstone/CheckboxItem
+ * @memberof lune/CheckboxItem
  * @mixes ui/Toggleable.Toggleable
  * @hoc
  * @public
@@ -178,15 +178,15 @@ const CheckboxItemDecorator = compose(
 );
 
 /**
- * A Sandstone-styled item with a checkbox component.
+ * A Lune-styled item with a checkbox component.
  *
  * `CheckboxItem` will manage its `selected` state via [Toggleable]{@link ui/Toggleable} unless set
  * directly.
  *
  * @class CheckboxItem
- * @memberof sandstone/CheckboxItem
- * @extends sandstone/CheckboxItem.CheckboxItemBase
- * @mixes sandstone/CheckboxItem.CheckboxItemDecorator
+ * @memberof lune/CheckboxItem
+ * @extends lune/CheckboxItem.CheckboxItemBase
+ * @mixes lune/CheckboxItem.CheckboxItemDecorator
  * @ui
  * @public
  */

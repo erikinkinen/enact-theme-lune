@@ -1,10 +1,10 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, range, select} from '@enact/storybook-utils/addons/controls';
-import Button from '@enact/sandstone/Button';
-import BodyText from '@enact/sandstone/BodyText';
-import Item from '@enact/sandstone/Item';
-import Scroller from '@enact/sandstone/Scroller';
+import Button from '@enact/lune/Button';
+import BodyText from '@enact/lune/BodyText';
+import Item from '@enact/lune/Item';
+import Scroller from '@enact/lune/Scroller';
 import Spotlight from '@enact/spotlight';
 import SpotlightContainerDecorator from '@enact/spotlight/SpotlightContainerDecorator';
 import Group from '@enact/ui/Group';
@@ -163,7 +163,7 @@ class ScrollerWithLargeContainer extends Component {
 }
 
 export default {
-	title: 'Sandstone/Scroller',
+	title: 'Lune/Scroller',
 	component: 'Scroller'
 };
 

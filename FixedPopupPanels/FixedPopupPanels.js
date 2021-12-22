@@ -1,7 +1,7 @@
 /**
- * Provides Sandstone styled fixed-width, popup-styled Panels component.
+ * Provides Lune styled fixed-width, popup-styled Panels component.
  *
- * @module sandstone/FixedPopupPanels
+ * @module lune/FixedPopupPanels
  * @exports FixedPopupPanels
  * @exports FixedPopupPanelsBase
  * @exports FixedPopupPanelsDecorator
@@ -22,10 +22,10 @@ import DefaultHeader from '../Panels/Header';
 import css from './FixedPopupPanels.module.less';
 
 /**
- * Adds popup functionality and `rtl` prop to [`FixedPopupPanels`]{@link sandstone/FixedPopupPanels}.
+ * Adds popup functionality and `rtl` prop to [`FixedPopupPanels`]{@link lune/FixedPopupPanels}.
  *
  * @class FixedPopupPanelsDecorator
- * @memberof sandstone/FixedPopupPanels
+ * @memberof lune/FixedPopupPanels
  * @hoc
  * @public
  */
@@ -54,11 +54,11 @@ const fixedPopupPanelsHandlers = {
 };
 
 /**
- * A base panels component for [`FixedPopupPanels`]{@link sandstone/FixedPopupPanels} that has
+ * A base panels component for [`FixedPopupPanels`]{@link lune/FixedPopupPanels} that has
  * left key handler to navigate panels.
  *
  * @class FixedPopupPanelsBase
- * @memberof sandstone/FixedPopupPanels
+ * @memberof lune/FixedPopupPanels
  * @ui
  * @public
  */
@@ -68,14 +68,14 @@ const FixedPopupPanelsBase = (props) => {
 };
 
 /**
- * An instance of [`Panels`]{@link sandstone/Panels.Panels} which restricts the `Panel` to the right
+ * An instance of [`Panels`]{@link lune/Panels.Panels} which restricts the `Panel` to the right
  * or left side of the screen inside a popup. Typically used for overlaying panels over other
  * content.
  *
  * @class FixedPopupPanels
- * @memberof sandstone/FixedPopupPanels
- * @extends sandstone/FixedPopupPanels.FixedPopupPanelsBase
- * @mixes sandstone/FixedPopupPanels.FixedPopupPanelsDecorator
+ * @memberof lune/FixedPopupPanels
+ * @extends lune/FixedPopupPanels.FixedPopupPanelsBase
+ * @mixes lune/FixedPopupPanels.FixedPopupPanelsDecorator
  * @ui
  * @public
  */
@@ -84,7 +84,7 @@ const FixedPopupPanels = FixedPopupPanelsDecorator(FixedPopupPanelsBase);
 /**
  * Size of the popup.
  *
- * @memberof sandstone/FixedPopupPanels.FixedPopupPanels.prototype
+ * @memberof lune/FixedPopupPanels.FixedPopupPanels.prototype
  * @name width
  * @type {('narrow'|'half')}
  * @default 'narrow'
@@ -93,22 +93,22 @@ const FixedPopupPanels = FixedPopupPanelsDecorator(FixedPopupPanelsBase);
 
 /**
  * The standard view container used inside a
- * [FixedPopupPanels]{@link sandstone/FixedPopupPanels.FixedPopupPanels} view manager instance.
+ * [FixedPopupPanels]{@link lune/FixedPopupPanels.FixedPopupPanels} view manager instance.
  *
  * @class Panel
- * @extends sandstone/Panels.Panel
- * @memberof sandstone/FixedPopupPanels
+ * @extends lune/Panels.Panel
+ * @memberof lune/FixedPopupPanels
  * @ui
  * @public
  */
 const Panel = (props) => (<DefaultPanel {...props} css={css} hideChildren={false} />);
 
 /**
- * A shortcut to access {@link sandstone/FixedPopupPanels.Panel}
+ * A shortcut to access {@link lune/FixedPopupPanels.Panel}
  *
  * @name Panel
  * @static
- * @memberof sandstone/FixedPopupPanels.FixedPopupPanels
+ * @memberof lune/FixedPopupPanels.FixedPopupPanels
  */
 FixedPopupPanels.Panel = Panel;
 
@@ -117,8 +117,8 @@ FixedPopupPanels.Panel = Panel;
  * [`slots`]{@link ui/Slottable.Slottable} for components.
  *
  * @class Header
- * @extends sandstone/Panels.Header
- * @memberof sandstone/FixedPopupPanels
+ * @extends lune/Panels.Header
+ * @memberof lune/FixedPopupPanels
  * @ui
  * @public
  */
@@ -127,11 +127,11 @@ const Header = (props) => (<DefaultHeader type="compact" {...props} css={css} />
 Header.defaultSlot = DefaultHeader.defaultSlot;
 
 /**
- * A shortcut to access {@link sandstone/FixedPopupPanels.Header}
+ * A shortcut to access {@link lune/FixedPopupPanels.Header}
  *
  * @name Header
  * @static
- * @memberof sandstone/FixedPopupPanels.FixedPopupPanels
+ * @memberof lune/FixedPopupPanels.FixedPopupPanels
  */
 FixedPopupPanels.Header = Header;
 

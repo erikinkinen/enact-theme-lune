@@ -19,17 +19,17 @@ function defaultDirection (type) {
 }
 
 /**
- * A stateless tooltip component with Sandstone styling applied.
+ * A stateless tooltip component with Lune styling applied.
  *
  * @class TooltipBase
- * @memberof sandstone/TooltipDecorator
+ * @memberof lune/TooltipDecorator
  * @ui
  * @public
  */
 const TooltipBase = kind({
 	name: 'Tooltip',
 
-	propTypes: /** @lends sandstone/TooltipDecorator.TooltipBase.prototype */ {
+	propTypes: /** @lends lune/TooltipDecorator.TooltipBase.prototype */ {
 		/**
 		 * The node to be displayed as the main content of the tooltip.
 		 *
@@ -97,7 +97,7 @@ const TooltipBase = kind({
 		/**
 		 * Allows the tooltip to marquee.
 		 *
-		 * Specifying a [`width`]{@link sandstone/TooltipDecorator.TooltipBase#width} restrects
+		 * Specifying a [`width`]{@link lune/TooltipDecorator.TooltipBase#width} restrects
 		 * the marquee to that size.
 		 *
 		 * @type {Boolean}
@@ -218,10 +218,10 @@ const TooltipBase = kind({
 });
 
 /**
- * A tooltip component with Sandstone styling applied.
+ * A tooltip component with Lune styling applied.
  *
  * @class Tooltip
- * @memberof sandstone/TooltipDecorator
+ * @memberof lune/TooltipDecorator
  * @ui
  * @public
  */

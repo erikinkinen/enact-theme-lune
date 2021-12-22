@@ -1,7 +1,7 @@
 {
-  "name": "sandstone-sampler",
+  "name": "lune-sampler",
   "version": "2.0.2",
-  "description": "Component and QA samples for Sandstone",
+  "description": "Component and QA samples for Lune",
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -17,12 +17,12 @@
   },
   "license": "Apache-2.0",
   "enact": {
-    "theme": "sandstone"
+    "theme": "lune"
   },
   "dependencies": {
     "@enact/core": "^4.1.2",
     "@enact/i18n": "^4.1.2",
-    "@enact/sandstone": "../../",
+    "@enact/lune": "../../",
     "@enact/spotlight": "^4.1.2",
     "@enact/ui": "^4.1.2",
     "classnames": "^2.2.6",

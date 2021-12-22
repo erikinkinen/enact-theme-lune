@@ -1,10 +1,10 @@
 /**
- * Provides a Sandstone-themed Item component with an interactive radio toggle icon.
+ * Provides a Lune-themed Item component with an interactive radio toggle icon.
  *
  * @example
  * <RadioItem>Item</RadioItem>
  *
- * @module sandstone/RadioItem
+ * @module lune/RadioItem
  * @exports RadioItem
  * @exports RadioItemBase
  */
@@ -27,18 +27,18 @@ const Item = ItemDecorator(ItemBase);
  * An item component with a radio toggle icon.
  *
  * This component is most often not used directly but may be composed within another component as it
- * is within [RadioItem]{@link sandstone/RadioItem.RadioItem}.
+ * is within [RadioItem]{@link lune/RadioItem.RadioItem}.
  *
  * @class RadioItemBase
- * @memberof sandstone/RadioItem
- * @extends sandstone/Item.Item
+ * @memberof lune/RadioItem
+ * @extends lune/Item.Item
  * @ui
  * @public
  */
 const RadioItemBase = kind({
 	name: 'RadioItem',
 
-	propTypes: /** @lends sandstone/RadioItem.RadioItem.prototype */ {
+	propTypes: /** @lends lune/RadioItem.RadioItem.prototype */ {
 		/**
 		 * Customizes the component by mapping the supplied collection of CSS class names to the
 		 * corresponding internal elements and states of this component.
@@ -57,7 +57,7 @@ const RadioItemBase = kind({
 		 *
 		 * @type {String}
 		 * @default 'circle'
-		 * @see {@link sandstone/Icon.Icon}
+		 * @see {@link lune/Icon.Icon}
 		 */
 		icon: PropTypes.string,
 
@@ -109,10 +109,10 @@ const RadioItemBase = kind({
 });
 
 /**
- * Sandstone specific behaviors to apply to [RadioItem]{@link sandstone/RadioItem.RadioItemBase}.
+ * Lune specific behaviors to apply to [RadioItem]{@link lune/RadioItem.RadioItemBase}.
  *
  * @hoc
- * @memberof sandstone/RadioItem
+ * @memberof lune/RadioItem
  * @mixes ui/Toggleable.Toggleable
  * @public
  */
@@ -125,9 +125,9 @@ const RadioItemDecorator = compose(
  * Renders an `Item` with a radio-dot component. Useful to show a selected state on an Item.
  *
  * @class RadioItem
- * @memberof sandstone/RadioItem
- * @extends sandstone/RadioItem.RadioItemBase
- * @mixes sandstone/RadioItem.RadioItemDecorator
+ * @memberof lune/RadioItem
+ * @extends lune/RadioItem.RadioItemBase
+ * @mixes lune/RadioItem.RadioItemDecorator
  * @ui
  * @public
  */

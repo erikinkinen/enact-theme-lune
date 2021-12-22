@@ -1,7 +1,7 @@
 /**
- * Exports the {@link sandstone/internal/DebounceDecorator.DebounceDecorator} higher-order component
+ * Exports the {@link lune/internal/DebounceDecorator.DebounceDecorator} higher-order component
  *
- * @module sandstone/internal/DebounceDecorator
+ * @module lune/internal/DebounceDecorator
  * @private
  */
 
@@ -11,9 +11,9 @@ import PropTypes from 'prop-types';
 import {Component} from 'react';
 
 /**
- * Default config for {@link sandstone/internal/DebounceDecorator.DebounceDecorator}.
+ * Default config for {@link lune/internal/DebounceDecorator.DebounceDecorator}.
  *
- * @memberof sandstone/internal/DebounceDecorator.DebounceDecorator
+ * @memberof lune/internal/DebounceDecorator.DebounceDecorator
  * @hocconfig
  */
 const defaultConfig = {
@@ -23,7 +23,7 @@ const defaultConfig = {
 	 *
 	 * @type {String}
 	 * @default null
-	 * @memberof sandstone/internal/DebounceDecorator.DebounceDecorator.defaultConfig
+	 * @memberof lune/internal/DebounceDecorator.DebounceDecorator.defaultConfig
 	 */
 	cancel: null,
 
@@ -32,7 +32,7 @@ const defaultConfig = {
 	 *
 	 * @type {String}
 	 * @default 'onChange'
-	 * @memberof sandstone/internal/DebounceDecorator.DebounceDecorator.defaultConfig
+	 * @memberof lune/internal/DebounceDecorator.DebounceDecorator.defaultConfig
 	 */
 	debounce: 'onChange',
 
@@ -41,7 +41,7 @@ const defaultConfig = {
 	 *
 	 * @type {Number}
 	 * @default 500
-	 * @memberof sandstone/internal/DebounceDecorator.DebounceDecorator.defaultConfig
+	 * @memberof lune/internal/DebounceDecorator.DebounceDecorator.defaultConfig
 	 */
 	delay: 500
 };
@@ -53,7 +53,7 @@ const defaultConfig = {
  * events occurring after `delay` of milliseconds.
  *
  * @class DebounceDecorator
- * @memberof sandstone/internal/DebounceDecorator
+ * @memberof lune/internal/DebounceDecorator
  * @hoc
  * @private
  */
@@ -63,16 +63,16 @@ const DebounceDecorator = hoc(defaultConfig, (config, Wrapped) => {
 	return class extends Component {
 		static displayName = 'DebounceDecorator';
 
-		static propTypes = /** @lends sandstone/internal/DebounceDecorator.DebounceDecorator.prototype */ {
+		static propTypes = /** @lends lune/internal/DebounceDecorator.DebounceDecorator.prototype */ {
 			/**
 			 * Handler for `onChange` events
 			 *
 			 * `'onChange'` can be changed to a different prop name by specifying the `debounce`
 			 * config option.
 			 *
-			 * @see {@link sandstone/internal/DebounceDecorator.DebounceDecorator.defaultConfig#debounce}
+			 * @see {@link lune/internal/DebounceDecorator.DebounceDecorator.defaultConfig#debounce}
 			 * @name onChange
-			 * @memberof sandstone/internal/DebounceDecorator.DebounceDecorator.prototype
+			 * @memberof lune/internal/DebounceDecorator.DebounceDecorator.prototype
 			 * @type {Function}
 			 * @public
 			 */

@@ -3,11 +3,11 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, select} from '@enact/storybook-utils/addons/controls';
-import Button from '@enact/sandstone/Button';
-import {FlexiblePopupPanelsBase, FlexiblePopupPanels, Panel, PanelBase, Header} from '@enact/sandstone/FlexiblePopupPanels';
-import Item from '@enact/sandstone/Item';
-import Scroller from '@enact/sandstone/Scroller';
-import Slider from '@enact/sandstone/Slider';
+import Button from '@enact/lune/Button';
+import {FlexiblePopupPanelsBase, FlexiblePopupPanels, Panel, PanelBase, Header} from '@enact/lune/FlexiblePopupPanels';
+import Item from '@enact/lune/Item';
+import Scroller from '@enact/lune/Scroller';
+import Slider from '@enact/lune/Slider';
 import ri from '@enact/ui/resolution';
 import {useState} from 'react';
 import compose from 'ramda/src/compose';
@@ -21,7 +21,7 @@ const Config = mergeComponentMetadata('FlexiblePopupPanels', FlexiblePopupPanels
 const PanelConfig = mergeComponentMetadata('Panel', PanelBase, Panel);
 
 export default {
-	title: 'Sandstone/FlexiblePopupPanels',
+	title: 'Lune/FlexiblePopupPanels',
 	component: 'FlexiblePopupPanels'
 };
 

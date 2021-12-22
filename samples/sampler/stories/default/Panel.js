@@ -1,11 +1,11 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {number, select, text} from '@enact/storybook-utils/addons/controls';
-import Button from '@enact/sandstone/Button';
-import ImageItem from '@enact/sandstone/ImageItem';
-import {Header, Panel} from '@enact/sandstone/Panels';
-import TabLayout, {Tab} from '@enact/sandstone/TabLayout';
-import {VirtualGridList} from '@enact/sandstone/VirtualList';
+import Button from '@enact/lune/Button';
+import ImageItem from '@enact/lune/ImageItem';
+import {Header, Panel} from '@enact/lune/Panels';
+import TabLayout, {Tab} from '@enact/lune/TabLayout';
+import {VirtualGridList} from '@enact/lune/VirtualList';
 import {scale} from '@enact/ui/resolution';
 import {Fragment} from 'react';
 
@@ -73,7 +73,7 @@ const updateDataSize = (dataSize) => {
 updateDataSize(defaultDataSize);
 
 export default {
-	title: 'Sandstone/Panels.Panel',
+	title: 'Lune/Panels.Panel',
 	component: 'Panel'
 };
 

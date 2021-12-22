@@ -1,9 +1,9 @@
 import kind from '@enact/core/kind';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean} from '@enact/storybook-utils/addons/controls';
-import BodyText from '@enact/sandstone/BodyText';
-import Button from '@enact/sandstone/Button';
-import Icon from '@enact/sandstone/Icon';
+import BodyText from '@enact/lune/BodyText';
+import Button from '@enact/lune/Button';
+import Icon from '@enact/lune/Icon';
 import ri from '@enact/ui/resolution';
 import PropTypes from 'prop-types';
 
@@ -70,7 +70,7 @@ export default {
 export const ATourOfSampler = (args) => (
 	<div style={{overflow: 'hidden', height: '100%'}}>
 		<BodyText centered={args['text centered']}>
-			Welcome to the Sandstone sampler! Explore Sandstone components.
+			Welcome to the Lune sampler! Explore Lune components.
 		</BodyText>
 		<Button onClick={action('onClick')} selected={args['button selected']}>
 			Click me

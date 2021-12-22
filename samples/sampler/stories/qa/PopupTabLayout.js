@@ -1,18 +1,18 @@
 import {add, is} from '@enact/core/keymap';
 import {I18nContextDecorator} from '@enact/i18n/I18nDecorator';
-import BodyText from '@enact/sandstone/BodyText';
-import Button from '@enact/sandstone/Button';
-import Dropdown from '@enact/sandstone/Dropdown';
-import Heading from '@enact/sandstone/Heading';
-import Icon from '@enact/sandstone/Icon';
-import Input from '@enact/sandstone/Input';
-import Item from '@enact/sandstone/Item';
-import {Panel, Header} from '@enact/sandstone/Panels';
-import Popup from '@enact/sandstone/Popup';
-import PopupTabLayout, {Tab, TabPanels, TabPanel} from '@enact/sandstone/PopupTabLayout';
-import Scroller from '@enact/sandstone/Scroller';
-import Slider from '@enact/sandstone/Slider';
-import SwitchItem from '@enact/sandstone/SwitchItem';
+import BodyText from '@enact/lune/BodyText';
+import Button from '@enact/lune/Button';
+import Dropdown from '@enact/lune/Dropdown';
+import Heading from '@enact/lune/Heading';
+import Icon from '@enact/lune/Icon';
+import Input from '@enact/lune/Input';
+import Item from '@enact/lune/Item';
+import {Panel, Header} from '@enact/lune/Panels';
+import Popup from '@enact/lune/Popup';
+import PopupTabLayout, {Tab, TabPanels, TabPanel} from '@enact/lune/PopupTabLayout';
+import Scroller from '@enact/lune/Scroller';
+import Slider from '@enact/lune/Slider';
+import SwitchItem from '@enact/lune/SwitchItem';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {Cell} from '@enact/ui/Layout';
 import PropTypes from 'prop-types';
@@ -37,7 +37,7 @@ const navNext = (callback, value) => () => {
 };
 
 export default {
-	title: 'Sandstone/PopupTabLayout',
+	title: 'Lune/PopupTabLayout',
 	component: 'PopupTabLayout'
 };
 

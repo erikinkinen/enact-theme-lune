@@ -1,7 +1,7 @@
 import {boolean, select, text} from '@enact/storybook-utils/addons/controls';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {mergeComponentMetadata} from '@enact/storybook-utils';
-import {InputField, InputFieldBase} from '@enact/sandstone/Input';
+import {InputField, InputFieldBase} from '@enact/lune/Input';
 
 import {iconNames, divMargin, propOptions, inputData} from './common/Input_Common';
 
@@ -9,7 +9,7 @@ InputField.displayName = 'InputField';
 const FieldConfig = mergeComponentMetadata('InputField', InputFieldBase, InputField);
 
 export default {
-	title: 'Sandstone/Input/InputField',
+	title: 'Lune/Input/InputField',
 	component: 'InputField'
 };
 

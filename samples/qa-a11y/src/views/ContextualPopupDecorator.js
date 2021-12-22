@@ -1,6 +1,6 @@
-import Button from '@enact/sandstone/Button';
-import ContextualPopupDecorator from '@enact/sandstone/ContextualPopupDecorator';
-import RadioItem from '@enact/sandstone/RadioItem';
+import Button from '@enact/lune/Button';
+import ContextualPopupDecorator from '@enact/lune/ContextualPopupDecorator';
+import RadioItem from '@enact/lune/RadioItem';
 import Group from '@enact/ui/Group';
 import Toggleable from '@enact/ui/Toggleable';
 

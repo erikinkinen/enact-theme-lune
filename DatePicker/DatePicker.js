@@ -4,7 +4,7 @@
  * @example
  * <DatePicker onChange={console.log} />
  *
- * @module sandstone/DatePicker
+ * @module lune/DatePicker
  * @exports DatePicker
  * @exports DatePickerBase
  * @exports dateToLocaleString
@@ -96,11 +96,11 @@ const dateTimeConfig = {
 };
 
 /**
- * A date selection component, ready to use in Sandstone applications.
+ * A date selection component, ready to use in Lune applications.
  *
  * `DatePicker` may be used to select the year, month, and day. It uses a standard `Date` object for
  * its `value` which can be shared as the `value` for a
- * [TimePicker]{@link sandstone/TimePicker.TimePicker} to select both a date and time.
+ * [TimePicker]{@link lune/TimePicker.TimePicker} to select both a date and time.
  *
  * By default, `DatePicker` maintains the state of its `value` property. Supply the
  * `defaultValue` property to control its initial value. If you wish to directly control updates
@@ -116,8 +116,8 @@ const dateTimeConfig = {
  * ```
  *
  * @class DatePicker
- * @memberof sandstone/DatePicker
- * @extends sandstone/DatePicker.DatePickerBase
+ * @memberof lune/DatePicker
+ * @extends lune/DatePicker.DatePickerBase
  * @mixes ui/Changeable.Changeable
  * @omit day
  * @omit maxDays
@@ -142,7 +142,7 @@ const DatePicker = Pure(
  *
  * @name defaultValue
  * @type {Date}
- * @memberof sandstone/DatePicker.DatePicker.prototype
+ * @memberof lune/DatePicker.DatePicker.prototype
  * @public
  */
 
@@ -151,7 +151,7 @@ const DatePicker = Pure(
  *
  * @name value
  * @type {Date}
- * @memberof sandstone/DatePicker.DatePicker.prototype
+ * @memberof lune/DatePicker.DatePicker.prototype
  * @public
  */
 
@@ -159,7 +159,7 @@ const DatePicker = Pure(
  * Converts a standard `Date` object into a locale-specific string.
  *
  * @function
- * @memberof sandstone/DatePicker
+ * @memberof lune/DatePicker
  * @param {Date} date `Date` to convert
  * @returns {String?} Converted date or `null` if `date` is invalid
  */

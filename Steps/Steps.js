@@ -1,5 +1,5 @@
 /**
- * Provides Sandstone styled component to indicate progress along a continuum.
+ * Provides Lune styled component to indicate progress along a continuum.
  *
  * In the following example, 6 total steps will be displayed with the current step being the 3rd
  * step, having passed the previous 2 steps, with 3 more to go.
@@ -7,7 +7,7 @@
  * @example
  * <Steps total={6} current={3} />
  *
- * @module sandstone/Steps
+ * @module lune/Steps
  * @exports Steps
  * @exports StepsBase
  * @exports StepsDecorator
@@ -26,17 +26,17 @@ import Skinnable from '../Skinnable';
 import componentCss from './Steps.module.less';
 
 /**
- * Renders a sandstone-styled steps component only basic behavior.
+ * Renders a lune-styled steps component only basic behavior.
  *
  * @class StepsBase
- * @memberof sandstone/Steps
+ * @memberof lune/Steps
  * @ui
  * @public
  */
 const StepsBase = kind({
 	name: 'Steps',
 
-	propTypes: /** @lends sandstone/Steps.StepsBase.prototype */ {
+	propTypes: /** @lends lune/Steps.StepsBase.prototype */ {
 		/**
 		 * Customizes the component by mapping the supplied collection of CSS class names to the
 		 * corresponding internal elements and states of this component.
@@ -73,7 +73,7 @@ const StepsBase = kind({
 		/**
 		 * The icon to use for indicating the current step.
 		 *
-		 * This accepts any icon supported by {@link sandstone/Icon}, in addition to a special
+		 * This accepts any icon supported by {@link lune/Icon}, in addition to a special
 		 * value: "numbers", which instead of a standard icon, shows the number of the step.
 		 *
 		 * @type {String}
@@ -85,7 +85,7 @@ const StepsBase = kind({
 		/**
 		 * The icon to use for indicating all steps following the current step.
 		 *
-		 * This accepts any icon supported by {@link sandstone/Icon}, in addition to a special
+		 * This accepts any icon supported by {@link lune/Icon}, in addition to a special
 		 * value: "numbers", which instead of a standard icon, shows the number of the step.
 		 *
 		 * @type {String}
@@ -102,7 +102,7 @@ const StepsBase = kind({
 		 * receive the `children` and `size` props.
 		 *
 		 * @type {Component}
-		 * @default sandstone/Icon.Icon
+		 * @default lune/Icon.Icon
 		 * @public
 		 */
 		iconComponent: EnactPropTypes.component,
@@ -110,7 +110,7 @@ const StepsBase = kind({
 		/**
 		 * The icon to use for indicating all steps preceding the current step.
 		 *
-		 * This accepts any icon supported by {@link sandstone/Icon}, in addition to a special
+		 * This accepts any icon supported by {@link lune/Icon}, in addition to a special
 		 * value: "numbers", which instead of a standard icon, shows the number of the step.
 		 *
 		 * @type {String}
@@ -122,7 +122,7 @@ const StepsBase = kind({
 		/**
 		 * The size of the step icons.
 
-		 * This accepts any `size` supported by {@link sandstone/Icon}.
+		 * This accepts any `size` supported by {@link lune/Icon}.
 		 *
 		 * @type {('large'|'medium'|'small'|'tiny')}
 		 * @default 'small'
@@ -143,7 +143,7 @@ const StepsBase = kind({
 		/**
 		 * The icon to use for any skipped steps, past or future.
 		 *
-		 * This accepts any icon supported by {@link sandstone/Icon}.
+		 * This accepts any icon supported by {@link lune/Icon}.
 		 *
 		 * The current step will always show the `currentIcon` regardless of whether it has been
 		 * skipped. It's the developer's responsibility to not set `current` to a skipped step.
@@ -239,11 +239,11 @@ const StepsBase = kind({
 });
 
 /**
- * Sandstone-specific behaviors to apply to [StepsBase]{@link sandstone/Steps.StepsBase}.
+ * Lune-specific behaviors to apply to [StepsBase]{@link lune/Steps.StepsBase}.
  *
  * @hoc
- * @memberof sandstone/Steps
- * @mixes sandstone/Skinnable.Skinnable
+ * @memberof lune/Steps
+ * @mixes lune/Skinnable.Skinnable
  * @public
  */
 const StepsDecorator = compose(
@@ -251,12 +251,12 @@ const StepsDecorator = compose(
 );
 
 /**
- * A full-featured Sandstone-styled step component.
+ * A full-featured Lune-styled step component.
  *
  * @class Steps
- * @memberof sandstone/Steps
- * @extends sandstone/Steps.StepsBase
- * @mixes sandstone/Steps.StepsDecorator
+ * @memberof lune/Steps
+ * @extends lune/Steps.StepsBase
+ * @mixes lune/Steps.StepsDecorator
  * @ui
  * @public
  */

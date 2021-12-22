@@ -1,6 +1,6 @@
-import {Panels} from '@enact/sandstone/Panels';
+import {Panels} from '@enact/lune/Panels';
 import {Component} from 'react';
-import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
+import ThemeDecorator from '@enact/lune/ThemeDecorator';
 
 import MainPanel from '../views/MainPanel';
 

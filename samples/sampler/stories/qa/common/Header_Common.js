@@ -1,7 +1,7 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
-import Button from '@enact/sandstone/Button';
-import {Header, HeaderBase} from '@enact/sandstone/Panels';
-import Steps from '@enact/sandstone/Steps';
+import Button from '@enact/lune/Button';
+import {Header, HeaderBase} from '@enact/lune/Panels';
+import Steps from '@enact/lune/Steps';
 import clone from 'ramda/src/clone';
 
 const Config = mergeComponentMetadata('Header', HeaderBase, Header);
@@ -14,7 +14,7 @@ export const inputData = {
 	shortRtlTitle: 'غينيا واستمر',
 	shortRtlSubtitle: 'غينيا واستمر',
 
-	longTitle: 'Core, The building blocks of an Enact application. Sandstone, our touch-centric UI library.',
+	longTitle: 'Core, The building blocks of an Enact application. Lune, our touch-centric UI library.',
 	longSubtitle: 'An app development framework built atop React that’s easy to use, performant and customizable. The goal of Enact is to provide the building blocks for creating robust and maintainable applications.',
 	longRtlTitle: 'هذا النص طويل ولكن ليس طويلاً. بالتأكيد ليست قصيرة جدا ، على الرغم من.'
 };

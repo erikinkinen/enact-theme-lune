@@ -26,7 +26,7 @@ const defaultConfig = {
 	emitSpotlightEvents: null
 };
 
-// Adds sandstone-specific slider behaviors
+// Adds lune-specific slider behaviors
 // * aria-valuetext handling
 //   * use aria-valuetext when set
 //   * defaults to current value

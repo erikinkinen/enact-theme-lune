@@ -1,4 +1,4 @@
-import Item from '@enact/sandstone/Item';
+import Item from '@enact/lune/Item';
 import {Component} from 'react';
 
 import CommonView from '../../components/CommonView';

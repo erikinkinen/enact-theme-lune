@@ -1,6 +1,6 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {text, select} from '@enact/storybook-utils/addons/controls';
-import ActionGuide, {ActionGuideBase} from '@enact/sandstone/ActionGuide';
+import ActionGuide, {ActionGuideBase} from '@enact/lune/ActionGuide';
 
 // import icons
 import docs from '../../images/icon-enact-docs.png';
@@ -13,7 +13,7 @@ ActionGuide.displayName = 'ActionGuide';
 const Config = mergeComponentMetadata('ActionGuide', ActionGuideBase, ActionGuide);
 
 export default {
-	title: 'Sandstone/ActionGuide',
+	title: 'Lune/ActionGuide',
 	component: 'ActionGuide'
 };
 

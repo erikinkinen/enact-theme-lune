@@ -1,4 +1,4 @@
-import Item from '@enact/sandstone/Item';
+import Item from '@enact/lune/Item';
 import {VoiceControlDecorator} from '@enact/webos/speech';
 import {Component} from 'react';
 

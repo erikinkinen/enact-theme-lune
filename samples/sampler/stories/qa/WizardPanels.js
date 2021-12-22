@@ -1,12 +1,12 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, number, select} from '@enact/storybook-utils/addons/controls';
-import BodyText from '@enact/sandstone/BodyText';
-import Button from '@enact/sandstone/Button';
-import Icon from '@enact/sandstone/Icon';
-import Item from '@enact/sandstone/Item';
-import {Scroller} from '@enact/sandstone/Scroller';
-import WizardPanels, {Panel, WizardPanelsBase} from '@enact/sandstone/WizardPanels';
+import BodyText from '@enact/lune/BodyText';
+import Button from '@enact/lune/Button';
+import Icon from '@enact/lune/Icon';
+import Item from '@enact/lune/Item';
+import {Scroller} from '@enact/lune/Scroller';
+import WizardPanels, {Panel, WizardPanelsBase} from '@enact/lune/WizardPanels';
 import PropTypes from 'prop-types';
 import {Component, PureComponent} from 'react';
 
@@ -21,13 +21,13 @@ const inputData = {
 	prevString: 'Prev',
 	nextString: 'Next',
 	longString:
-	'Core, The building blocks of an Enact application. Sandstone, our touch-centric UI library.',
+	'Core, The building blocks of an Enact application. Lune, our touch-centric UI library.',
 	longerString:
 	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus faucibus ornare suspendisse sed nisi. Vestibulum sed arcu non odio euismod lacinia at quis. Elementum eu facilisis sed odio morbi quis commodo. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Neque ornare aenean euismod elementum. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci. Tincidunt augue interdum velit euismod. Nunc sed augue lacus viverra vitae congue eu consequat. Ultricies integer quis auctor elit sed vulputate. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit.'
 };
 
 export default {
-	title: 'Sandstone/WizardPanels',
+	title: 'Lune/WizardPanels',
 	component: 'WizardPanels'
 };
 

@@ -1,12 +1,12 @@
 import kind from '@enact/core/kind';
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {boolean, number, object, select, text} from '@enact/storybook-utils/addons/controls';
-import BodyText from '@enact/sandstone/BodyText';
-import Button from '@enact/sandstone/Button';
-import Heading from '@enact/sandstone/Heading';
-import Input from '@enact/sandstone/Input';
-import Scroller from '@enact/sandstone/Scroller';
-import TooltipDecorator, {Tooltip, TooltipBase} from '@enact/sandstone/TooltipDecorator';
+import BodyText from '@enact/lune/BodyText';
+import Button from '@enact/lune/Button';
+import Heading from '@enact/lune/Heading';
+import Input from '@enact/lune/Input';
+import Scroller from '@enact/lune/Scroller';
+import TooltipDecorator, {Tooltip, TooltipBase} from '@enact/lune/TooltipDecorator';
 import Layout, {Cell, Row} from '@enact/ui/Layout';
 import ri from '@enact/ui/resolution';
 import PropTypes from 'prop-types';
@@ -266,7 +266,7 @@ class TooltipFollow extends Component {
 }
 
 export default {
-	title: 'Sandstone/Tooltip',
+	title: 'Lune/Tooltip',
 	component: 'Tooltip'
 };
 

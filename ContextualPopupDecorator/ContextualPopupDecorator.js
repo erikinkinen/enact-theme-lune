@@ -1,7 +1,7 @@
 /**
- * A higher-order component to add a Sandstone styled popup to a component.
+ * A higher-order component to add a Lune styled popup to a component.
  *
- * @module sandstone/ContextualPopupDecorator
+ * @module lune/ContextualPopupDecorator
  * @exports	ContextualPopup
  * @exports	ContextualPopupDecorator
  */
@@ -35,11 +35,11 @@ const PositionToDirection = {
 };
 
 /**
- * Default config for {@link sandstone/ContextualPopupDecorator.ContextualPopupDecorator}
+ * Default config for {@link lune/ContextualPopupDecorator.ContextualPopupDecorator}
  *
  * @type {Object}
  * @hocconfig
- * @memberof sandstone/ContextualPopupDecorator.ContextualPopupDecorator
+ * @memberof lune/ContextualPopupDecorator.ContextualPopupDecorator
  */
 const defaultConfig = {
 	/**
@@ -47,7 +47,7 @@ const defaultConfig = {
 	 *
 	 * @type {Boolean}
 	 * @default false
-	 * @memberof sandstone/ContextualPopupDecorator.ContextualPopupDecorator.defaultConfig
+	 * @memberof lune/ContextualPopupDecorator.ContextualPopupDecorator.defaultConfig
 	 * @public
 	 */
 	noArrow: false,
@@ -55,10 +55,10 @@ const defaultConfig = {
 	/**
 	 * Disables passing the `skin` prop to the wrapped component.
 	 *
-	 * @see {@link sandstone/Skinnable.Skinnable.skin}
+	 * @see {@link lune/Skinnable.Skinnable.skin}
 	 * @type {Boolean}
 	 * @default false
-	 * @memberof sandstone/ContextualPopupDecorator.ContextualPopupDecorator.defaultConfig
+	 * @memberof lune/ContextualPopupDecorator.ContextualPopupDecorator.defaultConfig
 	 * @public
 	 */
 	noSkin: false,
@@ -69,7 +69,7 @@ const defaultConfig = {
 	 *
 	 * @type {String}
 	 * @default 'selected'
-	 * @memberof sandstone/ContextualPopupDecorator.ContextualPopupDecorator.defaultConfig
+	 * @memberof lune/ContextualPopupDecorator.ContextualPopupDecorator.defaultConfig
 	 * @public
 	 */
 	openProp: 'selected'
@@ -86,10 +86,10 @@ const Decorator = hoc(defaultConfig, (config, Wrapped) => {
 	return class extends Component {
 		static displayName = 'ContextualPopupDecorator';
 
-		static propTypes = /** @lends sandstone/ContextualPopupDecorator.ContextualPopupDecorator.prototype */ {
+		static propTypes = /** @lends lune/ContextualPopupDecorator.ContextualPopupDecorator.prototype */ {
 			/**
 			 * The component rendered within the
-			 * [ContextualPopup]{@link sandstone/ContextualPopupDecorator.ContextualPopup}.
+			 * [ContextualPopup]{@link lune/ContextualPopupDecorator.ContextualPopup}.
 			 *
 			 * @type {Component}
 			 * @required
@@ -100,7 +100,7 @@ const Decorator = hoc(defaultConfig, (config, Wrapped) => {
 			/**
 			 * Limits the range of voice control to the popup.
 			 *
-			 * @memberof sandstone/ContextualPopupDecorator.ContextualPopupDecorator.prototype
+			 * @memberof lune/ContextualPopupDecorator.ContextualPopupDecorator.prototype
 			 * @type {Boolean}
 			 * @default true
 			 * @public
@@ -168,7 +168,7 @@ const Decorator = hoc(defaultConfig, (config, Wrapped) => {
 
 			/**
 			 * CSS class name to pass to the
-			 * [ContextualPopup]{@link sandstone/ContextualPopupDecorator.ContextualPopup}.
+			 * [ContextualPopup]{@link lune/ContextualPopupDecorator.ContextualPopup}.
 			 *
 			 * This is commonly used to set width and height of the popup.
 			 *
@@ -227,10 +227,10 @@ const Decorator = hoc(defaultConfig, (config, Wrapped) => {
 			 * The current skin for this component.
 			 *
 			 * When `noSkin` is set on the config object, `skin` will only be applied to the
-			 * [ContextualPopup]{@link sandstone/ContextualPopupDecorator.ContextualPopup} and not
+			 * [ContextualPopup]{@link lune/ContextualPopupDecorator.ContextualPopup} and not
 			 * to the popup's activator component.
 			 *
-			 * @see {@link sandstone/Skinnable.Skinnable.skin}
+			 * @see {@link lune/Skinnable.Skinnable.skin}
 			 * @type {String}
 			 * @public
 			 */
@@ -552,7 +552,7 @@ const Decorator = hoc(defaultConfig, (config, Wrapped) => {
 		 * fit in the specified direction, it will automatically flip to the opposite direction.
 		 *
 		 * @method
-		 * @memberof sandstone/ContextualPopupDecorator.ContextualPopupDecorator.prototype
+		 * @memberof lune/ContextualPopupDecorator.ContextualPopupDecorator.prototype
 		 * @public
 		 * @returns {undefined}
 		 */
@@ -766,7 +766,7 @@ const Decorator = hoc(defaultConfig, (config, Wrapped) => {
 
 /**
  * Adds support for positioning a
- * [ContextualPopup]{@link sandstone/ContextualPopupDecorator.ContextualPopup} relative to the
+ * [ContextualPopup]{@link lune/ContextualPopupDecorator.ContextualPopup} relative to the
  * wrapped component.
  *
  * `ContextualPopupDecorator` may be used to show additional settings or actions rendered within a
@@ -785,7 +785,7 @@ const Decorator = hoc(defaultConfig, (config, Wrapped) => {
  * ```
  *
  * @hoc
- * @memberof sandstone/ContextualPopupDecorator
+ * @memberof lune/ContextualPopupDecorator
  * @public
  */
 const ContextualPopupDecorator = compose(

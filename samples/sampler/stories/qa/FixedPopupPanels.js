@@ -5,17 +5,17 @@ import {I18nContextDecorator} from '@enact/i18n/I18nDecorator';
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, select} from '@enact/storybook-utils/addons/controls';
-import BodyText from '@enact/sandstone/BodyText';
-import Button from '@enact/sandstone/Button';
-import {FixedPopupPanels, Panel, Header} from '@enact/sandstone/FixedPopupPanels';
-import Dropdown from '@enact/sandstone/Dropdown';
-import Icon from '@enact/sandstone/Icon';
-import Input from '@enact/sandstone/Input';
-import Item from '@enact/sandstone/Item';
-import Popup from '@enact/sandstone/Popup';
-import Scroller from '@enact/sandstone/Scroller';
-import Slider from '@enact/sandstone/Slider';
-import {VirtualList} from '@enact/sandstone/VirtualList';
+import BodyText from '@enact/lune/BodyText';
+import Button from '@enact/lune/Button';
+import {FixedPopupPanels, Panel, Header} from '@enact/lune/FixedPopupPanels';
+import Dropdown from '@enact/lune/Dropdown';
+import Icon from '@enact/lune/Icon';
+import Input from '@enact/lune/Input';
+import Item from '@enact/lune/Item';
+import Popup from '@enact/lune/Popup';
+import Scroller from '@enact/lune/Scroller';
+import Slider from '@enact/lune/Slider';
+import {VirtualList} from '@enact/lune/VirtualList';
 import Spotlight from '@enact/spotlight';
 import Pause from '@enact/spotlight/Pause';
 import {Column, Cell} from '@enact/ui/Layout';
@@ -80,7 +80,7 @@ const itemRenderer = ({index, ...rest}) => {
 };
 
 export default {
-	title: 'Sandstone/FixedPopupPanels',
+	title: 'Lune/FixedPopupPanels',
 	component: 'FixedPopupPanels'
 };
 

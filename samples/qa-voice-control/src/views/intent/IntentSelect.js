@@ -1,6 +1,6 @@
-import Button from '@enact/sandstone/Button';
-import Heading from '@enact/sandstone/Heading';
-import Item from '@enact/sandstone/Item';
+import Button from '@enact/lune/Button';
+import Heading from '@enact/lune/Heading';
+import Item from '@enact/lune/Item';
 import {Component} from 'react';
 
 import CommonView from '../../components/CommonView';

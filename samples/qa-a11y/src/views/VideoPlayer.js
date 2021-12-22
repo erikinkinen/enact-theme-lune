@@ -1,8 +1,8 @@
-import Button from '@enact/sandstone/Button';
-import ImageItem from '@enact/sandstone/ImageItem';
-import {MediaControls} from '@enact/sandstone/MediaPlayer';
-import VideoPlayer from '@enact/sandstone/VideoPlayer';
-import {VirtualGridList} from '@enact/sandstone/VirtualList';
+import Button from '@enact/lune/Button';
+import ImageItem from '@enact/lune/ImageItem';
+import {MediaControls} from '@enact/lune/MediaPlayer';
+import VideoPlayer from '@enact/lune/VideoPlayer';
+import {VirtualGridList} from '@enact/lune/VirtualList';
 import ri from '@enact/ui/resolution';
 
 const items = [];

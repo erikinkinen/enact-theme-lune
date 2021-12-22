@@ -1,4 +1,4 @@
-import {Panel} from '@enact/sandstone/Panels';
+import {Panel} from '@enact/lune/Panels';
 import {Component} from 'react';
 
 import ImageList from '../components/ImageList';

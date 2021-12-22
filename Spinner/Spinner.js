@@ -1,12 +1,12 @@
 /**
- * Provides Sandstone-themed indeterminate progress indicator (spinner) components and behaviors.
+ * Provides Lune-themed indeterminate progress indicator (spinner) components and behaviors.
  *
  * Used for indicating to the user that something is busy and interaction is temporarily suspended.
  *
  * @example
  * <Spinner>Loading message...</Spinner>
  *
- * @module sandstone/Spinner
+ * @module lune/Spinner
  * @exports Spinner
  * @exports SpinnerBase
  * @exports SpinnerDecorator
@@ -31,7 +31,7 @@ import componentCss from './Spinner.module.less';
  * A component that shows spinning balls, with optional text as children.
  *
  * @class SpinnerCore
- * @memberof sandstone/Spinner
+ * @memberof lune/Spinner
  * @ui
  * @private
  */
@@ -81,7 +81,7 @@ const SpinnerCore = kind({
  * The base component, defining all of the properties.
  *
  * @class SpinnerBase
- * @memberof sandstone/Spinner
+ * @memberof lune/Spinner
  * @extends ui/Spinner.SpinnerBase
  * @ui
  * @public
@@ -89,7 +89,7 @@ const SpinnerCore = kind({
 const SpinnerBase = kind({
 	name: 'Spinner',
 
-	propTypes: /** @lends sandstone/Spinner.SpinnerBase.prototype */ {
+	propTypes: /** @lends lune/Spinner.SpinnerBase.prototype */ {
 		/**
 		 * Customizes the component by mapping the supplied collection of CSS class names to the
 		 * corresponding internal elements and states of this component.
@@ -108,7 +108,7 @@ const SpinnerBase = kind({
 		 * Customize the size of this component.
 		 *
 		 * Recommended usage is "medium" (default) for standalone and popup scenarios, while "small"
-		 * is best suited for use inside other elements, like {@link sandstone/Item.Item}.
+		 * is best suited for use inside other elements, like {@link lune/Item.Item}.
 		 *
 		 * @type {('medium'|'small')}
 		 * @default 'medium'
@@ -165,14 +165,14 @@ const SpinnerBase = kind({
  * `'container'`. Blocking spotlight within the container is up to app implementation.
  *
  * @hoc
- * @memberof sandstone/Spinner
+ * @memberof lune/Spinner
  * @private
  */
 const SpinnerSpotlightDecorator = hoc((config, Wrapped) => {
 	return class extends Component {
 		static displayName = 'SpinnerSpotlightDecorator';
 
-		static propTypes = /** @lends sandstone/Spinner.Spinner.prototype */ {
+		static propTypes = /** @lends lune/Spinner.Spinner.prototype */ {
 			/**
 			 * Determines how far the click-blocking should extend.
 			 *
@@ -219,11 +219,11 @@ const SpinnerSpotlightDecorator = hoc((config, Wrapped) => {
 });
 
 /**
- * Sandstone-specific Spinner behaviors to apply to [Spinner]{@link sandstone/Spinner.Spinner}.
+ * Lune-specific Spinner behaviors to apply to [Spinner]{@link lune/Spinner.Spinner}.
  *
  * @hoc
- * @memberof sandstone/Spinner
- * @mixes sandstone/Skinnable.Skinnable
+ * @memberof lune/Spinner
+ * @mixes lune/Skinnable.Skinnable
  * @public
  */
 const SpinnerDecorator = compose(
@@ -233,12 +233,12 @@ const SpinnerDecorator = compose(
 );
 
 /**
- * A Sandstone-styled Spinner.
+ * A Lune-styled Spinner.
  *
  * @class Spinner
- * @memberof sandstone/Spinner
- * @extends sandstone/Spinner.SpinnerBase
- * @mixes sandstone/Spinner.SpinnerDecorator
+ * @memberof lune/Spinner
+ * @extends lune/Spinner.SpinnerBase
+ * @mixes lune/Spinner.SpinnerDecorator
  * @ui
  * @public
  */

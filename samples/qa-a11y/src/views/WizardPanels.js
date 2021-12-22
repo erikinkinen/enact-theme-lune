@@ -1,9 +1,9 @@
-import BodyText from '@enact/sandstone/BodyText';
-import Button from '@enact/sandstone/Button';
-import CheckboxItem from '@enact/sandstone/CheckboxItem';
-import Icon from '@enact/sandstone/Icon';
-import Item from '@enact/sandstone/Item';
-import WizardPanels from '@enact/sandstone/WizardPanels';
+import BodyText from '@enact/lune/BodyText';
+import Button from '@enact/lune/Button';
+import CheckboxItem from '@enact/lune/CheckboxItem';
+import Icon from '@enact/lune/Icon';
+import Item from '@enact/lune/Item';
+import WizardPanels from '@enact/lune/WizardPanels';
 import {Component} from 'react';
 
 class WizardPanelsView extends Component {

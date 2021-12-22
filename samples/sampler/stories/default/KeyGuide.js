@@ -1,6 +1,6 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {boolean, range, select, text} from '@enact/storybook-utils/addons/controls';
-import KeyGuide from '@enact/sandstone/KeyGuide';
+import KeyGuide from '@enact/lune/KeyGuide';
 
 const prop = {
 	icon: ['red', 'green', 'yellow', 'blue', 'gear', 'trash', 'search']
@@ -10,7 +10,7 @@ const Config = mergeComponentMetadata('KeyGuide', KeyGuide);
 KeyGuide.displayName = 'KeyGuide';
 
 export default {
-	title: 'Sandstone/KeyGuide',
+	title: 'Lune/KeyGuide',
 	component: 'KeyGuide'
 };
 

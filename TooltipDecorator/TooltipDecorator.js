@@ -1,9 +1,9 @@
 /* global MutationObserver ResizeObserver */
 
 /**
- * Sandstone styled tooltip components.
+ * Lune styled tooltip components.
  *
- * @module sandstone/TooltipDecorator
+ * @module lune/TooltipDecorator
  * @exports Tooltip
  * @exports TooltipBase
  * @exports TooltipDecorator
@@ -24,9 +24,9 @@ import {adjustDirection, adjustAnchor, calcOverflow, getLabelOffset, getPosition
 let currentTooltip; // needed to know whether or not we should stop a showing job when unmounting
 
 /**
- * Default config for [TooltipDecorator]{@link sandstone/TooltipDecorator.TooltipDecorator}
+ * Default config for [TooltipDecorator]{@link lune/TooltipDecorator.TooltipDecorator}
  *
- * @memberof sandstone/TooltipDecorator.TooltipDecorator
+ * @memberof lune/TooltipDecorator.TooltipDecorator
  * @hocconfig
  */
 const defaultConfig = {
@@ -35,12 +35,12 @@ const defaultConfig = {
 	 * flipping to an alternate orientation or adjusting its offset to remain on screen.
 	 * The default of 48 is derived from a standard 24px screen-keepout size plus the standard
 	 * Spotlight-outset (24px) margin/padding value which keeps elements and text aligned inside a
-	 * [Panel]{@link sandstone/Panels.Panel}. Note: This value will be scaled according to the
+	 * [Panel]{@link lune/Panels.Panel}. Note: This value will be scaled according to the
 	 * resolution.
 	 *
 	 * @type {Number}
 	 * @default 24
-	 * @memberof sandstone/TooltipDecorator.TooltipDecorator.defaultConfig
+	 * @memberof lune/TooltipDecorator.TooltipDecorator.defaultConfig
 	 */
 	screenEdgeKeepout: (24 + 24),
 
@@ -53,13 +53,13 @@ const defaultConfig = {
 	 *
 	 * @type {String}
 	 * @default 'children'
-	 * @memberof sandstone/TooltipDecorator.TooltipDecorator.defaultConfig
+	 * @memberof lune/TooltipDecorator.TooltipDecorator.defaultConfig
 	 */
 	tooltipDestinationProp: 'children'
 };
 
 /**
- * A higher-order component which positions [Tooltip]{@link sandstone/TooltipDecorator.Tooltip} in
+ * A higher-order component which positions [Tooltip]{@link lune/TooltipDecorator.Tooltip} in
  * relation to the wrapped component.
  *
  * The tooltip is automatically displayed when the decorated component is focused after a set
@@ -70,7 +70,7 @@ const defaultConfig = {
  * Note that the direction of tooltip will be flipped horizontally in RTL locales.
  *
  * @class TooltipDecorator
- * @memberof sandstone/TooltipDecorator
+ * @memberof lune/TooltipDecorator
  * @hoc
  * @public
  */
@@ -81,7 +81,7 @@ const TooltipDecorator = hoc(defaultConfig, (config, Wrapped) => {
 	const Decorator = class extends Component {
 		static displayName = 'TooltipDecorator';
 
-		static propTypes = /** @lends sandstone/TooltipDecorator.TooltipDecorator.prototype */ {
+		static propTypes = /** @lends lune/TooltipDecorator.TooltipDecorator.prototype */ {
 			/**
 			 * Disables the component but does not affect tooltip operation.
 			 *
@@ -111,7 +111,7 @@ const TooltipDecorator = hoc(defaultConfig, (config, Wrapped) => {
 			/**
 			 * Allows the tooltip to marquee.
 			 *
-			 * Specifying a [`tooltipWidth`]{@link sandstone/TooltipDecorator.TooltipDecorator#tooltipWidth}
+			 * Specifying a [`tooltipWidth`]{@link lune/TooltipDecorator.TooltipDecorator#tooltipWidth}
 			 * restrects the marquee to that size.
 			 *
 			 * @type {Boolean}

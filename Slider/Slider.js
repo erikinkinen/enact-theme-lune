@@ -1,5 +1,5 @@
 /**
- * Provides Sandstone-themed slider components and behaviors.
+ * Provides Lune-themed slider components and behaviors.
  *
  * @example
  * <Slider
@@ -10,7 +10,7 @@
  *   tooltip
  * />
  *
- * @module sandstone/Slider
+ * @module lune/Slider
  * @exports Slider
  * @exports SliderBase
  * @exports SliderDecorator
@@ -54,7 +54,7 @@ import componentCss from './Slider.module.less';
  * @class SliderBase
  * @extends ui/Slider.SliderBase
  * @omit progressBarComponent
- * @memberof sandstone/Slider
+ * @memberof lune/Slider
  * @ui
  * @public
  */
@@ -184,7 +184,7 @@ const SliderBase = (props) => {
 
 SliderBase.displayName = 'Slider';
 
-SliderBase.propTypes = /** @lends sandstone/Slider.SliderBase.prototype */ {
+SliderBase.propTypes = /** @lends lune/Slider.SliderBase.prototype */ {
 	/**
 	 * Activates the component when selected so that it may be manipulated via the directional
 	 * input keys.
@@ -266,7 +266,7 @@ SliderBase.propTypes = /** @lends sandstone/Slider.SliderBase.prototype */ {
 	 * The maximum value of the slider.
 	 *
 	 * The range between `min` and `max` should be evenly divisible by
-	 * [step]{@link sandstone/Slider.SliderBase.step}.
+	 * [step]{@link lune/Slider.SliderBase.step}.
 	 *
 	 * @type {Number}
 	 * @default 100
@@ -278,7 +278,7 @@ SliderBase.propTypes = /** @lends sandstone/Slider.SliderBase.prototype */ {
 	 * The minimum value of the slider.
 	 *
 	 * The range between `min` and `max` should be evenly divisible by
-	 * [step]{@link sandstone/Slider.SliderBase.step}.
+	 * [step]{@link lune/Slider.SliderBase.step}.
 	 *
 	 * @type {Number}
 	 * @default 0
@@ -351,7 +351,7 @@ SliderBase.propTypes = /** @lends sandstone/Slider.SliderBase.prototype */ {
 	 * Enables the built-in tooltip
 	 *
 	 * To customize the tooltip, pass either a custom tooltip component or an instance of
-	 * [SliderTooltip]{@link sandstone/Slider.SliderTooltip} with additional props configured.
+	 * [SliderTooltip]{@link lune/Slider.SliderTooltip} with additional props configured.
 	 *
 	 * ```
 	 * <Slider
@@ -419,13 +419,13 @@ SliderBase.defaultProps = {
 };
 
 /**
- * Sandstone-specific slider behaviors to apply to [SliderBase]{@link sandstone/Slider.SliderBase}.
+ * Lune-specific slider behaviors to apply to [SliderBase]{@link lune/Slider.SliderBase}.
  *
  * @hoc
- * @memberof sandstone/Slider
+ * @memberof lune/Slider
  * @mixes ui/Changeable.Changeable
  * @mixes spotlight/Spottable.Spottable
- * @mixes sandstone/Skinnable.Skinnable
+ * @mixes lune/Skinnable.Skinnable
  * @mixes ui/Slottable.Slottable
  * @mixes ui/Slider.SliderDecorator
  * @public
@@ -440,8 +440,8 @@ const SliderDecorator = compose(
 );
 
 /**
- * Slider input with Sandstone styling, [`Spottable`]{@link spotlight/Spottable.Spottable},
- * [Touchable]{@link ui/Touchable} and [`SliderDecorator`]{@link sandstone/Slider.SliderDecorator}
+ * Slider input with Lune styling, [`Spottable`]{@link spotlight/Spottable.Spottable},
+ * [Touchable]{@link ui/Touchable} and [`SliderDecorator`]{@link lune/Slider.SliderDecorator}
  * applied.
  *
  * By default, `Slider` maintains the state of its `value` property. Supply the `defaultValue`
@@ -450,8 +450,8 @@ const SliderDecorator = compose(
  * events.
  *
  * @class Slider
- * @memberof sandstone/Slider
- * @mixes sandstone/Slider.SliderDecorator
+ * @memberof lune/Slider
+ * @mixes lune/Slider.SliderDecorator
  * @ui
  * @public
  */
@@ -463,7 +463,7 @@ const SliderDecorator = compose(
  * the parent controls the value of the slider directly through the props.
  *
  * @name aria-valuetext
- * @memberof sandstone/Slider.Slider.prototype
+ * @memberof lune/Slider.Slider.prototype
  * @type {String|Number}
  * @public
  */
@@ -471,13 +471,13 @@ const SliderDecorator = compose(
 const Slider = SliderDecorator(SliderBase);
 
 /**
- * A [Tooltip]{@link sandstone/TooltipDecorator.Tooltip} specifically adapted for use with
- * [ProgressBar]{@link sandstone/ProgressBar.ProgressBar} or
- * [Slider]{@link sandstone/Slider.Slider}.
+ * A [Tooltip]{@link lune/TooltipDecorator.Tooltip} specifically adapted for use with
+ * [ProgressBar]{@link lune/ProgressBar.ProgressBar} or
+ * [Slider]{@link lune/Slider.Slider}.
  *
- * @see {@link sandstone/ProgressBar.ProgressBarTooltip}
+ * @see {@link lune/ProgressBar.ProgressBarTooltip}
  * @class SliderTooltip
- * @memberof sandstone/Slider
+ * @memberof lune/Slider
  * @ui
  * @public
  */

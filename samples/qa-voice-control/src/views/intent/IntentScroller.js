@@ -1,5 +1,5 @@
-import Item from '@enact/sandstone/Item';
-import Scroller from '@enact/sandstone/Scroller';
+import Item from '@enact/lune/Item';
+import Scroller from '@enact/lune/Scroller';
 import {scaleToRem} from '@enact/ui/resolution';
 import Repeater from '@enact/ui/Repeater';
 import {Component} from 'react';

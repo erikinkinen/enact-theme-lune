@@ -7,17 +7,17 @@ import Skinnable from '../Skinnable';
 import css from './ContextualPopup.module.less';
 
 /**
- * An SVG arrow for {@link sandstone/ContextualPopupDecorator/ContextualPopup.ContextualPopup}.
+ * An SVG arrow for {@link lune/ContextualPopupDecorator/ContextualPopup.ContextualPopup}.
  *
  * @class ContextualPopupArrow
- * @memberof sandstone/ContextualPopupDecorator
+ * @memberof lune/ContextualPopupDecorator
  * @ui
  * @private
  */
 const ContextualPopupArrow = kind({
 	name: 'ContextualPopupArrow',
 
-	propTypes: /** @lends sandstone/ContextualPopupDecorator.ContextualPopupArrow.prototype */ {
+	propTypes: /** @lends lune/ContextualPopupDecorator.ContextualPopupArrow.prototype */ {
 		direction: PropTypes.oneOf(['above', 'below', 'left', 'right'])
 	},
 
@@ -45,22 +45,22 @@ const ContextualPopupRoot = Skinnable('div');
 
 /**
  * A popup component used by
- * [ContextualPopupDecorator]{@link sandstone/ContextualPopupDecorator.ContextualPopupDecorator} to
+ * [ContextualPopupDecorator]{@link lune/ContextualPopupDecorator.ContextualPopupDecorator} to
  * wrap its
- * [popupComponent]{@link sandstone/ContextualPopupDecorator.ContextualPopupDecorator.popupComponent}.
+ * [popupComponent]{@link lune/ContextualPopupDecorator.ContextualPopupDecorator.popupComponent}.
  *
  * `ContextualPopup` is usually not used directly but is made available for unique application use
  * cases.
  *
  * @class ContextualPopup
- * @memberof sandstone/ContextualPopupDecorator
+ * @memberof lune/ContextualPopupDecorator
  * @ui
  * @public
  */
 const ContextualPopupBase = kind({
 	name: 'ContextualPopup',
 
-	propTypes: /** @lends sandstone/ContextualPopupDecorator.ContextualPopup.prototype */ {
+	propTypes: /** @lends lune/ContextualPopupDecorator.ContextualPopup.prototype */ {
 		/**
 		 * The contents of the popup.
 		 *

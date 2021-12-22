@@ -13,8 +13,8 @@ import css from './FlexiblePopupPanels.module.less';
  * [`slots`]{@link ui/Slottable.Slottable} for components.
  *
  * @class Header
- * @extends sandstone/Panels.Header
- * @memberof sandstone/FlexiblePopupPanels
+ * @extends lune/Panels.Header
+ * @memberof lune/FlexiblePopupPanels
  * @ui
  * @public
  */
@@ -23,7 +23,7 @@ const HeaderBase = kind({
 
 	contextType: PanelsStateContext,
 
-	propTypes: /** @lends sandstone/FlexiblePopupPanels.Header.prototype */ {
+	propTypes: /** @lends lune/FlexiblePopupPanels.Header.prototype */ {
 		/**
 		 * Hint string read when focusing the application close button.
 		 *

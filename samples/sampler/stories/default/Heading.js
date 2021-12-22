@@ -1,7 +1,7 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {boolean, select, text} from '@enact/storybook-utils/addons/controls';
-import BodyText from '@enact/sandstone/BodyText';
-import Heading, {HeadingBase} from '@enact/sandstone/Heading';
+import BodyText from '@enact/lune/BodyText';
+import Heading, {HeadingBase} from '@enact/lune/Heading';
 import UiHeading from '@enact/ui/Heading';
 import {Fragment} from 'react';
 
@@ -16,7 +16,7 @@ const prop = {
 };
 
 export default {
-	title: 'Sandstone/Heading',
+	title: 'Lune/Heading',
 	component: 'Heading'
 };
 

@@ -1,12 +1,12 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, number, select} from '@enact/storybook-utils/addons/controls';
-import BodyText from '@enact/sandstone/BodyText';
-import Button from '@enact/sandstone/Button';
-import Icon from '@enact/sandstone/Icon';
-import Item from '@enact/sandstone/Item';
-import {Scroller} from '@enact/sandstone/Scroller';
-import WizardPanels, {WizardPanelsBase} from '@enact/sandstone/WizardPanels';
+import BodyText from '@enact/lune/BodyText';
+import Button from '@enact/lune/Button';
+import Icon from '@enact/lune/Icon';
+import Item from '@enact/lune/Item';
+import {Scroller} from '@enact/lune/Scroller';
+import WizardPanels, {WizardPanelsBase} from '@enact/lune/WizardPanels';
 
 WizardPanels.displayName = 'WizardPanels';
 const Config = mergeComponentMetadata('WizardPanels', WizardPanelsBase, WizardPanels);
@@ -16,7 +16,7 @@ const propOptions = {
 };
 
 export default {
-	title: 'Sandstone/WizardPanels',
+	title: 'Lune/WizardPanels',
 	component: 'WizardPanels'
 };
 

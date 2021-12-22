@@ -1,10 +1,10 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, select, text} from '@enact/storybook-utils/addons/controls';
-import Alert, {AlertBase, AlertImage} from '@enact/sandstone/Alert';
-import Button from '@enact/sandstone/Button';
-import CheckboxItem from '@enact/sandstone/CheckboxItem';
-import ProgressBar from '@enact/sandstone/ProgressBar';
+import Alert, {AlertBase, AlertImage} from '@enact/lune/Alert';
+import Button from '@enact/lune/Button';
+import CheckboxItem from '@enact/lune/CheckboxItem';
+import ProgressBar from '@enact/lune/ProgressBar';
 
 Alert.displayName = 'Alert';
 AlertImage.displayName = 'AlertImage';
@@ -13,13 +13,13 @@ const ImageConfig = mergeComponentMetadata('AlertImage', AlertImage);
 
 const inputData = {
 	longTitle:
-	'Core, The building blocks of an Enact application. Sandstone, our touch-centric UI library.',
+	'Core, The building blocks of an Enact application. Lune, our touch-centric UI library.',
 	longChildren:
 	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tellus in velit ornare commodo. Nam dignissim fringilla nulla, sit amet hendrerit sapien laoreet quis. Praesent quis tellus non diam viverra feugiat. In quis mattis purus, quis tristique mi. Mauris vitae tellus tempus, convallis ligula id, laoreet eros. Nullam eu tempus odio, non mollis tellus. Phasellus vitae iaculis nisl. Sed ipsum felis, suscipit vel est quis, interdum pretium dolor. Curabitur sit amet purus ac massa ullamcorper egestas ornare vel lectus. Nullam quis velit sed ex finibus cursus. Duis porttitor congue cursus.'
 };
 
 export default {
-	title: 'Sandstone/Alert',
+	title: 'Lune/Alert',
 	component: 'Alert'
 };
 

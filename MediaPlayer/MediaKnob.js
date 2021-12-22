@@ -3,10 +3,10 @@ import {Knob} from '@enact/ui/Slider';
 import PropTypes from 'prop-types';
 
 /**
- * Knob for the MediaSlider in {@link sandstone/MediaPlayer}.
+ * Knob for the MediaSlider in {@link lune/MediaPlayer}.
  *
  * @class MediaKnob
- * @memberof sandstone/MediaPlayer
+ * @memberof lune/MediaPlayer
  * @ui
  * @private
  */

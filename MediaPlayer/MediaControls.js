@@ -48,7 +48,7 @@ const animationDuration = 300;
  * A set of components for controlling media playback and rendering additional components.
  *
  * @class MediaControlsBase
- * @memberof sandstone/MediaPlayer
+ * @memberof lune/MediaPlayer
  * @ui
  * @private
  */
@@ -56,7 +56,7 @@ const MediaControlsBase = kind({
 	name: 'MediaControls',
 
 	// intentionally assigning these props to MediaControls instead of Base (which is private)
-	propTypes: /** @lends sandstone/MediaPlayer.MediaControls.prototype */ {
+	propTypes: /** @lends lune/MediaPlayer.MediaControls.prototype */ {
 		/**
 		 * DOM id for the component.
 		 *
@@ -93,8 +93,8 @@ const MediaControlsBase = kind({
 		bottomComponents: PropTypes.node,
 
 		/**
-		 * Jump backward [icon]{@link sandstone/Icon.Icon} name. Accepts any
-		 * [icon]{@link sandstone/Icon.Icon} component type.
+		 * Jump backward [icon]{@link lune/Icon.Icon} name. Accepts any
+		 * [icon]{@link lune/Icon.Icon} component type.
 		 *
 		 * @type {String}
 		 * @default 'jumpbackward'
@@ -111,8 +111,8 @@ const MediaControlsBase = kind({
 		jumpButtonsDisabled: PropTypes.bool,
 
 		/**
-		 * Jump forward [icon]{@link sandstone/Icon.Icon} name. Accepts any
-		 * [icon]{@link sandstone/Icon.Icon} component type.
+		 * Jump forward [icon]{@link lune/Icon.Icon} name. Accepts any
+		 * [icon]{@link lune/Icon.Icon} component type.
 		 *
 		 * @type {String}
 		 * @default 'jumpforward'
@@ -211,9 +211,9 @@ const MediaControlsBase = kind({
 
 		/**
 		 * A string which is sent to the `pause` icon of the player controls. This can be
-		 * anything that is accepted by [Icon]{@link sandstone/Icon.Icon}. This will be temporarily replaced by
-		 * the [playIcon]{@link sandstone/MediaPlayer.MediaControls.playIcon} when the
-		 * [paused]{@link sandstone/MediaPlayer.MediaControls.paused} boolean is `false`.
+		 * anything that is accepted by [Icon]{@link lune/Icon.Icon}. This will be temporarily replaced by
+		 * the [playIcon]{@link lune/MediaPlayer.MediaControls.playIcon} when the
+		 * [paused]{@link lune/MediaPlayer.MediaControls.paused} boolean is `false`.
 		 *
 		 * @type {String}
 		 * @default 'pause'
@@ -223,9 +223,9 @@ const MediaControlsBase = kind({
 
 		/**
 		 * A string which is sent to the `play` icon of the player controls. This can be
-		 * anything that is accepted by {@link sandstone/Icon.Icon}. This will be temporarily replaced by
-		 * the [pauseIcon]{@link sandstone/MediaPlayer.MediaControls.pauseIcon} when the
-		 * [paused]{@link sandstone/MediaPlayer.MediaControls.paused} boolean is `true`.
+		 * anything that is accepted by {@link lune/Icon.Icon}. This will be temporarily replaced by
+		 * the [pauseIcon]{@link lune/MediaPlayer.MediaControls.pauseIcon} when the
+		 * [paused]{@link lune/MediaPlayer.MediaControls.paused} boolean is `true`.
 		 *
 		 * @type {String}
 		 * @default 'play'
@@ -359,12 +359,12 @@ const MediaControlsBase = kind({
 });
 
 /**
- * Media control behaviors to apply to [MediaControlsBase]{@link sandstone/MediaPlayer.MediaControlsBase}.
+ * Media control behaviors to apply to [MediaControlsBase]{@link lune/MediaPlayer.MediaControlsBase}.
  * Provides built-in support for showing more components and key handling for basic playback
  * controls.
  *
  * @class MediaControlsDecorator
- * @memberof sandstone/MediaPlayer
+ * @memberof lune/MediaPlayer
  * @mixes ui/Slottable.Slottable
  * @hoc
  * @private
@@ -373,7 +373,7 @@ const MediaControlsDecorator = hoc((config, Wrapped) => {
 	class MediaControlsDecoratorHOC extends Component {
 		static displayName = 'MediaControlsDecorator';
 
-		static propTypes = /** @lends sandstone/MediaPlayer.MediaControlsDecorator.prototype */ {
+		static propTypes = /** @lends lune/MediaPlayer.MediaControlsDecorator.prototype */ {
 			/**
 			 * The label for the action guide.
 			 *
@@ -861,7 +861,7 @@ const handleCancel = (ev, {onClose}) => {
  * `MediaControls` when the user navigates down from the media buttons.
  *
  * @class MediaControls
- * @memberof sandstone/MediaPlayer
+ * @memberof lune/MediaPlayer
  * @mixes ui/Cancelable.Cancelable
  * @ui
  * @public

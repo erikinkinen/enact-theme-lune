@@ -16,14 +16,14 @@ import componentCss from './Panels.module.less';
  * Basic Panels component without a default [arranger]{@link ui/ViewManager.Arranger}
  *
  * @class Panels
- * @memberof sandstone/Panels
+ * @memberof lune/Panels
  * @ui
  * @public
  */
 const PanelsBase = kind({
 	name: 'Panels',
 
-	propTypes: /** @lends sandstone/Panels.Panels.prototype */ {
+	propTypes: /** @lends lune/Panels.Panels.prototype */ {
 		/**
 		 * Function that generates unique identifiers for Panel instances.
 		 *
@@ -63,7 +63,7 @@ const PanelsBase = kind({
 		backButtonBackgroundOpacity: PropTypes.oneOf(['opaque', 'transparent']),
 
 		/**
-		 * [`Panel`s]{@link sandstone/Panels.Panel} to be rendered
+		 * [`Panel`s]{@link lune/Panels.Panel} to be rendered
 		 *
 		 * @type {Node}
 		 * @public
@@ -107,7 +107,7 @@ const PanelsBase = kind({
 		 *
 		 * When defined, `Panels` will manage the presentation state of `Panel` instances in order
 		 * to restore it when returning to the `Panel`. See
-		 * [noSharedState]{@link sandstone/Panels.Panels.noSharedState} for more details on shared
+		 * [noSharedState]{@link lune/Panels.Panels.noSharedState} for more details on shared
 		 * state.
 		 *
 		 * @type {String}
@@ -156,7 +156,7 @@ const PanelsBase = kind({
 		 *
 		 * When `false`, each `Panel` will track the state of some framework components in order to
 		 * restore that state when the Panel is recreated. For example, the scroll position of a
-		 * `sandstone/Scroller` within a `Panel` will be saved and restored when returning to that
+		 * `lune/Scroller` within a `Panel` will be saved and restored when returning to that
 		 * `Panel`.
 		 *
 		 * This only applied when navigating "back" (to a lower index) to `Panel`. When navigating

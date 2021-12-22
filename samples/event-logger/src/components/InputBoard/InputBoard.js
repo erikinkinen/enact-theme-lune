@@ -1,4 +1,4 @@
-import SwitchItem from '@enact/sandstone/SwitchItem';
+import SwitchItem from '@enact/lune/SwitchItem';
 import PropTypes from 'prop-types';
 import {createRef, Component} from 'react';
 import {connect} from 'react-redux';

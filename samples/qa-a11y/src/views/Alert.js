@@ -1,5 +1,5 @@
-import Alert, {AlertImage} from '@enact/sandstone/Alert';
-import Button from '@enact/sandstone/Button';
+import Alert, {AlertImage} from '@enact/lune/Alert';
+import Button from '@enact/lune/Button';
 
 import Section from '../components/Section';
 import useArrayState from '../components/useArrayState';

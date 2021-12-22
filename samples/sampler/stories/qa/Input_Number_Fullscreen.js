@@ -1,6 +1,6 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {boolean, select, text} from '@enact/storybook-utils/addons/controls';
-import Input, {InputBase} from '@enact/sandstone/Input';
+import Input, {InputBase} from '@enact/lune/Input';
 
 import {buttons, propOptions, inputData} from './common/Input_Common';
 
@@ -8,7 +8,7 @@ Input.displayName = 'Input';
 const Config = mergeComponentMetadata('Input', InputBase, Input);
 
 export default {
-	title: 'Sandstone/Input/Number/Fullscreen',
+	title: 'Lune/Input/Number/Fullscreen',
 	component: 'InputField'
 };
 

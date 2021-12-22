@@ -1,8 +1,8 @@
-import Item from '@enact/sandstone/Item';
+import Item from '@enact/lune/Item';
 import PropTypes from 'prop-types';
 import {Component} from 'react';
 import ri from '@enact/ui/resolution';
-import {VirtualList} from '@enact/sandstone/VirtualList';
+import {VirtualList} from '@enact/lune/VirtualList';
 
 const
 	languages = [

@@ -1,16 +1,16 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {action} from '@enact/storybook-utils/addons/actions';
 import {boolean, select} from '@enact/storybook-utils/addons/controls';
-import BodyText from '@enact/sandstone/BodyText';
-import Button from '@enact/sandstone/Button';
-import Icon from '@enact/sandstone/Icon';
-import {Image} from '@enact/sandstone/Image';
-import ImageItem from '@enact/sandstone/ImageItem';
-import Item from '@enact/sandstone/Item';
-import {Header, Panels, Panel} from '@enact/sandstone/Panels';
-import {Scroller} from '@enact/sandstone/Scroller';
-import {TabLayout} from '@enact/sandstone/TabLayout';
-import {VirtualGridList} from '@enact/sandstone/VirtualList';
+import BodyText from '@enact/lune/BodyText';
+import Button from '@enact/lune/Button';
+import Icon from '@enact/lune/Icon';
+import {Image} from '@enact/lune/Image';
+import ImageItem from '@enact/lune/ImageItem';
+import Item from '@enact/lune/Item';
+import {Header, Panels, Panel} from '@enact/lune/Panels';
+import {Scroller} from '@enact/lune/Scroller';
+import {TabLayout} from '@enact/lune/TabLayout';
+import {VirtualGridList} from '@enact/lune/VirtualList';
 import ri from '@enact/ui/resolution';
 import {scale} from '@enact/ui/resolution';
 import {useState} from 'react';
@@ -42,7 +42,7 @@ const renderItem = ({index, ...rest}) => {
 Panels.displayName = 'Panels';
 
 export default {
-	title: 'Sandstone/Panels',
+	title: 'Lune/Panels',
 	component: 'Panels'
 };
 

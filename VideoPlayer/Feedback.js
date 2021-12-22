@@ -9,18 +9,18 @@ import states from './FeedbackIcons.js';
 import css from './Feedback.module.less';
 
 /**
- * Feedback {@link sandstone/VideoPlayer}. This displays the media's playback rate and other
+ * Feedback {@link lune/VideoPlayer}. This displays the media's playback rate and other
  * information.
  *
  * @class Feedback
- * @memberof sandstone/VideoPlayer
+ * @memberof lune/VideoPlayer
  * @ui
  * @private
  */
 const FeedbackBase = kind({
 	name: 'Feedback',
 
-	propTypes: /** @lends sandstone/VideoPlayer.Feedback.prototype */ {
+	propTypes: /** @lends lune/VideoPlayer.Feedback.prototype */ {
 		children: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 
 		/**
@@ -31,7 +31,7 @@ const FeedbackBase = kind({
 		 * Each state understands where its related icon should be positioned, and whether it should
 		 * respond to changes to the `visible` property.
 		 *
-		 * This string feeds directly into {@link sandstone/FeedbackIcon.FeedbackIcon}.
+		 * This string feeds directly into {@link lune/FeedbackIcon.FeedbackIcon}.
 		 *
 		 * @type {('play'|'pause'|'rewind'|'fastForward'|'jumpBackward'|'jumpForward'|'jumpToStart'|'jumpToEnd'|'stop')}
 		 * @public

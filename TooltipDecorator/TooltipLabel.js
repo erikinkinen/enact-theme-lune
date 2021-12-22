@@ -9,18 +9,18 @@ import css from './Tooltip.module.less';
 
 
 /**
- * {@link sandstone/TooltipDecorator.TooltipLabel} is a stateless tooltip component with
- * Sandstone styling applied.
+ * {@link lune/TooltipDecorator.TooltipLabel} is a stateless tooltip component with
+ * Lune styling applied.
  *
  * @class TooltipLabel
- * @memberof sandstone/TooltipDecorator
+ * @memberof lune/TooltipDecorator
  * @ui
  * @private
  */
 const TooltipLabel = kind({
 	name: 'TooltipLabel',
 
-	propTypes: /** @lends sandstone/TooltipDecorator.TooltipLabel.prototype */ {
+	propTypes: /** @lends lune/TooltipDecorator.TooltipLabel.prototype */ {
 		/**
 		 * The node to be displayed as the main content of the tooltip.
 		 *

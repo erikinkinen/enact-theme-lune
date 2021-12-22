@@ -1,7 +1,7 @@
 /**
  * Provides a floating component suitable for grouping collections of managed views.
  *
- * @module sandstone/PopupTabLayout
+ * @module lune/PopupTabLayout
  * @exports PopupTabLayout
  * @exports Tab
  * @exports TabPanels
@@ -37,18 +37,18 @@ const popupPropList = ['noAutoDismiss', 'onHide', 'onKeyDown', 'onShow', 'open',
  * Tabbed Layout component in a floating Popup.
  *
  * @class PopupTabLayoutBase
- * @memberof sandstone/PopupTabLayout
- * @extends sandstone/Popup.Popup
- * @extends sandstone/TabLayout.TabLayout
+ * @memberof lune/PopupTabLayout
+ * @extends lune/Popup.Popup
+ * @extends lune/TabLayout.TabLayout
  * @ui
  * @public
  */
 const PopupTabLayoutBase = kind({
 	name: 'PopupTabLayout',
 
-	propTypes: /** @lends sandstone/PopupTabLayout.PopupTabLayoutBase.prototype */ {
+	propTypes: /** @lends lune/PopupTabLayout.PopupTabLayoutBase.prototype */ {
 		/**
-		 * Collection of [Tabs]{@link sandstone/PopupTabLayout.Tab} to render.
+		 * Collection of [Tabs]{@link lune/PopupTabLayout.Tab} to render.
 		 *
 		 * @type {Node}
 		 * @public
@@ -227,7 +227,7 @@ const PopupTabLayoutBase = kind({
 		 *
 		 * It can be either `'none'`, `'self-first'`, or `'self-only'`.
 		 *
-		 * Note: The ready-to-use [Popup]{@link sandstone/Popup.Popup} component only supports
+		 * Note: The ready-to-use [Popup]{@link lune/Popup.Popup} component only supports
 		 * `'self-first'` and `'self-only'`.
 		 *
 		 * @type {('none'|'self-first'|'self-only')}
@@ -292,8 +292,8 @@ const PopupTabLayoutBase = kind({
  * Add behaviors to PopupTabLayout.
  *
  * @class PopupTabLayoutDecorator
- * @memberof sandstone/PopupTabLayout
- * @mixes sandstone/Skinnable.Skinnable
+ * @memberof lune/PopupTabLayout
+ * @mixes lune/Skinnable.Skinnable
  * @hoc
  * @public
  */
@@ -302,7 +302,7 @@ const PopupTabLayoutDecorator = compose(
 );
 
 /**
- * An instance of [`Popup`]{@link sandstone/Popup.Popup} which restricts the `TabLayout` content to
+ * An instance of [`Popup`]{@link lune/Popup.Popup} which restricts the `TabLayout` content to
  * the left side of the screen. The content of `TabLayout` can flex vertically, but not horizontally
  * (fixed width). This is typically used to switch between several collections of managed views
  * (`TabPanels` and `TabPanel`, also exported from this module).
@@ -332,19 +332,19 @@ const PopupTabLayoutDecorator = compose(
  * ```
  *
  * @class PopupTabLayout
- * @memberof sandstone/PopupTabLayout
+ * @memberof lune/PopupTabLayout
  * @ui
  * @public
  */
 const PopupTabLayout = PopupTabLayoutDecorator(PopupTabLayoutBase);
 
 /**
- * A shortcut to access {@link sandstone/PopupTabLayout.Tab}
+ * A shortcut to access {@link lune/PopupTabLayout.Tab}
  *
  * @name Tab
- * @type {sandstone/PopupTabLayout.Tab}
- * @memberof sandstone/PopupTabLayout.PopupTabLayout
- * @extends sandstone/TabLayout.Tab
+ * @type {lune/PopupTabLayout.Tab}
+ * @memberof lune/PopupTabLayout.PopupTabLayout
+ * @extends lune/TabLayout.Tab
  */
 PopupTabLayout.Tab = Tab;
 
@@ -352,8 +352,8 @@ PopupTabLayout.Tab = Tab;
  * A Tab for use inside this component.
  *
  * @class Tab
- * @memberof sandstone/PopupTabLayout
- * @extends sandstone/TabLayout.Tab
+ * @memberof lune/PopupTabLayout
+ * @extends lune/TabLayout.Tab
  * @ui
  */
 
@@ -389,12 +389,12 @@ const tabPanelsHandlers = {
 };
 
 /**
- * A base component for [`TabPanels`]{@link sandstone/PopupTabLayout.TabPanels} which has
+ * A base component for [`TabPanels`]{@link lune/PopupTabLayout.TabPanels} which has
  * left key handler to navigate panels.
  *
  * @class TabPanelsBase
- * @memberof sandstone/PopupTabLayout
- * @extends sandstone/Panels.Panels
+ * @memberof lune/PopupTabLayout
+ * @extends lune/Panels.Panels
  * @ui
  * @public
  */
@@ -413,8 +413,8 @@ TabPanelsBase.propTypes = {
  * A customized version of Panels for use inside this component.
  *
  * @class TabPanels
- * @memberof sandstone/PopupTabLayout
- * @extends sandstone/PopupTabLayout.TabPanelsBase
+ * @memberof lune/PopupTabLayout
+ * @extends lune/PopupTabLayout.TabPanelsBase
  * @ui
  * @public
  */
@@ -434,7 +434,7 @@ const TabPanels = I18nContextDecorator(
  * ```
  *
  * @name noCloseButton
- * @memberof sandstone/PopupTabLayout.TabPanels.prototype
+ * @memberof lune/PopupTabLayout.TabPanels.prototype
  * @type {Boolean}
  * @default true
  * @public
@@ -444,8 +444,8 @@ const TabPanels = I18nContextDecorator(
  * A customized version of Panel for use inside this component.
  *
  * @class TabPanel
- * @memberof sandstone/PopupTabLayout
- * @extends sandstone/Panels.Panel
+ * @memberof lune/PopupTabLayout
+ * @extends lune/Panels.Panel
  * @ui
  * @public
  */

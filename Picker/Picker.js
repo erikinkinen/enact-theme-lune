@@ -6,7 +6,7 @@
  * 	{['A', 'B', 'C']}
  * </Picker>
  *
- * @module sandstone/Picker
+ * @module lune/Picker
  * @exports Picker
  * @exports PickerBase
  */
@@ -32,14 +32,14 @@ import componentCss from './Picker.module.less';
  * This version is not [`spottable`]{@link spotlight/Spottable.Spottable}.
  *
  * @class PickerBase
- * @memberof sandstone/Picker
+ * @memberof lune/Picker
  * @ui
  * @public
  */
 const PickerBase = kind({
 	name: 'Picker',
 
-	propTypes: /** @lends sandstone/Picker.PickerBase.prototype */ {
+	propTypes: /** @lends lune/Picker.PickerBase.prototype */ {
 		/**
 		 * Picker value list.
 		 *
@@ -55,7 +55,7 @@ const PickerBase = kind({
 		 * By default, `aria-valuetext` is set to the current selected child text.
 		 *
 		 * @type {String}
-		 * @memberof sandstone/Picker.PickerBase.prototype
+		 * @memberof lune/Picker.PickerBase.prototype
 		 * @public
 		 */
 		'aria-valuetext': PropTypes.string,
@@ -82,7 +82,7 @@ const PickerBase = kind({
 		 * set to an array of labels.
 		 *
 		 * @type {Number[]|String[]}
-		 * @memberof sandstone/Picker.PickerBase.prototype
+		 * @memberof lune/Picker.PickerBase.prototype
 		 * @public
 		 */
 		'data-webos-voice-labels-ext': PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.number), PropTypes.arrayOf(PropTypes.string)]),
@@ -90,9 +90,9 @@ const PickerBase = kind({
 		/**
 		 * A custom icon for the decrementer.
 		 *
-		 * All strings supported by [Icon]{@link sandstone/Icon.Icon} are supported. Without a
+		 * All strings supported by [Icon]{@link lune/Icon.Icon} are supported. Without a
 		 * custom icon, the default is used, and is automatically changed when the
-		 * [orientation]{@link sandstone/Picker.Picker#orientation} is changed.
+		 * [orientation]{@link lune/Picker.Picker#orientation} is changed.
 		 *
 		 * @type {String}
 		 * @public
@@ -110,9 +110,9 @@ const PickerBase = kind({
 		/**
 		 * A custom icon for the incrementer.
 		 *
-		 * All strings supported by [Icon]{@link sandstone/Icon.Icon} are supported. Without a
+		 * All strings supported by [Icon]{@link lune/Icon.Icon} are supported. Without a
 		 * custom icon, the default is used, and is automatically changed when the
-		 * [orientation]{@link sandstone/Picker.Picker#orientation} is changed.
+		 * [orientation]{@link lune/Picker.Picker#orientation} is changed.
 		 *
 		 * @type {String}
 		 * @public
@@ -144,7 +144,7 @@ const PickerBase = kind({
 		 * Disables marqueeing of items.
 		 *
 		 * By default, each picker item is wrapped by a
-		 * [`Marquee`]{@link sandstone/Marquee.Marquee}. When this is set, the items will
+		 * [`Marquee`]{@link lune/Marquee.Marquee}. When this is set, the items will
 		 * not be wrapped.
 		 *
 		 * @type {Boolean}
@@ -327,10 +327,10 @@ const PickerBase = kind({
  * supply a value to `value` at creation time and update it in response to `onChange` events.
  *
  * @class Picker
- * @memberof sandstone/Picker
- * @extends sandstone/Picker.PickerBase
+ * @memberof lune/Picker
+ * @extends lune/Picker.PickerBase
  * @mixes ui/Changeable.Changeable
- * @mixes sandstone/Marquee.MarqueeController
+ * @mixes lune/Marquee.MarqueeController
  * @ui
  * @public
  */
@@ -349,7 +349,7 @@ const Picker = Pure(
  * *Note*: Changing `defaultValue` after initial render has no effect.
  *
  * @name defaultValue
- * @memberof sandstone/Picker.Picker.prototype
+ * @memberof lune/Picker.Picker.prototype
  * @type {Number}
  * @public
  */

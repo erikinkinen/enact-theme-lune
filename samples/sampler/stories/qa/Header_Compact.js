@@ -1,6 +1,6 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {boolean, select, text} from '@enact/storybook-utils/addons/controls';
-import {Header, HeaderBase} from '@enact/sandstone/Panels';
+import {Header, HeaderBase} from '@enact/lune/Panels';
 import {Fragment} from 'react';
 
 import {commonProps, headerStoryConfig, inputData, makeCustomizedConfig, prop} from './common/Header_Common';
@@ -15,7 +15,7 @@ const compactDefaultProps = {
 const customizedConfig = makeCustomizedConfig(compactDefaultProps);
 
 export default {
-	title: 'Sandstone/Header/Compact',
+	title: 'Lune/Header/Compact',
 	component: 'Header'
 };
 

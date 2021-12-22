@@ -1,8 +1,8 @@
-import Button from '@enact/sandstone/Button';
+import Button from '@enact/lune/Button';
 import kind from '@enact/core/kind';
 import {Component} from 'react';
-import VideoPlayer from '@enact/sandstone/VideoPlayer';
-import {MediaControls} from '@enact/sandstone/MediaPlayer';
+import VideoPlayer from '@enact/lune/VideoPlayer';
+import {MediaControls} from '@enact/lune/MediaPlayer';
 
 const SelectableVideoPlayer = class extends Component {
 

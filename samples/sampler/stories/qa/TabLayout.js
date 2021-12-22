@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-no-bind */
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {boolean, range, select} from '@enact/storybook-utils/addons/controls';
-import BodyText from '@enact/sandstone/BodyText';
-import Button from '@enact/sandstone/Button';
-import Item from '@enact/sandstone/Item';
-import {Panel, Header} from '@enact/sandstone/Panels';
-import {Scroller} from '@enact/sandstone/Scroller';
-import TabLayout, {TabLayoutBase, Tab} from '@enact/sandstone/TabLayout';
+import BodyText from '@enact/lune/BodyText';
+import Button from '@enact/lune/Button';
+import Item from '@enact/lune/Item';
+import {Panel, Header} from '@enact/lune/Panels';
+import {Scroller} from '@enact/lune/Scroller';
+import TabLayout, {TabLayoutBase, Tab} from '@enact/lune/TabLayout';
 import {Component, useState} from 'react';
 
 import icons from '../helper/icons';
@@ -66,7 +66,7 @@ class AddingTabSample extends Component {
 }
 
 export default {
-	title: 'Sandstone/TabLayout',
+	title: 'Lune/TabLayout',
 	component: 'TabLayout'
 };
 
@@ -423,7 +423,7 @@ export const WithControlledIndex = (args) => {
 
 	return (
 		<Panel>
-			<Header title="Sandstone TabLayout" subtitle="Controlled Index" />
+			<Header title="Lune TabLayout" subtitle="Controlled Index" />
 			<TabLayout
 				index={selected}
 				onSelect={({index}) => setSelected(index)}

@@ -1,7 +1,7 @@
 /**
- * Exports the {@link sandstone/internal/DateTimeDecorator.DateTimeDecorator} higher-order component
+ * Exports the {@link lune/internal/DateTimeDecorator.DateTimeDecorator} higher-order component
  *
- * @module sandstone/internal/DateTimeDecorator
+ * @module lune/internal/DateTimeDecorator
  * @private
  */
 
@@ -27,11 +27,11 @@ const toTime = (date) => {
 };
 
 /**
- * {@link sandstone/internal/DateTimeDecorator.DateTimeDecorator} provides common behavior for
- * {@link sandstone/DatePicker.DatePicker} and {@link sandstone/TimePicker.TimePicker}.
+ * {@link lune/internal/DateTimeDecorator.DateTimeDecorator} provides common behavior for
+ * {@link lune/DatePicker.DatePicker} and {@link lune/TimePicker.TimePicker}.
  *
  * @class DateTimeDecorator
- * @memberof sandstone/internal/DateTimeDecorator
+ * @memberof lune/internal/DateTimeDecorator
  * @mixes ui/Changeable.Changeable
  * @hoc
  * @private
@@ -50,7 +50,7 @@ const DateTimeDecorator = hoc((config, Wrapped) => {
 	const Decorator = class extends Component {
 		static displayName = 'DateTimeDecorator';
 
-		static propTypes = /** @lends sandstone/internal/DateTimeDecorator.DateTimeDecorator.prototype */ {
+		static propTypes = /** @lends lune/internal/DateTimeDecorator.DateTimeDecorator.prototype */ {
 			/**
 			 * The current locale as a
 			 * {@link https://tools.ietf.org/html/rfc5646|BCP 47 language tag}.

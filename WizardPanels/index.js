@@ -1,7 +1,7 @@
 /**
- * Provides a Sandstone styled panels component for stepping through a process.
+ * Provides a Lune styled panels component for stepping through a process.
  *
- * @module sandstone/WizardPanels
+ * @module lune/WizardPanels
  * @exports Panel
  * @exports WizardPanels
  */
@@ -10,11 +10,11 @@ import {WizardPanels, WizardPanelsBase, WizardPanelsDecorator} from './WizardPan
 import Panel from './Panel';
 
 /**
- * A shortcut to access {@link sandstone/WizardPanels.Panel}
+ * A shortcut to access {@link lune/WizardPanels.Panel}
  *
  * @name Panel
  * @static
- * @memberof sandstone/WizardPanels.WizardPanels
+ * @memberof lune/WizardPanels.WizardPanels
  */
 WizardPanels.Panel = Panel;
 

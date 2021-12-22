@@ -7,14 +7,14 @@ import PropTypes from 'prop-types';
  * Configures the tab title and icon.
  *
  * @class Tab
- * @memberof sandstone/TabLayout
+ * @memberof lune/TabLayout
  * @ui
  * @public
  */
 const Tab = kind({
 	name: 'Tab',
 
-	propTypes: /** @lends sandstone/TabLayout.Tab.prototype */ {
+	propTypes: /** @lends lune/TabLayout.Tab.prototype */ {
 		/**
 		 * Title of the tab.
 		 *
@@ -50,13 +50,13 @@ const Tab = kind({
 		onTabClick: PropTypes.func,
 
 		/**
-		 * Configuration props for a [Sprite]{@link sandstone/Sprite.Sprite} icon.
+		 * Configuration props for a [Sprite]{@link lune/Sprite.Sprite} icon.
 		 *
-		 * All props on [Sprite]{@link sandstone/Sprite.Sprite} are supported here. By default,
+		 * All props on [Sprite]{@link lune/Sprite.Sprite} are supported here. By default,
 		 * `stopped` will be set to `false` when the tab is focused and `true` otherwise. To
 		 * override, pass `stopped` in this object.
 		 *
-		 * @see {@link sandstone/Sprite.Sprite}
+		 * @see {@link lune/Sprite.Sprite}
 		 * @type {Object}
 		 * @public
 		 */

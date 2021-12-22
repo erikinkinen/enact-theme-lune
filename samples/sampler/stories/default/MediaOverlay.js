@@ -1,6 +1,6 @@
 import {mergeComponentMetadata} from '@enact/storybook-utils';
 import {boolean, range, select, text} from '@enact/storybook-utils/addons/controls';
-import MediaOverlay, {MediaOverlayBase} from '@enact/sandstone/MediaOverlay';
+import MediaOverlay, {MediaOverlayBase} from '@enact/lune/MediaOverlay';
 
 MediaOverlay.displayName = 'MediaOverlay';
 const Config = mergeComponentMetadata('MediaOverlay', MediaOverlayBase, MediaOverlay);
@@ -46,7 +46,7 @@ const prop = {
 };
 
 export default {
-	title: 'Sandstone/MediaOverlay',
+	title: 'Lune/MediaOverlay',
 	component: 'MediaOverlay'
 };
 

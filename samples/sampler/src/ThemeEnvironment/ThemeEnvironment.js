@@ -2,8 +2,8 @@
 
 import classnames from 'classnames';
 import kind from '@enact/core/kind';
-import {Panels, Panel, Header} from '@enact/sandstone/Panels';
-import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
+import {Panels, Panel, Header} from '@enact/lune/Panels';
+import ThemeDecorator from '@enact/lune/ThemeDecorator';
 import PropTypes from 'prop-types';
 
 import css from './ThemeEnvironment.module.less';

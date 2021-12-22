@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-bind */
 
-import DatePicker, {dateToLocaleString} from '@enact/sandstone/DatePicker';
-import {FixedPopupPanels, Header, Panel} from '@enact/sandstone/FixedPopupPanels';
-import Item from '@enact/sandstone/Item';
+import DatePicker, {dateToLocaleString} from '@enact/lune/DatePicker';
+import {FixedPopupPanels, Header, Panel} from '@enact/lune/FixedPopupPanels';
+import Item from '@enact/lune/Item';
 import {useState} from 'react';
 
 import Section from '../components/Section';
